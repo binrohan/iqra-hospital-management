@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Bill | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Bill</h2>
+
+
+
+<script type="text/javascript">
+    var accessList=@Html.Raw(Pharmacy.Service.JParser.Parse(ViewBag.Access));
+</script>
+<div id="summary_container" class="row">
+
+</div>
+<div id="filter_container" class="row">
+
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-success btn-round pull-right" id="btn_add_new" style="margin-left: 1%"><span class="glyphicon glyphicon-plus"></span>New</a>
+
+    </div>
+    <div id="grid_container">
+
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/Bill/AppScript.js"></script>
+<script type="text/javascript">
+    (function(){
+        var model={accessList:accessList};
+        Controller.Show(model);
+        model.BaseModel.Reload();
+    })()
+</script>

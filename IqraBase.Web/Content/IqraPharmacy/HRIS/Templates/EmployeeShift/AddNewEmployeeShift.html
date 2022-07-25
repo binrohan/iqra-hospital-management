@@ -1,0 +1,79 @@
+﻿<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Add Employee Shift</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <form class="middleForm" action="#">
+            <div class="row">
+                <section class="col-sm-12 col col-md-4">
+                    <label for="EmployeeId">Employee</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="EmployeeId" name="EmployeeId" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-4">
+                    <label for="ActivateAt">ActivateAt</label>
+                    <div class="input-group">
+                        <input type="text" data-binding="ActivateAt" data-dateformat="dd/MM/yyyy" name="ActivateAt" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-4">
+                    <label for="ActiveTo">ActiveTo</label>
+                    <div class="input-group">
+                        <input type="text" data-binding="ActiveTo" data-dateformat="dd/MM/yyyy" name="ActiveTo" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-12 col col-md-6">
+                    <label for="StartDayOfMonth">Start Day Of Month</label>
+                    <div class="input-group">
+                        <input type="text" data-type="int" data-binding="StartDayOfMonth" name="StartDayOfMonth" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-6">
+                    <label for="EndDayOfMonth">End Day Of Month</label>
+                    <div class="input-group">
+                        <input type="text" data-type="int" data-binding="EndDayOfMonth" name="EndDayOfMonth" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-12 col col-md-6">
+                    <label for="StartAt">StartAt</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="StartAt" data-dateformat="HH:mm" name="StartAt" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-6">
+                    <label for="EndAt">EndAt</label>
+                    <div class="input-group">
+                        <input type="text" data-binding="EndAt" data-dateformat="HH:mm" name="EndAt" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <section>
+                <label for="Remarks">Remarks</label>
+                <div class="input-group">
+                    <textarea data-binding="Remarks" name="Remarks" class="form-control"></textarea>
+                </div>
+            </section>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Employee Report";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    $('.employee_group').addClass('active menu-open').find('.report').addClass('active');
+</script>
+<h2 class="empty_style">Employee Report</h2>
+<div id="filter_container" class="row">
+    <div class="col-md-2 col-sm-4 col-xs-6">
+        <div><label>From</label></div>
+        <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+        <div><label>To</label></div>
+        <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+    </div>
+    <div class="col-md-2 hide_on_mobile">
+        <div><label>Period</label></div>
+        <div><input type="text" data-binding="Period" class="form-control" /></div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6" style="font-size:1.5em;text-align:center;">
+        <div><label>Voucher No.</label></div>
+        <div><span class="auto_bind" data-binding="Items"></span></div>
+    </div>
+</div>
+<div id="sale_summary_container" style="font-size: 1.5em; font-weight: bold; margin: 10px 0px;" class="row">
+    <div class="col-md-2 col-sm-4 col-xs-6">
+        <label>Sale </label>
+        <div>
+            <span class="auto_bind" data-binding="TotalSale"></span>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-4 hide_on_mobile">
+        <label>Discount </label>
+        <div>
+            <span class="auto_bind" data-binding="TotalDiscount"></span>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+        <label>TP Price </label>
+        <div>
+            <span class="auto_bind" data-binding="TradePrice"></span>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+        <label>Return </label>
+        <div>
+            <span class="auto_bind" data-binding="TotalReturn"></span>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+        <label>Cash </label>
+        <div>
+            <span class="auto_bind" data-binding="TotalCash"></span>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-4 hide_on_mobile">
+        <label>Trade Margin </label>
+        <div>
+            <span class="auto_bind" data-binding="TradeMargin"></span>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/EmployeeArea/Content/User/Report.js"></script>

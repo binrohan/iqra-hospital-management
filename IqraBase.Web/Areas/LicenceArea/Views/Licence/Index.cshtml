@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "License | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Licenses</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div class="empty_style button_container row">
+        <a class="btn btn-white btn-default btn-round pull-right margin-l-5" id="btn_upload_license"><span class="glyphicon glyphicon-plus"></span>Upload License</a>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<script src="~/Areas/LicenceArea/Content/Js/AppScript.js"></script>

@@ -1,0 +1,47 @@
+﻿<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;">Report Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <div class="form-horizontal smart-form middleForm">
+            <div>
+                <div id="filter_container_details" class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div><label>Order Price</label></div>
+                        <div><span data-binding="OrderPrice" class="form-control auto_bind" /></div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div><label>Purchase Price</label></div>
+                        <div><span data-binding="PurchasePrice" class="form-control auto_bind" /></div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div><label>Sale Price</label></div>
+                        <div><span data-binding="SalePrice" class="form-control auto_bind" /></div>
+                    </div>
+                </div>
+                <div class="empty_style button_container_details row" style="margin-top:15px;">
+                    <a href="#" class="btn btn-white btn-default btn-round pull-left" id="btn_counter_wise_details"><span class="glyphicon glyphicon-align-justify"></span> CounterWise</a>
+                    <a href="#" class="btn btn-white btn-default btn-round pull-left" id="btn_suplier_wise_details" style="margin-left: 1%;"><span class="glyphicon glyphicon-align-justify"></span> SuplierWise</a>
+                    <a href="#" class="btn btn-white btn-default btn-round pull-left" id="btn_day_wise_details" style="margin-left: 1%;"><span class="glyphicon glyphicon-asterisk"></span> Daily</a>
+                </div>
+                <div class="">
+                    <div id="suplier_grid_details" class="tab_taggle"></div>
+                    <div id="counter_grid_details" class="tab_taggle"></div>
+                    <div id="daily_grid_details" class="tab_taggle"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

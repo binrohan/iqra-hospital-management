@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Inventory | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    var ItemType = 0;
+    var OrderTypeId = '@ViewBag.OrderTypeId';
+    var duplicateTemplate = '/Content/IqraPharmacy/Pharmacy/Templates/Duplicate.html';
+    var addTemplate = '/Content/IqraPharmacy/Pharmacy/Templates/Add.html';
+    var addUrl = '/PharmacyItem/AddNew';
+    var editTemplate = '/Content/IqraPharmacy/Pharmacy/Templates/Edit.html';
+    var editUrl = '/PharmacyItem/Update';
+    var typeName = 'Pharmacy',
+        untUrl = '/UnitType/AutoComplete',
+        cntrUrl = '/ProductArea/Counter/AutoComplete',
+            ctgUrl = '/Category/AutoComplete';
+
+</script>
+<h2 class="empty_style">Inventory</h2>
+<div>
+    <div class="empty_style button_container row">
+        <input type="text" id="date" class="form-control" style="max-width:200px;" />
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+    <div class="text-center formFooter FooterFormMenu">
+        <button id="btn_Save" class="btn btn-white btn-default btn-round" type="button" style="margin-top: 15px; margin-bottom:5px;">
+            <span class="glyphicon glyphicon-remove"></span> Save &amp; Next
+        </button>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/InventoryArea/Content/Inventory.js"></script>
+<style>
+    .i-grid-content .action.selected{
+        background-color:#286789;
+    }
+    .i-grid-content .action.disabled{
+        background-color:#286789;
+        opacity:0.2;
+    }
+</style>

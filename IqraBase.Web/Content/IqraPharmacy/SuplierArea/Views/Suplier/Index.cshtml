@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Suplier | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+
+    var ItemType = 0, pharmacyTypeId = '@ViewBag.ItemType';
+    var OrderTypeId = pharmacyTypeId;
+    var template = '/Content/IqraPharmacy/Pharmacy/Templates/Edit.html';
+    var typeName = 'Pharmacy',
+        untUrl = '/UnitType/PharmacyAutoComplete',
+        cntrUrl = '/ProductArea/Counter/PharmacyAutoComplete',
+            ctgUrl = '/Category/PharmacyAutoComplete';
+
+</script>
+<h2 class="empty_style">Suplier</h2>
+<div>
+        <div class="empty_style button_container row">
+            <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+        </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<script src="~/Content/IqraPharmacy/SuplierArea/Content/Suplier/AppScript.js"></script>

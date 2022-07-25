@@ -1,0 +1,154 @@
+﻿<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> Counters </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <div id="summary_container" class="row" style="margin:10px 0">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2">
+                                <label class="auto_bind">Items</label>
+                                <div class="auto_bind form-control" data-binding="Items"></div>
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <label class="auto_bind">Quentity</label>
+                                <div class="auto_bind form-control" data-binding="RequiredQuantity"></div>
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <label>Total TP</label>
+                                <div class="auto_bind form-control" data-binding="TradePrice"></div>
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <label>VAT</label>
+                                <div class="auto_bind form-control" data-binding="TotalVat"></div>
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <label>Discount</label>
+                                <div class="auto_bind form-control" data-binding="TotalDiscount"></div>
+                            </div>
+                            <div class="col-sm-2 col-md-2">
+                                <label>Payable TP</label>
+                                <div class="auto_bind form-control" data-binding="PayableAmount"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="print_container" class="col-sm-12 col-md-6 col-lg-6">
+                        <div style="float: left; max-width: 80px; margin-right: 10px;">
+                            <label><input data-binding="IsAnyDay" data-type="string" max="" min="" type="checkbox"> Any Day</label>
+                            <input data-binding="AnyDay" class="form-control" data-type="float|null" type="text">
+                        </div>
+                        <div style="float: left; max-width: 220px;">
+                            <div class="row">
+                                <div class="col-sm-5 col-xs-5 col-md-5">
+                                    <label><input data-binding="IsAvarageDay" data-type="string" max="" min="" type="checkbox"> avgDay</label>
+                                    <input data-binding="AvarageDay" class="form-control" data-type="float|null" type="text">
+                                </div>
+                                <div class="col-sm-7 col-xs-7 col-md-7">
+                                    <input data-binding="ConsedarDay" value="365" class="form-control" type="text">
+
+                                    <input data-binding="Precetion" class="form-control" data-type="float|null" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-default btn-round btn_show_all pull-right" style="margin-left:10px;"><label><input data-binding="ShowAll" type="checkbox"> Show All</label></a>
+                        <a class="btn btn-default btn-round btn_refresh btn_add_print pull-right"><span class="glyphicon glyphicon-refresh"></span> Refresh </a>
+                    </div>
+                </div>
+                <div id="grid">
+
+                </div>
+                <div id="selected_item_summary_container" class="row" style="margin:10px 0; display:none;">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-2 col-md-2">
+                                    <label>Selected Items</label>
+                                    <div class="auto_bind form-control" data-binding="SelectedItems"></div>
+                                </div>
+                                <div class="col-sm-2 col-md-2">
+                                    <label>Selected Quentity</label>
+                                    <div>
+                                        <span class="auto_bind form-control" data-binding="SelectedSaleQuantity"></span>
+                                        <hr />
+                                        <span class="auto_bind form-control" data-binding="SelectedTradeQuantity"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-md-2">
+                                    <label>Trade Price</label>
+                                    <div class="auto_bind form-control" data-binding="SelectTradePrice"></div>
+                                </div>
+                                <div class="col-sm-2 col-md-2">
+                                    <label>Discount</label>
+                                    <div>
+                                        <span class="auto_bind form-control" data-binding="Discount"></span>
+                                        <hr />
+                                        <span class="auto_bind form-control" data-binding="DiscountTotal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-3 col-md-3">
+                                    <label>Vat</label>
+                                    <div>
+                                        <span class="auto_bind form-control" data-binding="Vat"></span>
+                                        <hr />
+                                        <span class="auto_bind form-control" data-binding="VatTotal"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <label>Payable TP</label>
+                                    <div class="auto_bind form-control" data-binding="PayableTP"></div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <label>MRP</label>
+                                    <div class="auto_bind form-control" data-binding="MRP"></div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <label>Trade Margin</label>
+                                    <div>
+                                        <span class="auto_bind form-control" data-binding="Profit"></span>
+                                        <hr />
+                                        <span class="auto_bind form-control" data-binding="TotalProfit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="type_selector">
+                    <label><input data-binding="IsDefaultSelect" type="checkbox"> Default</label>
+                    <label><input data-binding="IsAnyDaySelect" type="checkbox"> Any Days</label>
+                    <label><input data-binding="IsAvgDaySelect" type="checkbox"> Avg Days</label>
+                </div>
+                <div class="text-center formFooter FooterFormMenu">
+                    <button style="margin-top:0;" class="btn btn_save btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-save"></span> Create Order
+                    </button>
+                    <button style="margin-top:0;" class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <style type="text/css">
+        .type_selector{
+            margin-top:10px;
+            text-align:center;
+        }
+        .type_selector label{
+            margin-left:15px;
+        }
+    </style>
+</div>

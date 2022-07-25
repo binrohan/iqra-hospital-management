@@ -1,0 +1,55 @@
+﻿<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> Counters </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <div id="summary_container" class="row" style="margin:10px 0">
+                    <div class="col-sm-2 col-md-2">
+                        <label class="auto_bind" data-binding="QuentityTitle">Required Quentity</label>
+                        <div class="auto_bind form-control" data-binding="RequiredQuantity"></div>
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        <label>Total Trade Price</label>
+                        <div class="auto_bind form-control" data-binding="TradePrice"></div>
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        <label>Vat</label>
+                        <div class="auto_bind form-control" data-binding="TotalVat"></div>
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        <label>Discount</label>
+                        <div class="auto_bind form-control" data-binding="TotalDiscount"></div>
+                    </div>
+                    <div class="col-sm-2 col-md-2">
+                        <label>Payable Trade Price</label>
+                        <div class="auto_bind form-control" data-binding="PayableAmount"></div>
+                    </div>
+                    <div id="print_container" class="col-sm-2 col-md-2">
+                        <a class="btn btn-default btn-round btn_add_item btn_add_print pull-right" style="display:none;"><span class="glyphicon glyphicon-plus"></span> Add Items </a>
+                        <a class="btn btn-default btn-round btn_refresh btn_add_print pull-right"><span class="glyphicon glyphicon-refresh"></span> Refresh </a>
+                    </div>
+                </div>
+                <div id="grid">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-save"></span> Create Order
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

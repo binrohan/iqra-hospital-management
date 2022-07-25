@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Sales Error | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Sales Error</h2>
+<script type="text/javascript">
+    var currentUser=@Html.Raw(Pharmacy.Service.JParser.Parse(ViewBag.User));
+</script>
+<div id="filter_container" class="row">
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+    </div>
+    <div id="grid_container">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/CommonArea/Content/Js/SalesError/AppScript.js"></script>

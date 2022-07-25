@@ -1,0 +1,67 @@
+﻿<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> Counters </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <div id="filter_container" class="row">
+                    <div class="col-md-2 col-sm-6 col-xs-6">
+                        <div><label>From</label></div>
+                        <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-6">
+                        <div><label>To</label></div>
+                        <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-6 hide_on_mobile">
+                        <div><label>Period</label></div>
+                        <div><input type="text" data-binding="Period" class="form-control" /></div>
+                    </div>
+                </div>
+                <div id="summary_container" class="row" style="margin:10px 0">
+                    <div id="total_item" class="col-sm-2 col-md-2 hide_on_mobile">
+                        <label>Sold Items</label>
+                        <div class="auto_bind form-control" data-binding="TotalItem"></div>
+                    </div>
+                    <div class="col-sm-2 col-md-2 hide_on_mobile">
+                        <label>Sold Quantity</label>
+                        <div class="auto_bind form-control" data-binding="TotalQuentity"></div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-6">
+                        <label>Trade Price</label>
+                        <div class="auto_bind form-control" data-binding="TotalTradePrice"></div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-6">
+                        <label>Sold Price</label>
+                        <div class="auto_bind form-control" data-binding="TotalSalePrice"></div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-6">
+                        <label>Sold Discount</label>
+                        <div class="auto_bind form-control" data-binding="TotalDiscount"></div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-6">
+                        <label>Trade Margin</label>
+                        <div class="auto_bind form-control" data-binding="TradeMargin"></div>
+                    </div>
+                </div>
+                <div id="grid">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button style="margin:0 !important" class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                    <span id="print_container"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

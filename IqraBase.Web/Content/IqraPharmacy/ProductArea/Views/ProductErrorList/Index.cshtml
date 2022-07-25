@@ -1,0 +1,32 @@
+﻿
+
+@{
+    ViewBag.Title = "Pharmacy Error Items | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    var ItemType = 0;
+    var OrderTypeId = '@ViewBag.OrderTypeId';
+    var duplicateTemplate = '/Content/IqraPharmacy/Pharmacy/Templates/Duplicate.html';
+    var addTemplate = '/Content/IqraPharmacy/Pharmacy/Templates/Add.html';
+    var addUrl = '/PharmacyItem/AddNew';
+    var editTemplate = '/Content/IqraPharmacy/Pharmacy/Templates/Edit.html';
+    var editUrl = '/PharmacyItem/Update';
+    var typeName = 'Pharmacy',
+        untUrl = '/UnitType/PharmacyAutoComplete',
+        cntrUrl = '/ProductArea/Counter/PharmacyAutoComplete',
+            ctgUrl = '/Category/PharmacyAutoComplete';
+
+</script>
+<h2 class="empty_style">Pharmacy Items</h2>
+<div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ProductArea/Content/ProductErrorList/Pharmacy.js"></script>

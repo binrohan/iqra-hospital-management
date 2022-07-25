@@ -1,0 +1,62 @@
+﻿
+<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" class="auto_bind" data-binding="Title"></h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm" action="/">
+        <div class="row">
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="OldSalesUnitType">Old Sales Unit Type</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="OldSalesUnitType" class="form-control auto_bind"></span>
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="NewSalesUnitType">New Sales Unit Type</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="NewSalesUnitType" class="form-control auto_bind"></span>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-4 col col-md-4">
+                <div>
+                    <label for="UnitConversion">Old Unit to New Unit</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="int" required="" data-binding="UnitConversion" name="UnitConversion" placeholder="1 Old Unit = ? new Unit" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-4 col col-md-4">
+                <div>
+                    <label for="UnitConversion">Old Unit Stock</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="OldUnitStock" class="form-control auto_bind"></span>
+                </div>
+            </section>
+            <section class="col-sm-4 col col-md-4">
+                <div>
+                    <label for="UnitConversion">New Unit Stock</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="NewUnitStock" class="form-control auto_bind"></span>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+﻿
+<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" class="auto_bind" data-binding="Title">Add New Purchase By Return</h4>
+        </div>
+        <span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm">
+        <div class="row">
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="Type">Sale Voucher</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" data-binding="Voucher" name="Voucher" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label>&nbsp;</label>
+                </div>
+                <div class="input-group">
+                    <button class="btn btn_search btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-search"></span> Search </button>
+                    <label class="btn btn-white btn-default btn-round" type="button"><input type="checkbox" data-binding="IsShowAll" style="margin:0;" /> Set All </label>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="Amount">Sale At</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="CreatedAt" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="Amount">Total Items</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="ItemCount" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="Amount">Total Amount</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="SalePrice" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="Amount">Discount(P)</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="Discount" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="Amount">Discount(T)</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="TotalDiscount" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="Amount">Payable Amount</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="PayableAmount" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <div id="summary_container" class="row" style="margin:10px 0">
+            </div>
+            <div id="grid" class="grid_small_text">
+            </div>
+        </div>
+        <div class="row">
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="ReturnItem">Return Items</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="ReturnItem" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="ReturnQuentity">Return Quentities</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="ReturnQuentity" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="SoldPrice">Sold Price</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="SoldPrice" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="ReturnDiscount">Discount(P)</label>
+                </div>
+                <div class="input-group">
+                    <input data-binding="ReturnDiscount" class="form-control" type="text"/>
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="TotalReturnDiscount">Discount(T)</label>
+                </div>
+                <div class="input-group">
+                    <input data-binding="TotalReturnDiscount" class="form-control" type="text" />
+                </div>
+            </section>
+            <section class="col-xs-6 col-sm-4 col col-md-2">
+                <div>
+                    <label for="RetunAmount">Return Amount</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="RetunAmount" class="form-control auto_bind" type="text"></span>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+</div>

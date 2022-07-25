@@ -1,0 +1,48 @@
+﻿
+
+@using Microsoft.AspNet.Identity;
+@using Pharmacy.Data.Model.Product;
+@if (Request.IsAuthenticated)
+{
+
+}
+else
+{
+    <li class="treeview">
+        <a href="/ProductReturnArea/ProductReturn">
+            <i class="fa fa-laptop"></i>
+            <span>Order Online</span>
+        </a>
+    </li>
+    <li class="treeview">
+        <a href="/EmployeeArea/Employee">
+            <i class="fa fa-laptop"></i>
+            <span>Our Service</span>
+        </a>
+    </li>
+    <li class="treeview">
+        <a href="/CustomerArea/Customer">
+            <i class="fa fa-laptop"></i>
+            <span>Contact Us </span>
+        </a>
+    </li>
+    <li class="treeview">
+        <a href="/SuplierArea/Suplier">
+            <i class="fa fa-laptop"></i>
+            <span>History</span>
+        </a>
+    </li>
+    <li class="treeview">
+        <a href="/SuplierArea/Suplier">
+            <i class="fa fa-laptop"></i>
+            <span>History</span>
+        </a>
+    </li>
+}
+
+<script type="text/javascript">
+    var PharmacyTypeId = '@ItemModel.Pharmacy', NonePharmacyTypeId = '@ItemModel.NonePharmacy';
+    var CurrentTime = @Html.Raw(IqraBase.Service.JParser.Parse(DateTime.Now)) ;
+    CurrentTime=CurrentTime.getDate();
+    var CurrentDate = CurrentTime.format('dd/MM/yyyy');
+</script>

@@ -1,0 +1,314 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content div.form-control, .tab-content span.form-control {
+            display: block;
+        }
+
+            .tab-content div.form-control a {
+                cursor: pointer;
+            }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+
+        #ordered_items_grid .i-header.table_header.sorting > div, #ordered_items_grid .i-grid-content td {
+            font-size: 0.85em;
+        }
+
+        .i-grid-content tr td {
+            padding: 3px;
+        }
+
+        .new_window .form_container .form {
+            max-width: 99%;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;"> Patient Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <ul class="nav nav-tabs">
+                    <li class="active" data-field="BasicInfo"><a>Basic Info</a></li>
+                    <li data-field="PatientHistory"><a>Patient History</a></li>
+                    <li data-field="AppointmentTime"><a>Appointment Time </a></li>
+                    <li data-field="Prescription"><a>Prescription</a></li>
+                    <li data-field="TotalBills"><a>Investigations</a></li>
+                    <li data-field="PatientTransection"><a>Patient Transection</a></li>
+                    <li data-field="PatientPicture"><a>Patient Picture</a></li>
+                    <li data-field="PatientIdCard"><a>Patient Id-Card</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="basic_info" class="tab-pane fade in active">
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Name">Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Name" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="EmployeeCode">Patient Code</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Code" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="BloodGroup">Blood Group</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="BloodGroup" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Mobile">Mobile</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Mobile" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Status">Status</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Status" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="PatientType">Patient Type</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PatientType" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Email">Email</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Email" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Gender">Gender</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Gender" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Remarks">Remarks</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Remarks" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="LastDateOfAppointment">Last Date of Appointment</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="LastDateOfAppointment" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="LastDateOfAdmission">Last Date of Admission</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="LastDateOfAdmission" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="LastDateOfRealese">Last Date of Realese</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="LastDateOfRealese" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Doctor">Doctor's Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Doctor" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Room">Bed Number</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="BedNumber" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="CAddress">Current Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="CAddress" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="PAddress">Permanent Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PAddress" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="balance_inf">
+                            <div class="row" style="margin-top:5px; border-top:1px solid silver;">
+                                <section class="col-sm-6 col col-md-6">
+                                    <h2 style="margin-top:0px;">Balance</h2>
+                                </section>
+                                <section class="col-sm-3 col col-md-3">
+                                    <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_payment"><span class="glyphicon glyphicon-plus"></span>Payment</a>
+                                </section>
+                            </div>
+                            <div class="row">
+                                <section class="col-sm-3 col col-md-3">
+                                    <div>
+                                        <label for="DiscountedAmount">Payable Amount</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div data-binding="DiscountedAmount" class="form-control auto_bind"></div>
+                                    </div>
+                                </section>
+                                <section class="col-sm-3 col col-md-3">
+                                    <div>
+                                        <label for="PaidAmount">Paid Amount</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div data-binding="PaidAmount" class="form-control auto_bind"></div>
+                                    </div>
+                                </section>
+                                <section class="col-sm-3 col col-md-3">
+                                    <div>
+                                        <label for="DueAmount">DueAmount</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div data-binding="Due Amount" class="form-control auto_bind"></div>
+                                    </div>
+                                </section>
+                                <section class="col-sm-3 col col-md-3">
+                                    <div>
+                                        <label for="IsFullPaid">Is Full Paid?</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div data-binding="IsFullPaid" class="form-control auto_bind"></div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="patient_history" class="tab-pane fade">
+                        <div id="button_container" class="row" style="margin:10px 0">
+                        </div>
+                        <div id="patient_history_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="appointment_time" class="tab-pane fade">
+                        <div id="button_container" class="row" style="margin:10px 0">
+                        </div>
+                        <div id="appointment_time_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="prescription" class="tab-pane fade">
+                        <div id="button_container" class="row" style="margin:10px 0">
+                        </div>
+                        <div id="prescription_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="totalBills" class="tab-pane fade">
+                        <div id="button_container" class="row" style="margin:10px 0">
+                        </div>
+                        <div id="totalBills_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="patient_transection" class="tab-pane fade">
+                        <div class="row summary_container" style="margin:10px 0">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label> Bill Amount </label></div>
+                                <div><span data-binding="BillAmount" class="form-control auto_bind">0.00</span></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label> Paid </label></div>
+                                <div><span data-binding="PaidAmount" class="form-control auto_bind">0.00</span></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label> Discount </label></div>
+                                <div><span data-binding="Discount" class="form-control auto_bind">0.00</span></div>
+                            </div>
+                        </div>
+                        <div class="row button_container" style="margin:10px 0">
+                            <button class="btn btn_print btn-white btn-warning btn-round pull-right" type="button">
+                                <span class="glyphicon glyphicon-print"></span> Print
+                            </button>
+                        </div>
+                        <div id="patient_transection_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="patient_picture" class="tab-pane fade">
+                        <div class="row summary_container" style="margin:10px 0">
+
+                        </div>
+                        <div class="row button_container" style="margin:10px 0">
+                            <a class="btn btn_add_picture btn-white btn-active btn-round pull-right">
+                                <span class="glyphicon glyphicon-plus-sign"></span> Add Picture
+                            </a>
+                        </div>
+                        <div id="patient_picture_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="patient_id_card" class="tab-pane fade">
+                        <div class="row summary_container" style="margin:10px 0">
+
+                        </div>
+                        <div class="row button_container" style="margin:10px 0">
+                            <a class="btn btn_add_id_card btn-white btn-active btn-round pull-right">
+                                <span class="glyphicon glyphicon-plus-sign"></span> Add Id Card
+                            </a>
+                        </div>
+                        <div id="patient_id_card_grid" class="margin-top-10"></div>
+                    </div>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,175 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content div.form-control, .tab-content span.form-control {
+            display: block;
+        }
+
+            .tab-content div.form-control a {
+                cursor: pointer;
+            }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+
+        #ordered_items_grid .i-header.table_header.sorting > div, #ordered_items_grid .i-grid-content td {
+            font-size: 0.85em;
+        }
+
+        .i-grid-content tr td {
+            padding: 3px;
+        }
+
+        .new_window .form_container .form {
+            max-width: 99%;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;"> Prescription Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <!--<ul class="nav nav-tabs">
+                    <li data-field="Prescription"><a>Prescription Details</a></li>
+                </ul>-->
+
+                <div class="tab-content">
+                    <div id="prescription" class="tab-pane fade in active">
+                        <!--Docotrs Details-->
+                        <div class="row">
+                            <div style="display: inline; float:left; margin-left: 3%">
+                                <b data-binding="Doctor" class="auto_bind" style="font-size:20px"></b>
+                                <div data-binding="DoctorDesignation" class="auto_bind"></div>
+                                <div data-binding="DoctorTitle" class="auto_bind"></div>
+                                <div data-binding="DoctorEmail" class="auto_bind"></div>
+                                <b>BMDC No. </b><b data-binding="BMDCNo" class="auto_bind"></b>
+                                <div data-binding="ChamberAddress" class="auto_bind"></div>
+                            </div>
+                            <div style="display: inline; float:right">
+                            </div>
+                        </div>
+                        
+                        <hr style="height:1px;background-color:#00bfff;display: block; background: transparent; border: none;  border-top: solid 1px #aaa;" />
+                        <!--Patients Details-->
+                        <table style="width:100%; font-size: 13px ">
+                            <tr>
+                                <td width="15%" style="font-weight:bold">Patient Name:</td>
+                                <td width="20%" data-binding="Patient" class="auto_bind"></td>
+                                <td width="5%" style="font-weight:bold">Age:</td>
+                                <td width="15%" data-binding="PatientAge" class="auto_bind"></td>
+                                <td style="font-weight:bold">Gender:</td>
+                                <td width="6%" data-binding="PatientGender" class="auto_bind"></td>
+                                <td style="font-weight:bold">Contact:</td>
+                                <td data-binding="PatientMobile" class="auto_bind"></td>
+                            </tr>
+                        </table>
+                        <!--<div style="display:inline">
+                            <b style="margin-left:10%">Patient Name: </b><div data-binding="Patient" class="auto_bind" style="display:inline"> </div>
+                            <b style="margin-left:10%">Age: </b><div data-binding="PatientAge" class="auto_bind" style="display:inline"> </div>
+                            <b style="margin-left:10%">Gender: </b><div data-binding="PatientGender" class="auto_bind" style="display:inline"> </div>
+                            <b style="margin-left:10%">Contact: </b><div data-binding="PatientMobile" class="auto_bind" style="display:inline"> </div>
+                        </div>-->
+                        <hr style="height:1px;background-color:#00bfff;display: block; background: transparent; border: none;  border-top: solid 1px #aaa;" />
+                        <div class="row">
+                            <div style="display:inline; float:left; margin-top:2%; margin-right:2%; width: 40%;">
+                                <div style="float: left; width: 100%; margin-left: 4%">
+                                    <div>
+                                        <label>Complains</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div id="complain" style="margin-left: 8%"></div>
+                                    </div>
+                                    <!--<p style="font-size:50px; font-family: cursive;float:left; display:inline; margin-left:2%;"> &#8478;,</p>-->
+                                </div>
+                                <div style="float: left;width: 100% ; margin-left: 5%">
+                                    <div>
+                                        <label>Previous Information</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div id="previous_information" style="margin-left: 8%"></div>
+                                    </div>
+                                </div>
+                                <div style="float: left;width: 100% ; margin-left: 5%">
+                                    <div>
+                                        <label>Additional Information</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div id="additional_information" style="margin-left: 8%"></div>
+                                    </div>
+                                </div>
+
+                                <div style="float: left;width: 100% ; margin-left: 5%">
+                                    <div>
+                                        <label>Advice</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <div id="advice" style="margin-left: 3%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display:inline; float:left;margin-left:3%">
+                                <div style="border-left:1px solid #000;height:450px"></div>
+                            </div>
+                            <p style="font-size:50px; font-family: cursive;float:left; display:inline; margin-left:2%;"> &#8478;,</p>
+                            <div style=" float:left; display:inline; margin-top:8%; width 40%;">
+                                <div id="medecine_container">
+
+                                </div>
+
+                                <div style="width: 100%; margin-top: 5%; float:left; display:inline;">
+                                    <div>
+                                        <label>Investigation</label>
+                                    </div>
+                                    <div class="input-group" style="margin-left:5%">
+                                        <div id="investigation_container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="height:1px;background-color:#00bfff;display: block; background: transparent; border: none;  border-top: solid 1px #aaa;" />
+                        <div class="row" style="margin-left:2%">
+                            <section class="col-sm-6 col col-md-6">
+                                <div style="display:inline">
+                                    <b> Next Meeting Date: </b><div data-binding="NextMeetingDate" class="auto_bind" style="display:inline"></div>
+                                </div>
+                            </section>
+
+                            <section class="col-sm-6 col col-md-6">
+                                <div style="display:inline">
+                                    <b> Doctor's Signature: </b>
+                                </div>
+                            </section>
+                        </div>
+                        <hr style="height:1px;background-color:#00bfff;display: block; background: transparent; border: none;  border-top: solid 1px #aaa;" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                    <button class="btn btn_print btn-white btn-warning btn-round" type="button">
+                        <span class="glyphicon glyphicon-print"></span> Print
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

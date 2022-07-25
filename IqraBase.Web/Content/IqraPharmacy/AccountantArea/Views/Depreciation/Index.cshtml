@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Depreciation | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Depreciation</h2>
+<script type="text/javascript">
+    var accessList=@Html.Raw(Pharmacy.Service.JParser.Parse(ViewBag.Access));
+</script>
+
+
+<div id="filter_container" class="row">
+
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+        <a style="margin-left: 1%;" class="btn btn-white btn-default btn-round pull-right" id="btn_run_depreciation"><span class="glyphicon glyphicon-plus"></span> Run Depreciation</a>
+    </div>
+    <div id="grid_container">
+
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/Depreciation/AppScript.js"></script>

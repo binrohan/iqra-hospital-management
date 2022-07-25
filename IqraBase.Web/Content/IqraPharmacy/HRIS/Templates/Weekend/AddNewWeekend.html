@@ -1,0 +1,59 @@
+﻿<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Add Employee Weekend</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <form class="middleForm" action="#">
+            <div class="row">
+                <section class="col-sm-12 col col-md-6">
+                    <label for="EmployeeId">Employee</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="EmployeeId" name="EmployeeId" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-6">
+                    <label for="DayOfWeek">DayOfWeek</label>
+                    <div class="input-group">
+                        <input type="text" data-type="int" data-binding="DayOfWeek" name="DayOfWeek" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-12 col col-md-6">
+                    <label for="From">ActivateFrom</label>
+                    <div class="input-group">
+                        <input type="text" data-binding="From" data-dateformat="dd/MM/yyyy" name="From" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-6">
+                    <label for="To">ActiveTo</label>
+                    <div class="input-group">
+                        <input type="text" data-binding="To" data-dateformat="dd/MM/yyyy" name="To" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <section>
+                <label for="Remarks">Remarks</label>
+                <div class="input-group">
+                    <textarea data-binding="Remarks" name="Remarks" class="form-control"></textarea>
+                </div>
+            </section>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

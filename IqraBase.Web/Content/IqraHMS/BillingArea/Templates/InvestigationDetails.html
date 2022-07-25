@@ -1,0 +1,129 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content div.form-control, .tab-content span.form-control {
+            display: block;
+        }
+
+            .tab-content div.form-control a {
+                cursor: pointer;
+            }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+
+        #ordered_items_grid .i-header.table_header.sorting > div, #ordered_items_grid .i-grid-content td {
+            font-size: 0.85em;
+        }
+
+        .i-grid-content tr td {
+            padding: 3px;
+        }
+
+        .new_window .form_container .form {
+            max-width: 99%;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;"> Investigation Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <div class="tab-content">
+                    <div id="investigationFees" class="tab-pane fade in active">
+                        <!--Docotrs Details-->
+                        <!--<div class="row">
+                            <div style="display: inline; float:left; margin-left: 3%">
+                                <b data-binding="Doctor" class="auto_bind" style="font-size:20px"></b>
+                                <div data-binding="DoctorDesignation" class="auto_bind"></div>
+                                <div data-binding="DoctorTitle" class="auto_bind"></div>
+                                <div data-binding="DoctorEmail" class="auto_bind"></div>
+                                <b>BMDC No. </b><b data-binding="BMDCNo" class="auto_bind"></b>
+                                <div data-binding="ChamberAddress" class="auto_bind"></div>
+                            </div>
+                            <div style="display: inline; float:right">
+                            </div>
+                        </div>-->
+
+                        <hr style="height:1px;background-color:#00bfff;display: block; background: transparent; border: none;  border-top: solid 1px #aaa;" />
+                        <!--Patients Details-->
+                        <table style="width:100%; font-size: 13px ">
+                            <tr>
+                                <td width="15%" style="font-weight:bold">Patient Name:</td>
+                                <td width="20%" data-binding="Name" class="auto_bind"></td>
+                                <td width="5%" style="font-weight:bold">Age:</td>
+                                <td width="15%" data-binding="PatientAge" class="auto_bind"></td>
+                                <td style="font-weight:bold">Gender:</td>
+                                <td width="6%" data-binding="Gender" class="auto_bind"></td>
+                                <td style="font-weight:bold">Contact:</td>
+                                <td data-binding="Mobile" class="auto_bind"></td>
+                            </tr>
+                        </table>
+                        <hr style="height:1px;background-color:#00bfff;display: block; background: transparent; border: none;  border-top: solid 1px #aaa;" />
+                        <div class="row">
+                            <table border="1" align="center" style="width:90%; font-size: 13px">
+                                <tr align="center ">
+                                    <td>SL</td>
+                                    <td>Investigation Name</td>
+                                    <td>Cost</td>
+                                </tr>
+
+                                <tr id="cost_summary">
+                                    <td colspan="2" align="right">Total Amount:</td>
+                                    <td colspan="3" align="right" width="20%" data-binding="TotalAmount" class="auto_bind"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">Discount Percentage</td>
+                                    <td colspan="2" align="right" width="20%" data-binding="DiscountPercentage" class="auto_bind"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">Discount Taka:</td>
+                                    <td colspan="2" align="right" width="20%" data-binding="DiscountTaka" class="auto_bind"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">Net Amount:</td>
+                                    <td colspan="2" align="right" width="20%" data-binding="DiscountedAmount" class="auto_bind"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">Paid Amount:</td>
+                                    <td colspan="2" align="right" width="20%" data-binding="PaidAmount" class="auto_bind"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">Due Amount:</td>
+                                    <td colspan="2" align="right" width="20%" data-binding="DueAmount" class="auto_bind"></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                    <button class="btn btn_print btn-white btn-warning btn-round" type="button">
+                        <span class="glyphicon glyphicon-print"></span> Print
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

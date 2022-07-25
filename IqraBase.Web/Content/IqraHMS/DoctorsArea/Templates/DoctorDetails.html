@@ -1,0 +1,217 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content div.form-control, .tab-content span.form-control {
+            display: block;
+        }
+
+            .tab-content div.form-control a {
+                cursor: pointer;
+            }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+
+        #ordered_items_grid .i-header.table_header.sorting > div, #ordered_items_grid .i-grid-content td {
+            font-size: 0.85em;
+        }
+
+        .i-grid-content tr td {
+            padding: 3px;
+        }
+
+        .new_window .form_container .form {
+            max-width: 99%;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;"> Doctor Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <ul class="nav nav-tabs">
+                    <li class="active" data-field="BasicInfo"><a>Basic Info</a></li>
+                    <li data-field="VisitingTime"><a>Visiting Time</a></li>
+                    <li data-field="DoctorFees"><a>Doctor Fees</a></li>
+                    <li data-field="Appointment"><a>Appointments</a></li>
+                    <li data-field="Commission"><a>Commissions</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="basic_info" class="tab-pane fade in active">
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Name">Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Name" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Mobile">Mobile</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Mobile" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Email">Email</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Email" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Fax">Gender</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Gender" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Department">Department</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Department" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Designation">Designation</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Designation" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="BMDCNo">BMDC Registration No.</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="BMDCNo" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="ChamberAddress">Chamber Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="ChamberAddress" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-4 col col-md-4">
+                                <div>
+                                    <label for="Address">Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Address" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-4 col col-md-4">
+                                <div>
+                                    <label for="DoctorTitle">Doctor Title</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="DoctorTitle" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-4 col col-md-4">
+                                <div>
+                                    <label for="EmployeeCode">Employee Code</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="EmployeeCode" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Fee">Fee</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Fee" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                    <div id="visiting_time" class="tab-pane fade">
+                        <div id="button_container" class="row" style="margin:10px 0">
+                            <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new_visiting_time"><span class="glyphicon glyphicon-plus"></span>New</a>
+                        </div>
+                        <div id="visiting_time_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="doctor_fees" class="tab-pane fade">
+                        <div id="button_container" class="row" style="margin:10px 0">
+                            <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new_fee"><span class="glyphicon glyphicon-plus"></span>New</a>
+                        </div>
+                        <div id="doctor_fees_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="appointment" class="tab-pane fade">
+                        <div id="summary_container" class="row">
+
+                        </div>
+                        <div id="filter_container" class="row">
+
+                        </div>
+                        <div style="margin-top:10px;">
+                            <div id="button_container" class="empty_style button_container row">
+
+                            </div>
+                            <div id="grid_container">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="commission" class="tab-pane fade">
+                        <div class="row summary_container" >
+
+                        </div>
+                        <div class="row filter_container">
+
+                        </div>
+                        <div style="margin-top:10px;">
+                            <div id="button_container" class="empty_style button_container row">
+
+                            </div>
+                            <div id="grid_container">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

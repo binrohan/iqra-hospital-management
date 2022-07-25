@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Menu Access | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Menu Access</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div class="empty_style button_container row">
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Areas/MenuArea/Content/MenuAccess/CategoryAccess.js"></script>

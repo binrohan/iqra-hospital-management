@@ -1,0 +1,38 @@
+﻿
+
+@{
+    ViewBag.Title = "Patient Appointment | IqraHMS";
+}
+
+<h2 class="empty_style">Patient Appointments</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+
+    <script type="text/javascript">
+        var patientAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.PatientAccess));
+    </script>
+}
+<div id="summary_container" class="row">
+
+</div>
+<div id="filter_container" class="row">
+
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+        <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New Appointment</a>
+        <a class="btn btn-white btn-default btn-round pull-right margin-l-5" id="btn_select_patients"><span class="glyphicon glyphicon-plus"></span>Patients</a>
+        <a class="btn btn-white btn-default btn-round pull-right margin-l-5" id="btn_registration"><span class="glyphicon glyphicon-plus"></span>New Registration</a>
+    </div>
+    <div id="grid_container">
+
+    </div>
+</div>
+<script src="~/Content/IqraHMS/AppointmentArea/Js/Appointment.js"></script>
+<script type="text/javascript">
+    (function(){
+        var model={accessList:patientAccessList};
+        Controller.Show(model);
+        model.BaseModel.Reload();
+    })()
+</script>

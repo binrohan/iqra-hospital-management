@@ -1,0 +1,109 @@
+﻿<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> Return Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <div class="">
+            <ul class="nav nav-tabs">
+                <li class="active" data-field="BasicInfo"><a>Basic Info</a></li>
+                <li data-field="ReturnItems"><a>Return Items</a></li>
+                <li data-field="SalsItems"><a>Sale Items</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="basic_info" class="tab-pane fade in active">
+                    <div class="row">
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="VoucherNo">Voucher No</label>
+                            </div>
+                            <div class="input-group">
+                                <div data-binding="VoucherNo" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="SaleVoucher">Sale Voucher</label>
+                            </div>
+                            <div class="input-group">
+                                <div data-binding="SaleVoucher" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="SalesPrice">Sales Price</label>
+                            </div>
+                            <div class="input-group">
+                                <div data-binding="SalesPrice" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="ReturnAmount">ReturnAmount</label>
+                            </div><div class="input-group">
+                                <div data-binding="ReturnAmount" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="col-sm-6 col col-md-6">
+                            <div><label for="Items">Items</label></div>
+                            <div class="input-group">
+                                <div data-binding="Items" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="CreatedAt">
+                                    CreatedAt
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <div data-binding="CreatedAt" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="Creator">Creator</label>
+                            </div>
+                            <div class="input-group">
+                                <div data-binding="Creator" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                        <section class="col-sm-6 col col-md-6">
+                            <div>
+                                <label for="Computer">Computer</label>
+                            </div>
+                            <div class="input-group">
+                                <div data-binding="Computer" class="form-control auto_bind"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="return_items" class="tab-pane fade">
+                    <div id="print_container"></div>
+                    <div id="return_items_grid" class="margin-top-10"></div>
+                </div>
+                <div id="sales_info" class="tab-pane fade">
+                    <div id="print_container"></div>
+                    <div id="salse_info_grid" class="margin-top-10"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Running\2022\Published</_PublishTargetUrl>
+    <History>True|2022-05-21T03:24:55.8705354Z;True|2022-05-20T18:56:43.5726658+06:00;True|2022-05-20T12:42:57.8911218+06:00;True|2022-05-19T14:47:48.3909211+06:00;True|2022-05-19T14:21:58.8249607+06:00;True|2022-05-14T14:34:25.3857534+06:00;True|2022-05-14T14:25:09.9615055+06:00;True|2022-04-27T19:44:53.4718789+06:00;True|2022-04-22T16:40:03.1411846+06:00;True|2022-04-22T10:49:05.4248008+06:00;True|2022-04-19T12:55:53.7961648+06:00;True|2022-04-12T12:37:46.7248638+06:00;True|2022-04-12T11:21:52.8627726+06:00;True|2022-04-11T16:40:48.6384746+06:00;False|2022-04-11T16:39:21.9151390+06:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>05/22/2019 21:39:46</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Content/ActionMethod.js">
+      <publishTime>06/15/2019 13:37:11</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Content/ControllerAccess.js">
+      <publishTime>06/15/2019 13:34:57</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Content/SetAccess.js">
+      <publishTime>05/24/2019 14:58:44</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Content/SetControllerAccess.js">
+      <publishTime>05/24/2019 15:10:02</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/Add.html">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/AssignRole.html">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/AssignRoleToUser.html">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/ForgetPassword.html">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/SetAppAccess.html">
+      <publishTime>05/24/2019 11:31:35</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/SetControllerAccess.html">
+      <publishTime>05/24/2019 15:07:22</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Templates/SubMenu.html">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Views/AppAccess/Index.cshtml">
+      <publishTime>05/24/2019 11:29:19</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Views/web.config">
+      <publishTime>05/22/2019 15:44:21</publishTime>
+    </File>
+    <File Include="Areas/AccessArea/Views/_ViewStart.cshtml">
+      <publishTime>05/22/2019 15:35:39</publishTime>
+    </File>
+    <File Include="Areas/LicenceArea/Content/Js/AddLicence.js">
+      <publishTime>09/17/2021 21:54:10</publishTime>
+    </File>
+    <File Include="Areas/LicenceArea/Content/Js/AppScript.js">
+      <publishTime>09/17/2021 21:54:10</publishTime>
+    </File>
+    <File Include="Areas/LicenceArea/Tenplates/AddLicence.html">
+      <publishTime>09/17/2021 21:54:10</publishTime>
+    </File>
+    <File Include="Areas/LicenceArea/Views/Licence/Index.cshtml">
+      <publishTime>09/17/2021 21:54:10</publishTime>
+    </File>
+    <File Include="Areas/LicenceArea/Views/web.config">
+      <publishTime>09/17/2021 21:54:10</publishTime>
+    </File>
+    <File Include="Areas/LicenceArea/Views/_ViewStart.cshtml">
+      <publishTime>09/17/2021 21:54:10</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuAccess/CategoryAccess.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuAccess/MenuAccess.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuAccess/SetCategoryDesignationAccess.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuAccess/SetCategoryUserAccess.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuAccess/SetMenuAccess.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuCategory/AppScript.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/MenuItem/AppScript.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Content/SubMenuItem/AppScript.js">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Templates/SetMenuAccess.html">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/MenuAccess/Index.cshtml">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/MenuCategory/Index.cshtml">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/MenuItem/Index.cshtml">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/SubMenuItem/Index.cshtml">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/web.config">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="Areas/MenuArea/Views/_ViewStart.cshtml">
+      <publishTime>05/18/2022 17:26:48</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/App.SetUp.dll">
+      <publishTime>05/20/2022 18:56:24</publishTime>
+    </File>
+    <File Include="bin/App.SetUp.pdb">
+      <publishTime>05/20/2022 18:56:24</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>05/22/2019 21:39:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Data.dll">
+      <publishTime>05/20/2022 18:56:27</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Data.dll.config">
+      <publishTime>10/16/2021 13:57:06</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Data.pdb">
+      <publishTime>05/20/2022 18:56:27</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Service.dll">
+      <publishTime>05/20/2022 18:56:27</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Service.dll.config">
+      <publishTime>10/15/2021 22:11:30</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Service.pdb">
+      <publishTime>05/20/2022 18:56:27</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Web.dll">
+      <publishTime>05/21/2022 09:24:35</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Web.dll.config">
+      <publishTime>10/16/2021 13:57:07</publishTime>
+    </File>
+    <File Include="bin/HMSPharmacy.Web.pdb">
+      <publishTime>05/21/2022 09:24:35</publishTime>
+    </File>
+    <File Include="bin/IqraBase.App.dll">
+      <publishTime>04/22/2022 16:33:14</publishTime>
+    </File>
+    <File Include="bin/IqraBase.App.pdb">
+      <publishTime>04/22/2022 16:33:14</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Data.dll">
+      <publishTime>05/20/2022 18:56:24</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Data.dll.config">
+      <publishTime>05/22/2019 16:16:51</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Data.pdb">
+      <publishTime>05/20/2022 18:56:24</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Service.dll">
+      <publishTime>05/20/2022 18:56:26</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Service.dll.config">
+      <publishTime>05/22/2019 15:59:01</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Service.pdb">
+      <publishTime>05/20/2022 18:56:26</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Web.dll">
+      <publishTime>05/21/2022 09:24:45</publishTime>
+    </File>
+    <File Include="bin/IqraBase.Web.pdb">
+      <publishTime>05/21/2022 09:24:45</publishTime>
+    </File>
+    <File Include="bin/IqraBaseService.dll">
+      <publishTime>05/31/2021 15:06:54</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Data.dll">
+      <publishTime>05/20/2022 18:56:27</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Data.dll.config">
+      <publishTime>04/17/2019 19:39:46</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Data.pdb">
+      <publishTime>05/20/2022 18:56:27</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Service.dll">
+      <publishTime>05/20/2022 18:56:29</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Service.dll.config">
+      <publishTime>04/17/2019 20:01:12</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Service.pdb">
+      <publishTime>05/20/2022 18:56:29</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Values.dll">
+      <publishTime>04/22/2022 16:33:15</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Values.pdb">
+      <publishTime>04/22/2022 16:33:15</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Web.dll">
+      <publishTime>05/21/2022 09:24:40</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Web.dll.config">
+      <publishTime>11/01/2019 13:11:10</publishTime>
+    </File>
+    <File Include="bin/IqraHMS.Web.pdb">
+      <publishTime>05/21/2022 09:24:40</publishTime>
+    </File>
+    <File Include="bin/IqraPathProvider.dll">
+      <publishTime>05/31/2021 15:06:52</publishTime>
+    </File>
+    <File Include="bin/IqraService.DB.dll">
+      <publishTime>05/31/2021 15:06:53</publishTime>
+    </File>
+    <File Include="bin/IqraService.dll">
+      <publishTime>05/31/2021 15:07:07</publishTime>
+    </File>
+    <File Include="bin/IqraService.Search.dll">
+      <publishTime>05/31/2021 15:06:52</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>08/22/2017 17:39:42</publishTime>
+    </File>
+    <File Include="bin/LazzPharma.Web.dll">
+      <publishTime>05/21/2022 09:24:41</publishTime>
+    </File>
+    <File Include="bin/LazzPharma.Web.dll.config">
+      <publishTime>05/15/2019 12:46:34</publishTime>
+    </File>
+    <File Include="bin/LazzPharma.Web.pdb">
+      <publishTime>05/21/2022 09:24:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 13:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2015 13:16:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WebSockets.dll">
+      <publishTime>04/22/2022 16:33:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WebSockets.pdb">
+      <publishTime>04/22/2022 16:33:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
+    </File>
+    <File Include="bin/Pharmacy.Data.dll">
+      <publishTime>05/20/2022 18:56:28</publishTime>
+    </File>
+    <File Include="bin/Pharmacy.Data.dll.config">
+      <publishTime>09/27/2017 20:08:23</publishTime>
+    </File>
+    <File Include="bin/Pharmacy.Data.pdb">
+      <publishTime>05/20/2022 18:56:28</publishTime>
+    </File>
+    <File Include="bin/Pharmacy.Service.dll">
+      <publishTime>05/20/2022 18:56:30</publishTime>
+    </File>
+    <File Include="bin/Pharmacy.Service.dll.config">
+      <publishTime>09/27/2017 20:08:21</publishTime>
+    </File>
+    <File Include="bin/Pharmacy.Service.pdb">
+      <publishTime>05/20/2022 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="bootstrap.css">
+      <publishTime>05/22/2019 22:14:38</publishTime>
+    </File>
+    <File Include="bootstrap.min.css">
+      <publishTime>05/22/2019 22:14:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/22/2019 22:15:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/22/2019 22:15:18</publishTime>
+    </File>
+    <File Include="Content/HMSPharmacy/AccountArea/Content/Js/AccountReference/AppScript.js">
+      <publishTime>05/19/2022 14:01:16</publishTime>
+    </File>
+    <File Include="Content/HMSPharmacy/AccountArea/Views/AccountReference/Index.cshtml">
+      <publishTime>10/15/2021 22:37:14</publishTime>
+    </File>
+    <File Include="Content/HMSPharmacy/AccountArea/Views/Shared/_Layout.cshtml">
+      <publishTime>10/15/2021 22:34:30</publishTime>
+    </File>
+    <File Include="Content/HMSPharmacy/AccountArea/Views/web.config">
+      <publishTime>10/15/2021 22:34:30</publishTime>
+    </File>
+    <File Include="Content/HMSPharmacy/AccountArea/Views/_ViewStart.cshtml">
+      <publishTime>10/15/2021 22:34:30</publishTime>
+    </File>
+    <File Include="Content/HTMLViews/AdmissionFormPrintable.cshtml">
+      <publishTime>10/05/2021 20:10:39</publishTime>
+    </File>
+    <File Include="Content/HTMLViews/Index.cshtml">
+      <publishTime>10/06/2021 22:13:18</publishTime>
+    </File>
+    <File Include="Content/Img/DSC_0158.jpg">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/DSC_0274.jpg">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/DSC_0294.jpg">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/DSC_0322.jpg">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/folderIcon.png">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/Hospital.jpg">
+      <publishTime>09/26/2021 20:07:38</publishTime>
+    </File>
+    <File Include="Content/Img/Hospital1.jpg">
+      <publishTime>09/26/2021 20:12:57</publishTime>
+    </File>
+    <File Include="Content/Img/Hospital2.jpg">
+      <publishTime>09/26/2021 20:13:21</publishTime>
+    </File>
+    <File Include="Content/Img/Hospital3.jpg">
+      <publishTime>09/26/2021 20:13:57</publishTime>
+    </File>
+    <File Include="Content/Img/LazzPharma.ico">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/LazzPharma.png">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/logo.png">
+      <publishTime>04/19/2022 15:24:34</publishTime>
+    </File>
+    <File Include="Content/Img/NoImage.png">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/Slider/head-img.jpg">
+      <publishTime>06/29/2019 17:46:30</publishTime>
+    </File>
+    <File Include="Content/Img/Slider/img2.jpg">
+      <publishTime>06/29/2019 17:46:31</publishTime>
+    </File>
+    <File Include="Content/Img/Slider/img3.jpg">
+      <publishTime>06/29/2019 17:46:31</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AdmissionArea/Js/Admission/AppScripts.js">
+      <publishTime>10/21/2021 12:57:36</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AdmissionArea/Js/Admission/onAdmissionDetails.js">
+      <publishTime>10/20/2021 17:39:50</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AdmissionArea/Templates/Admission.html">
+      <publishTime>10/06/2021 22:17:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AdmissionArea/Views/Admission/Index.cshtml">
+      <publishTime>10/19/2021 19:00:04</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AdmissionArea/Views/web.config">
+      <publishTime>10/06/2021 22:03:59</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AdmissionArea/Views/_ViewStart.cshtml">
+      <publishTime>10/06/2021 22:03:59</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Js/Appointment.js">
+      <publishTime>01/17/2020 10:05:56</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Js/Calendar.js">
+      <publishTime>01/04/2020 21:33:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Js/NonePatientAppointmentCreate.js">
+      <publishTime>01/16/2020 19:14:42</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Js/PatientAppointmentCreate.js">
+      <publishTime>01/16/2020 19:15:00</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Views/Appointment/Index.cshtml">
+      <publishTime>01/10/2020 16:05:34</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Views/Shared/_Layout.cshtml">
+      <publishTime>01/03/2020 18:38:16</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Views/web.config">
+      <publishTime>01/03/2020 18:38:16</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/AppointmentArea/Views/_ViewStart.cshtml">
+      <publishTime>01/04/2020 16:24:14</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/AppointmentCharge/AppointmentCharge.js">
+      <publishTime>01/14/2020 13:04:16</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/AppointmentCharge/AppointmentChargePrint.js">
+      <publishTime>01/16/2020 19:02:34</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/BedAllocation/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/BedAllocation/PrintBedReceipt.js">
+      <publishTime>01/08/2020 00:39:44</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/BedChargeInvoice/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/BedChargeInvoice/BedChargeInvoice.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/BedChargeInvoice/OtherChargeInvoice.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/BillClearance/BillClearance.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/ChemberVisit/AppScripts.js">
+      <publishTime>09/26/2021 10:31:05</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/DoctorFees/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/DuePayment/AddPayment.js">
+      <publishTime>05/19/2022 19:59:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/DuePayment/AppScripts.js">
+      <publishTime>05/19/2022 11:30:28</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/InvestigationFees/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/InvestigationFees/InvestigationDetails.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/InvestigationInvoice/PrintInvestigationInvoice.js">
+      <publishTime>04/19/2022 17:56:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/InvestigationInvoice/PrintInvestigationInvoiceBarcodeSticker.js">
+      <publishTime>10/23/2021 19:38:54</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/PatientTransection/DischargeBillPrint.js">
+      <publishTime>01/15/2020 14:32:14</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/PatientTransection/PrintPatientTransection.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/PatientTransection/RePrintDischargeBill.js">
+      <publishTime>01/08/2020 14:27:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/Release/PrintRelease.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/RoomChargeInvoice/AppScripts.js">
+      <publishTime>05/27/2019 17:28:52</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Js/TotalBills/AppScripts.js">
+      <publishTime>05/20/2022 15:09:10</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/AddPayment.html">
+      <publishTime>05/19/2022 13:21:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/AppointmentCharge.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/AppointmentChargePrint.html">
+      <publishTime>01/16/2020 18:33:52</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/BedChargeInvoice.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/BillClearance.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/InvestigationDetails.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/OtherChargeInvoice.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/PatientInvestigationBarcode.html">
+      <publishTime>01/13/2020 15:44:48</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/PrintBedReceipt.html">
+      <publishTime>01/13/2020 15:36:24</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/PrintDischargeBill.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/PrintInvestigationInvoice.html">
+      <publishTime>01/16/2020 18:14:44</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/PrintPatientTransection.html">
+      <publishTime>01/08/2020 01:32:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Templates/PrintRelease.html">
+      <publishTime>01/13/2020 14:47:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/BedAllocation/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/ChemberVisit/Index.cshtml">
+      <publishTime>09/26/2021 10:28:06</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/DoctorFees/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/DuePayment/Index.cshtml">
+      <publishTime>05/19/2022 13:28:45</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/InvestigationFees/Index.cshtml">
+      <publishTime>09/27/2021 11:00:27</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/RoomChargeInvoice/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/TotalBills/Index.cshtml">
+      <publishTime>05/18/2022 18:11:39</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/BillingArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReport/AddCandidateReport.js">
+      <publishTime>05/20/2022 18:55:41</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReport/CandidateReport.js">
+      <publishTime>04/27/2022 19:29:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReport/CandidateReportPrint.js">
+      <publishTime>05/12/2022 11:00:00</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReport/SetData.js">
+      <publishTime>04/30/2022 14:45:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReport/WebCamPicture.js">
+      <publishTime>04/27/2022 16:12:08</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReportCategory/CandidateReportCategory.js">
+      <publishTime>04/27/2022 11:55:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReportCategory/CandidateReportCategoryDetails.js">
+      <publishTime>04/24/2022 21:56:03</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReportItem/CandidateReportItem.js">
+      <publishTime>04/24/2022 19:36:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReportTitle/CandidateReportTitle.js">
+      <publishTime>04/27/2022 18:11:58</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Js/CandidateReportTitle/CandidateReportTitleDetails.js">
+      <publishTime>04/25/2022 14:36:25</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Templates/AddCandidateReport.html">
+      <publishTime>05/20/2022 17:28:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Templates/WebCamPicture.html">
+      <publishTime>04/27/2022 16:00:43</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Views/CandidateReport/Index.cshtml">
+      <publishTime>05/18/2022 20:36:37</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Views/CandidateReportCategory/Index.cshtml">
+      <publishTime>04/24/2022 21:05:29</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Views/CandidateReportItem/Index.cshtml">
+      <publishTime>04/24/2022 19:17:51</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Views/CandidateReportTitle/Index.cshtml">
+      <publishTime>04/24/2022 21:44:43</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Views/web.config">
+      <publishTime>04/24/2022 19:13:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CandidateReportArea/Views/_ViewStart.cshtml">
+      <publishTime>04/24/2022 19:13:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Js/Commission/AppScripts.js">
+      <publishTime>10/24/2021 15:09:02</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Js/CommissionGroup/AppScripts.js">
+      <publishTime>01/09/2020 01:38:22</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Js/CommissionSetting/AppScripts.js">
+      <publishTime>04/24/2022 21:16:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Js/DoctorInvestigationCommission/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Js/TotalBillsHistory/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/Commission/Index.cshtml">
+      <publishTime>01/10/2020 16:06:16</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/CommissionGroup/Index.cshtml">
+      <publishTime>01/09/2020 01:33:24</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/CommissionSetting/Index.cshtml">
+      <publishTime>10/17/2021 14:09:53</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/DoctorInvestigationCommission/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/TotalBillsHistory/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommissionArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Js/Department/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Js/Designation/AppScripts.js">
+      <publishTime>01/04/2020 13:16:50</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Js/DiseaseType/AppScripts.js">
+      <publishTime>10/08/2021 15:04:02</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Js/EmployeeType/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Js/Profession/AppScripts.js">
+      <publishTime>10/07/2021 19:24:59</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/Department/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/Designation/Index.cshtml">
+      <publishTime>12/27/2019 16:56:42</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/DiseaseType/Index.cshtml">
+      <publishTime>10/08/2021 15:10:06</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/EmployeeType/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/Profession/Index.cshtml">
+      <publishTime>10/07/2021 16:27:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/CommonArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/AppointmentSchedule/AppScripts.js">
+      <publishTime>09/26/2021 22:28:41</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/AppointmentSchedule/OnScheduleDetails.js">
+      <publishTime>09/26/2021 22:52:54</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/AppointmentTime/AppScripts.js">
+      <publishTime>05/20/2022 18:23:30</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/Doctor/AddDoctor.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/Doctor/AppScripts.js">
+      <publishTime>04/27/2022 13:05:58</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/Doctor/DoctorDetails.js">
+      <publishTime>01/15/2020 12:55:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/Doctor/EndVisitTime.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/Doctor/PatientList.js">
+      <publishTime>09/26/2021 20:47:07</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Js/DoctorAvailability/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Templates/AddDoctor.html">
+      <publishTime>04/27/2022 12:54:59</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Templates/DoctorDetails.html">
+      <publishTime>01/10/2020 18:09:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Templates/EndVisitTime.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/AppointmentSchedule/Index.cshtml">
+      <publishTime>09/26/2021 19:18:32</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/AppointmentTime/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/Doctor/Index.cshtml">
+      <publishTime>04/27/2022 13:03:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/Doctor/Patients.cshtml">
+      <publishTime>09/26/2021 20:46:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/DoctorAvailability/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DoctorsArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Js/DrugBrand/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Js/DrugCompany/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Js/DrugGeneric/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Js/DrugType/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Views/DrugBrand/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Views/DrugCompany/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Views/DrugGeneric/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Views/DrugType/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/DrugArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/HMSInventoryItem/AppScripts.js">
+      <publishTime>01/08/2020 16:34:12</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/HMSInventoryItem/OnDetails.js">
+      <publishTime>01/08/2020 17:21:04</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryItemPurchaseInfo/AppScripts.js">
+      <publishTime>01/08/2020 12:21:24</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryItemPurchaseInfo/ItemListController.js">
+      <publishTime>01/07/2020 18:02:08</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryItemPurchaseInfo/OnCreate.js">
+      <publishTime>01/09/2020 00:58:10</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryItemPurchaseInfo/OnDetails.js">
+      <publishTime>01/08/2020 16:44:42</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryItemPurchaseInfo/Preview.js">
+      <publishTime>01/07/2020 22:14:12</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryItemStock/AppScripts.js">
+      <publishTime>01/06/2020 18:09:10</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryStockChangeHistory/AppScripts.js">
+      <publishTime>01/07/2020 12:25:52</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InventoryUnit/AppScripts.js">
+      <publishTime>01/07/2020 12:01:08</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Js/InvestigationInventory/AppScripts.js">
+      <publishTime>01/08/2020 17:25:10</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Templates/AddPurchase.html">
+      <publishTime>01/07/2020 22:18:20</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Templates/ItemList.html">
+      <publishTime>01/06/2020 16:40:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Templates/Preview.html">
+      <publishTime>01/07/2020 22:18:54</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/HMSInventoryItem/Index.cshtml">
+      <publishTime>01/06/2020 16:07:12</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/InventoryItemPurchaseInfo/Index.cshtml">
+      <publishTime>01/07/2020 13:51:20</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/InventoryItemStock/Index.cshtml">
+      <publishTime>01/06/2020 17:19:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/InventoryStockChangeHistory/Index.cshtml">
+      <publishTime>01/06/2020 17:40:56</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/InventoryUnit/Index.cshtml">
+      <publishTime>01/06/2020 15:14:06</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/InvestigationInventory/Index.cshtml">
+      <publishTime>01/06/2020 16:15:22</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/web.config">
+      <publishTime>01/06/2020 13:21:34</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InventoryArea/Views/_ViewStart.cshtml">
+      <publishTime>01/06/2020 13:21:34</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/css/InvestigationPrint.css">
+      <publishTime>04/19/2022 15:23:36</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/Investigation/AppScripts.js">
+      <publishTime>04/24/2022 21:06:49</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/Investigation/OnDetails.js">
+      <publishTime>04/30/2022 12:09:36</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/Investigation/OnSetData.js">
+      <publishTime>04/24/2022 20:04:02</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationCategory/AppScripts.js">
+      <publishTime>01/08/2020 23:24:44</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationEquipment/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItem/AppScripts - Copy.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItem/AppScripts.js">
+      <publishTime>04/18/2022 15:09:57</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItem/OnDetails - Copy.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItem/OnDetails.js">
+      <publishTime>04/18/2022 14:40:35</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItemRelation/AppScripts - Copy.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItemRelation/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItemRelation/Investigation - Copy.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationItemRelation/ReportCategory.js">
+      <publishTime>04/18/2022 17:44:49</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationRefference/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationReportCategory/AppScripts.js">
+      <publishTime>04/18/2022 21:41:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationReportCategory/OnDetails.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/InvestigationReportGroup/AppScripts.js">
+      <publishTime>04/18/2022 20:57:44</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PathologistInvestigationStatus/AppScripts.js">
+      <publishTime>05/12/2022 16:41:32</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/AppScripts.js">
+      <publishTime>04/19/2022 14:25:35</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/Create.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/CreateForNonePatient.js">
+      <publishTime>10/22/2021 21:56:28</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/DuePayment.js">
+      <publishTime>10/24/2021 14:46:54</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/ListDelivered.js">
+      <publishTime>12/08/2019 14:37:22</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/MakeDelivered.js">
+      <publishTime>10/24/2021 11:35:27</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/OnDetails.js">
+      <publishTime>10/23/2021 22:11:25</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/PrintInvestigation.js">
+      <publishTime>05/12/2022 15:34:39</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/ReportDelivery/AppScripts.js">
+      <publishTime>10/22/2021 22:48:50</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Js/SampleCollection/AppScripts.js">
+      <publishTime>10/24/2021 15:27:27</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Templates/CreateForNonePatient.html">
+      <publishTime>10/22/2021 21:57:00</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Templates/HtmlPage1.html">
+      <publishTime>04/19/2022 16:44:23</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Templates/OnSetData.html">
+      <publishTime>04/19/2022 11:06:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Templates/PrintInvestigation.html">
+      <publishTime>04/19/2022 16:17:05</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/Investigation/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/InvestigationCategory/Index.cshtml">
+      <publishTime>01/08/2020 23:11:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/InvestigationEquipment/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/InvestigationItem/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/InvestigationRefference/Index.cshtml">
+      <publishTime>01/04/2020 22:18:16</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/InvestigationReportCategory/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/InvestigationReportGroup/Index.cshtml">
+      <publishTime>04/18/2022 20:07:04</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/PathologistInvestigationStatus/Index.cshtml">
+      <publishTime>12/31/2019 12:24:22</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/PatientInvestigation/Index.cshtml">
+      <publishTime>05/18/2022 18:06:12</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/ReportDelivery/Index.cshtml">
+      <publishTime>01/05/2020 21:05:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/SampleCollection/Index.cshtml">
+      <publishTime>01/05/2020 14:38:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/InvestigationArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Admission/AppScripts.js">
+      <publishTime>10/06/2021 22:15:35</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Appointment/Calendar.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/IdPrinted/AddIdCard.js">
+      <publishTime>10/24/2021 14:36:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/AddInvestigationCreate.js">
+      <publishTime>04/19/2022 10:45:53</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/AddPatient.js">
+      <publishTime>10/19/2021 19:19:01</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/AddRoomAllocation.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/AddRoomAllocationCreate.js">
+      <publishTime>04/11/2022 20:37:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/AppointmentTimeDetails.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/AppScripts.js">
+      <publishTime>10/23/2021 16:42:05</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/BedAllocationDetails.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/DischargeBill.js">
+      <publishTime>01/08/2020 14:24:20</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/LinkScript/Appointment.js">
+      <publishTime>01/13/2020 15:35:30</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/LinkScript/BedAllocation.js">
+      <publishTime>04/11/2022 20:38:24</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/LinkScript/BillClearance.js">
+      <publishTime>01/15/2020 14:36:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/LinkScript/Release.js">
+      <publishTime>01/13/2020 15:36:54</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/LinkScript/Service.js">
+      <publishTime>10/17/2021 13:26:06</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/PatientAppointmentCreate.js">
+      <publishTime>01/14/2020 13:02:26</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/PatientDetails.js">
+      <publishTime>05/19/2022 13:52:05</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/PrescriptionDetails.js">
+      <publishTime>04/11/2022 20:54:22</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/Registration.js">
+      <publishTime>10/21/2021 17:16:15</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Patient/Release.js">
+      <publishTime>04/12/2022 11:53:59</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/PatientHistory/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/PatientPicture/AddPicture.js">
+      <publishTime>10/23/2021 21:17:06</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/PatientStatus/AppScripts.js">
+      <publishTime>10/07/2021 20:45:04</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Js/Release/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AddIdPrinted.html">
+      <publishTime>10/23/2021 21:47:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AddInvestigationCreate.html">
+      <publishTime>04/19/2022 09:22:03</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AddPatient.html">
+      <publishTime>01/13/2020 15:30:08</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AddPicture.html">
+      <publishTime>10/23/2021 16:57:09</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AddRoomAllocation.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AddRoomAllocationCreate.html">
+      <publishTime>10/16/2021 15:19:51</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/AppointmentTimeDetails.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/BedAllocationDetails.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/PatientAppointmentCreate.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/PatientDetails.html">
+      <publishTime>05/19/2022 13:51:53</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/PrescriptionDetails.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Templates/Release.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Admission/Index.cshtml">
+      <publishTime>10/06/2021 22:13:42</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Patient/Appointment.cshtml">
+      <publishTime>01/04/2020 13:57:10</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Patient/BedAllocation.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Patient/BillClearance.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Patient/Index.cshtml">
+      <publishTime>10/23/2021 16:41:04</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Patient/Release.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/Patient/Service.cshtml">
+      <publishTime>01/08/2020 01:50:34</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/PatientHistory/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/PatientStatus/Index.cshtml">
+      <publishTime>10/07/2021 16:26:31</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PatientArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Js/PrescribedMedicine/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Js/Prescription/AddPrescription.js">
+      <publishTime>09/27/2021 10:29:56</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Js/Prescription/AppScripts.js">
+      <publishTime>01/13/2020 12:15:18</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Templates/AddPrescription.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Views/PrescribedMedicine/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Views/Prescription/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/PrescriptionArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ReferralArea/Js/Reference/AppScripts.js">
+      <publishTime>10/20/2021 17:04:40</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ReferralArea/Js/Reference/ReferenceDetails.js">
+      <publishTime>10/20/2021 17:06:31</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ReferralArea/Views/Reference/Index.cshtml">
+      <publishTime>10/16/2021 18:31:36</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ReferralArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ReferralArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/Bed/AppScripts.js">
+      <publishTime>10/16/2021 17:50:25</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/Bed/OnBedDetails.js">
+      <publishTime>10/20/2021 17:48:01</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/Building/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/Room/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/Room/RoomDetails.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/RoomCategory/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Js/RoomType/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Templates/RoomDetails.html">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/Bed/Index.cshtml">
+      <publishTime>10/16/2021 18:35:11</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/Building/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/Room/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/RoomCategory/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/RoomType/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/RoomArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/HospitalService/AppScripts.js">
+      <publishTime>10/20/2021 16:47:39</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/HospitalService/ServiceDetails.js">
+      <publishTime>10/20/2021 17:44:57</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/PatientService/AddPatientService.js">
+      <publishTime>10/20/2021 19:18:19</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/PatientService/AppPatientService.js">
+      <publishTime>04/12/2022 11:43:29</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/PatientService/AppScripts.js">
+      <publishTime>10/20/2021 21:18:02</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/PatientService/PatientServiceDetails.js">
+      <publishTime>10/20/2021 16:44:23</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Js/PatientServiceItem/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Templates/AddPatientService.html">
+      <publishTime>10/20/2021 16:23:42</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Views/HospitalService/Index.cshtml">
+      <publishTime>10/20/2021 17:51:48</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Views/PatientService/Index.cshtml">
+      <publishTime>10/20/2021 11:42:37</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Views/PatientServiceItem/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/ServiceArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Js/Stuff/AppScripts.js">
+      <publishTime>04/22/2022 16:39:22</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Js/Stuff/StuffDetails.js">
+      <publishTime>01/02/2020 19:21:28</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Templates/AddEmployeeDetails.html">
+      <publishTime>01/03/2020 14:45:30</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Templates/AddEmployeeDocument.html">
+      <publishTime>01/02/2020 16:12:44</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Templates/StuffDetails.html">
+      <publishTime>12/31/2019 16:22:58</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Views/Stuff/Index.cshtml">
+      <publishTime>01/02/2020 13:00:56</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/StuffArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/TransectionArea/Js/DoctorTransection/AppScripts.js">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/TransectionArea/Js/PatientTransection/AppScripts.js">
+      <publishTime>04/11/2022 21:10:36</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/TransectionArea/Views/DoctorTransection/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/TransectionArea/Views/PatientTransection/Index.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/TransectionArea/Views/web.config">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraHMS/TransectionArea/Views/_ViewStart.cshtml">
+      <publishTime>12/07/2019 14:25:46</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Account/AccountGroup.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Account/AccountGroupCategory.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Account/AppScript.js">
+      <publishTime>06/17/2019 08:23:40</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReporting/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReporting/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReporting/Details.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReportingItem/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReportingItem/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReportingItem/Details.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReportingItem/ItemDetails.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/AccountReportingItem/ListController.js">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheet/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSetting/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSetting/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSetting/Details.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSettingItem/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSettingItem/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSettingItem/Details.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSettingItem/ItemDetails.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BalanceSheetSettingItem/ListController.js">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Bank/AddTransaction.js">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Bank/AppScript.js">
+      <publishTime>06/17/2019 00:14:42</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Bank/Transaction.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Bill/AddBill.js">
+      <publishTime>05/28/2019 17:27:48</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Bill/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Bill/BillDetails.js">
+      <publishTime>06/18/2019 13:44:55</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BillPayment/AddBillPayment.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/BillPayment/AppScript.js">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/DailyInOut/AddDailyInOut.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/DailyInOut/AddNew.js">
+      <publishTime>06/21/2019 21:57:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/DailyInOut/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/DailyInOut/Details.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/DailyInOut/Details/SaleDetails.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/DailyInOut/ItemDetails.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Depreciation/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/Depreciation/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FiscalYear/AddFiscalYear.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FiscalYear/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FixedAsset/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FixedAsset/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FixedAsset/OnDetails.js">
+      <publishTime>06/18/2019 13:44:55</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FixedAssetType/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/FixedAssetType/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/IncomeStatement/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/ManualJournal/AddManualJournal.js">
+      <publishTime>06/26/2019 17:21:47</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/ManualJournal/AppScript.js">
+      <publishTime>06/26/2019 16:23:29</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/ManualJournal/List.js">
+      <publishTime>06/26/2019 17:18:23</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/ManualJournal/OnDetails.js">
+      <publishTime>05/28/2019 13:35:30</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/OpeningClosingBalance/AddOpeningBalance.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/OpeningClosingBalance/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/PaymentType/AddNew.js">
+      <publishTime>06/17/2019 00:10:14</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/PaymentType/AppScript.js">
+      <publishTime>06/17/2019 07:17:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/TaxComponent/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/TaxComponent/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/TaxRate/AddNew.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Content/TaxRate/AppScript.js">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AccountReporting/Details.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AccountReportingItem/Add.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AccountReportingItem/Details.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AccountReportingItem/ItemDetails.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AddDailyInOut.html">
+      <publishTime>06/18/2019 17:27:24</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AddDailyInOutDetails.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AddFiscalYear.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AddInOut.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/AddOpeningBalance.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/BalanceSheetSetting/Details.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/BalanceSheetSettingItem/Add.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/BalanceSheetSettingItem/Details.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/BalanceSheetSettingItem/ItemDetails.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/BillPayment/AddBillPayment.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/DailyItemSaleDetails.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/Depreciation/Add.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/FixedAsset/Add.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/FixedAssetType/AddInOut.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/ManualJournal/AddManualJournal.html">
+      <publishTime>05/28/2019 11:26:18</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/TaxComponent/Add.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Templates/TaxRate/Add.html">
+      <publishTime>05/26/2019 23:39:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/AccountGroup/Index.cshtml">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/AccountGroupCategory/Index.cshtml">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/AccountReporting/Index.cshtml">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/AccountReportingItem/Index.cshtml">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/AppAccount/Index.cshtml">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/BalanceSheet/Index.cshtml">
+      <publishTime>05/27/2019 17:27:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/BalanceSheetSetting/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/BalanceSheetSettingItem/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/Bank/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/Bank/Transaction.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/Bill/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/BillPayment/Index.cshtml">
+      <publishTime>05/28/2019 00:37:43</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/DailyInOut/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/Depreciation/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/FiscalYear/Create.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/FiscalYear/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/FixedAsset/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/FixedAssetType/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/IncomeStatement/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/ManualJournal/Index.cshtml">
+      <publishTime>06/26/2019 16:18:45</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/OpeningBalance/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/PaymentType/Index.cshtml">
+      <publishTime>06/17/2019 00:11:33</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/TaxComponent/Index.cshtml">
+      <publishTime>05/27/2019 17:27:01</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/TaxRate/Index.cshtml">
+      <publishTime>05/27/2019 17:27:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/Transaction/Index.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AccountantArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/Attendance/AppScript.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/Attendance/AttendanceDetails.js">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/Attendance/DaySummaryDetails.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/Attendance/Summary.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/Attendance/Users.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/DailyAttendance/AppScript.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/DailyAttendance/DailyAttendanceDetails.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/LateEntry/AppScript.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/LateEntry/LateEntryDetails.js">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/LateEntry/Setting.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/OverTime/AppScript.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Content/OverTime/OnOverTimeApprove.js">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Templates/DailyAttendanceDetails.html">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Templates/DaySummaryDetails.html">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Templates/OnOverTimeApprove.html">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/Attendance/Index.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/Attendance/Sheet.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/Attendance/Summary.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/Attendance/Users.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/DailyAttendance/Index.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/LateEntry/Index.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/LateEntry/Setting.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/LateEntrySetting/Index.cshtml">
+      <publishTime>05/27/2019 17:34:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/OverTime/Index.cshtml">
+      <publishTime>05/27/2019 17:34:02</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/AttendanceArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Content/Js/Category/AppScript.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Content/Js/Computer/ComputerDetails.js">
+      <publishTime>05/27/2019 17:36:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Content/Js/ItemType/AppScript.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Content/Js/SalesError/AppScript.js">
+      <publishTime>09/02/2019 15:59:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Content/Js/SalesError/ImageViewer.js">
+      <publishTime>09/02/2019 16:13:26</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Content/Js/UnitType/AppScript.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Templates/Computer/ComputerDetails.html">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/Category/Index.cshtml">
+      <publishTime>05/27/2019 17:36:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/ItemType/Index.cshtml">
+      <publishTime>05/27/2019 17:36:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/SalesError/Index.cshtml">
+      <publishTime>09/02/2019 16:08:42</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/UnitType/Index.cshtml">
+      <publishTime>05/27/2019 17:36:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CommonArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Content/ComparisonDetailController.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Content/CounterWiseDetails.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Content/DailyOrderComparisionDetails.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Content/MonthlyDetails.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Content/OrderComparison.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Content/SuplierWiseDetails.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Templates/ComparisionReportDetails.html">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Templates/MonthlyOrderComparisionDetails.html">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Views/OrderCompare/Index.cshtml">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ComparisonArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CustomerArea/Content/Customer/AppScript.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CustomerArea/Views/Customer/Index.cshtml">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CustomerArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CustomerArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/CustomerArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Content/DailtyInfoDetails.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Content/DailyInfo.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Templates/DailyInfoDetails.html">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Views/DailyInfo/Index.cshtml">
+      <publishTime>05/27/2019 17:39:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Views/DailyLoginInfo/Index.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/DailyInfoItemArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Calendar.js">
+      <publishTime>06/28/2019 21:26:54</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Designation/AppScript.js">
+      <publishTime>06/29/2019 18:15:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Designation/DesignationDetails.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/EmployeeShift/AddNewEmployeeShift.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/EmployeeShift/Admin.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/EmployeeShift/EmployeeShift.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/EmployeeShift/ShiftDetailController.js">
+      <publishTime>06/15/2019 11:19:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/AddEmployeeLeave.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/AddEmployeeLeaveByAdmin.js">
+      <publishTime>06/15/2019 11:19:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/AdminLeave.js">
+      <publishTime>06/15/2019 11:21:14</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/EmployeeLeave.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/Leave.js">
+      <publishTime>06/15/2019 11:21:14</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/LeaveApproveController.js">
+      <publishTime>06/15/2019 11:19:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Leave/LeaveDetails.js">
+      <publishTime>06/15/2019 11:19:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/LeaveCategory/LeaveCategory.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/ActionMethod.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/MenuList.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/Roles.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/Security.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/SetAccess.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/SetRole.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Security/SubMenu.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/User/AddIncrement.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/User/AppScript.js">
+      <publishTime>06/29/2019 18:18:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/User/ChangeAttendanceId.js">
+      <publishTime>06/27/2019 18:03:35</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/User/ChangePassword.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/User/Report.js">
+      <publishTime>06/19/2019 10:38:23</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/User/UserDetails.js">
+      <publishTime>07/04/2019 17:43:40</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/UserType/AppScript.js">
+      <publishTime>05/26/2019 23:39:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Weekend/AddNewWeekend.js">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Content/Weekend/Weekend.js">
+      <publishTime>06/15/2019 11:23:59</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/AddEmployeeLeave.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/ChangeAttendanceId.html">
+      <publishTime>06/27/2019 18:05:25</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/ChangePassword.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/DesignationDetails.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/EmployeeShift/AddNewEmployeeShift.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/Leave/AddEmployeeLeaveByAdmin.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/Leave/LeaveApprove.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/Leave/LeaveDetails.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/Security/Add.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/Security/AssignRole.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/UserDetails.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Templates/Weekend/AddNewWeekend.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/Designation/Index.cshtml">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/Employee/Index.cshtml">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/Employee/Report.cshtml">
+      <publishTime>07/01/2019 16:27:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/EmployeeType/Index.cshtml">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/Security/Index.cshtml">
+      <publishTime>07/16/2019 10:30:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/EmployeeArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ErrorArea/Content/AppScript.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ErrorArea/Views/DataError/TPPrice.cshtml">
+      <publishTime>05/27/2019 17:41:28</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ErrorArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ErrorArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ErrorArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/AddExpense.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/AddFile.js">
+      <publishTime>04/27/2022 15:18:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/AddReport.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/ExpanseType/ExpanseType.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/Expense.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/ExpenseOld.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/ImageViewer.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/Report/AddReport.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/Report/Report.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/SuplierPayment/AddSuplierPayment.js">
+      <publishTime>07/04/2019 13:13:23</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/SuplierPayment/AddSuplierPaymentController.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/SuplierPayment/CounterWiseDetails.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/SuplierPayment/List/AppScript.js">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/SuplierPayment/SuplierPayment.js">
+      <publishTime>07/01/2019 20:00:28</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Content/SuplierPayment/SuplierWiseDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Templates/AddExpense.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Templates/AddFiles.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Templates/AddReport.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Templates/AddSuplierPayment.html">
+      <publishTime>06/30/2019 19:48:21</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Templates/ImageViewer.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Templates/SuplierPaymentReportDetails.html">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/Expense/Index.cshtml">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/Expense/Old.cshtml">
+      <publishTime>05/27/2019 17:42:30</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/Expense/Report.cshtml">
+      <publishTime>05/27/2019 17:42:30</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/ExpenseType/Index.cshtml">
+      <publishTime>05/27/2019 17:42:30</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/SuplierPayment/Index.cshtml">
+      <publishTime>07/01/2019 19:02:44</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/SuplierPayment/List.cshtml">
+      <publishTime>05/27/2019 17:42:30</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ExpenseArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/EmployeeShift/AddNewEmployeeShift.js">
+      <publishTime>06/15/2019 11:14:45</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/EmployeeShift/Admin.js">
+      <publishTime>06/28/2019 21:07:24</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/EmployeeShift/EmployeeShift.js">
+      <publishTime>06/28/2019 21:06:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/EmployeeShift/SetEndDate.js">
+      <publishTime>06/28/2019 21:15:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/EmployeeShift/ShiftDetailController.js">
+      <publishTime>06/15/2019 11:52:16</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/AddEmployeeLeave.js">
+      <publishTime>06/15/2019 14:21:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/AddEmployeeLeaveByAdmin.js">
+      <publishTime>06/15/2019 11:28:44</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/AdminLeave.js">
+      <publishTime>06/15/2019 14:51:59</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/EmployeeLeave.js">
+      <publishTime>06/15/2019 11:30:12</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/Leave.js">
+      <publishTime>06/15/2019 11:30:26</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/LeaveApproveController.js">
+      <publishTime>06/15/2019 14:52:12</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Leave/LeaveDetails.js">
+      <publishTime>06/15/2019 11:31:06</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/LeaveCategory/LeaveCategory.js">
+      <publishTime>06/15/2019 11:56:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Weekend/AddNewWeekend.js">
+      <publishTime>06/15/2019 11:25:21</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Weekend/SetEndDate.js">
+      <publishTime>06/28/2019 21:15:13</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Content/Weekend/Weekend.js">
+      <publishTime>06/28/2019 21:05:03</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Templates/AddEmployeeLeave.html">
+      <publishTime>06/15/2019 14:47:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Templates/EmployeeShift/AddNewEmployeeShift.html">
+      <publishTime>06/15/2019 11:11:56</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Templates/Leave/AddEmployeeLeaveByAdmin.html">
+      <publishTime>06/15/2019 11:11:56</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Templates/Leave/LeaveApprove.html">
+      <publishTime>06/15/2019 11:11:56</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Templates/Leave/LeaveDetails.html">
+      <publishTime>06/15/2019 11:11:56</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Templates/Weekend/AddNewWeekend.html">
+      <publishTime>06/15/2019 11:11:56</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/EmployeeShift/Admin.cshtml">
+      <publishTime>06/15/2019 11:05:54</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/EmployeeShift/Index.cshtml">
+      <publishTime>06/15/2019 11:14:33</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/Leave/Admin.cshtml">
+      <publishTime>06/15/2019 13:49:54</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/Leave/Employee.cshtml">
+      <publishTime>06/15/2019 11:21:14</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/Leave/Index.cshtml">
+      <publishTime>06/28/2019 21:04:47</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/LeaveCategory/Index.cshtml">
+      <publishTime>05/27/2019 17:28:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/web.config">
+      <publishTime>05/26/2019 23:39:06</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/Weekend/Index.cshtml">
+      <publishTime>06/15/2019 14:44:48</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/HRIS/Views/_ViewStart.cshtml">
+      <publishTime>06/15/2019 11:39:48</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/Alert.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/Inventory.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/InventoryDue/AppScript.js">
+      <publishTime>06/26/2019 16:25:55</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/InventoryDue/OnPatientDetails.js">
+      <publishTime>06/19/2019 13:26:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/InventoryDuePayment/AddNew.js">
+      <publishTime>06/19/2019 17:07:05</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/InventoryDuePayment/AppScript.js">
+      <publishTime>06/18/2019 18:05:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/InventoryDuePayment/OnPatientDetails.js">
+      <publishTime>06/18/2019 15:12:16</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/ItemInventories.js">
+      <publishTime>05/26/2019 23:39:06</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Content/ItemSales.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Templates/InventoryDuePayment/Add.html">
+      <publishTime>06/19/2019 12:47:59</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Templates/InventoryDuePayment/PrintBill.html">
+      <publishTime>06/19/2019 16:46:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/Inventory/Alert.cshtml">
+      <publishTime>05/26/2019 23:39:06</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/Inventory/Index.cshtml">
+      <publishTime>05/27/2019 17:46:34</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/Inventory/ItemInventories.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/Inventory/ItemSales.cshtml">
+      <publishTime>05/27/2019 17:46:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/InventoryAlert/Index.cshtml">
+      <publishTime>05/27/2019 17:46:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/InventoryDue/Index.cshtml">
+      <publishTime>06/19/2019 13:27:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/InventoryDuePayment/Index.cshtml">
+      <publishTime>06/18/2019 17:50:23</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/InventoryArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/AddDailySale.js">
+      <publishTime>06/21/2019 21:04:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/CashCounterReport/CashCounterReport.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/CashCounterReport/CashCounterReportDetails.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/ColumnSelector.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/DailySale.js">
+      <publishTime>06/19/2019 15:04:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/ItemSales.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/SaleDetails - Copy.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/SaleDetails.js">
+      <publishTime>05/31/2019 17:15:12</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Content/SalesReport.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Templates/AddDailySale.html">
+      <publishTime>06/19/2019 14:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Templates/CashCounterReportDetails.html">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Templates/SaleDetails.html">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/DailySale/Index.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/Counter.cshtml">
+      <publishTime>05/31/2019 17:13:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/DeliveryReport.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/Index.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/Item.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/List.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/NonePharmacy.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/Pharmacy.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/ItemSales/Suplier.cshtml">
+      <publishTime>05/27/2019 17:48:45</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ItemSalesArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Content/Purchase/All.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Content/Sales/All.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Content/Stock/All.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobilePurchaseReport/All.cshtml">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobilePurchaseReport/Graphical.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobilePurchaseReport/NonePharmacy.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobilePurchaseReport/Pharmacy.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobilePurchaseReport/Summary.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileSaleReport/All.cshtml">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileSaleReport/Graphical.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileSaleReport/NonePharmacy.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileSaleReport/Pharmacy.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileSaleReport/Summary.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileStockReport/All.cshtml">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileStockReport/Graphical.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileStockReport/NonePharmacy.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileStockReport/Pharmacy.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/MobileStockReport/Summary.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/Shared/PurchasePartial.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/Shared/SalePartial.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/Shared/StockPartial.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/MobileArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/AddNonePharmacy.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/AddReceived.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/AppScript.js">
+      <publishTime>07/01/2019 12:02:25</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/ItemListController.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/Received.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/Sales/AddSale.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/Sales/ItemListController.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/Content/Item/Sales/Sales.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Content/ProductDuplicateController.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Templates/Add.html">
+      <publishTime>05/26/2019 23:39:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Templates/Duplicate.html">
+      <publishTime>05/26/2019 23:39:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Views/NonePharmacy/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Views/NonePharmacyItemReceive/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Views/web.config">
+      <publishTime>05/26/2019 23:39:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/NonePharmacy/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Content/Patient/AppScript.js">
+      <publishTime>12/08/2019 14:23:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Content/Patient/OnPatientDetails.js">
+      <publishTime>01/02/2020 15:57:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Content/Patient/ProductReturn/AddByVoucher.js">
+      <publishTime>11/13/2019 10:08:32</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Content/Patient/ProductReturn/AddReturnByItem.js">
+      <publishTime>11/13/2019 20:35:46</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Content/Patient/ProductReturn/ReturnByItemPreview.js">
+      <publishTime>11/13/2019 16:55:55</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Content/Patient/ProductReturn/Selector.js">
+      <publishTime>11/13/2019 10:07:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Views/Patient/Index.cshtml">
+      <publishTime>06/21/2019 19:18:35</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Views/PharmacyPatient/Index.cshtml">
+      <publishTime>12/08/2019 13:26:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Views/web.config">
+      <publishTime>06/17/2019 07:24:28</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PatientArea/Views/_ViewStart.cshtml">
+      <publishTime>06/17/2019 07:36:41</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/AdvanceSalary/AppScripts.js">
+      <publishTime>07/04/2019 19:04:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/BonusStructure/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/EmployeeBonus/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/EmployeeBonus/OnGenerate.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/EmployeeBonusDetails/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanAccount/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanAccount/OnDetails.js">
+      <publishTime>06/18/2019 13:41:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanApprover/AppScripts.js">
+      <publishTime>05/27/2019 17:28:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanStructure/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanStructure/OnDetails.js">
+      <publishTime>06/18/2019 13:42:12</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanType/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/LoanType/OnDetails.js">
+      <publishTime>06/18/2019 13:42:35</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/OverTimeApplication/AppScripts.js">
+      <publishTime>05/27/2019 17:28:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/OverTimeSetting/AppScripts.js">
+      <publishTime>05/27/2019 17:28:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/SalaryItem/AppScripts.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Content/SalaryItem/OnDetails.js">
+      <publishTime>06/18/2019 13:45:37</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Templates/EmployeeBonus/OnGenerate.html">
+      <publishTime>05/26/2019 23:39:08</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/AdvanceSalary/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/BonusStructure/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/EmployeeBonus/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/EmployeeBonusDetails/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/LoanAccount/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/LoanApprover/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/LoanStructure/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/LoanType/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/OverTimeApplication/Index.cshtml">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/OverTimeSetting/Index.cshtml">
+      <publishTime>06/30/2019 17:01:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/SalaryItem/Index.cshtml">
+      <publishTime>05/27/2019 17:50:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/PayrollArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/AddPharmacy.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/EditPharmacy.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/AddReceived.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/AppScript.js">
+      <publishTime>07/01/2019 12:01:38</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/ItemListController.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/Received.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/Sales/AddSale.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/Sales/ItemListController.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/Item/Sales/Sales.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Content/ProductDuplicateController.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Templates/Add.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Templates/Duplicate.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Templates/Edit.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Templates/ItemList.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Templates/Received.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Templates/Sales.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/PharmacyItem/Index.cshtml">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/PharmacyItemReceive/Index.cshtml">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/PharmacyItemSale/Index.cshtml">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/Shared/ProductMenuPartial.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/web.config">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/Pharmacy/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Add.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/AddConversion.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Adjustment/AppScript.js">
+      <publishTime>06/19/2019 15:48:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Adjustment/OnDetails.js">
+      <publishTime>05/28/2019 03:44:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/AllProducts.js">
+      <publishTime>05/28/2019 03:41:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/BarcodeChangeController.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Counter/AppScript.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Counter/CounterDetails.js">
+      <publishTime>05/27/2019 17:51:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/DeletedItems.js">
+      <publishTime>06/26/2019 12:31:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Edit.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/ProductDetails.js">
+      <publishTime>06/27/2019 16:42:12</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/ProductDuplicateController.js">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/ProductErrorList/NonePharmacy.js">
+      <publishTime>07/01/2019 12:02:33</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/ProductErrorList/Pharmacy.js">
+      <publishTime>07/01/2019 12:01:25</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/Selector.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Content/StockChangeController.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/AddConversion.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/BarcodeChangeController.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/CounterDetails.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/DailyDueDetails.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/ProductDetails.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/ProductDuplicate.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/Selector.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Templates/StockChange.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/Counter/Index.cshtml">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/Product/DeletedItems.cshtml">
+      <publishTime>06/26/2019 11:18:34</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/Product/Index.cshtml">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/Product/Stock.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/ProductAdjustment/Index.cshtml">
+      <publishTime>05/28/2019 00:39:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/ProductErrorList/Index.cshtml">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/ProductErrorList/NonePharmacy.cshtml">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/AddOrder.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/EmailDetails.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/ItemAddController.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/ItemListController.js">
+      <publishTime>05/27/2019 17:23:22</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/NonePharmacyOrder.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/Order.js">
+      <publishTime>06/29/2019 18:14:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/OrderCCEmail.js">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/OrderDetails.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/OrderSelector.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/PharmacyOrder.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Content/Resend.js">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Templates/AddOrder.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Templates/EmailDetails.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Templates/ItemAdd.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Templates/OrderDetails.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Templates/OrderSelector.html">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/Order/Index.cshtml">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/Order/NonePharmacy.cshtml">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/Order/Pharmacy.cshtml">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/OrderEmails/Index.cshtml">
+      <publishTime>05/27/2019 17:51:55</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductOrderArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/AppScript.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/DailyPurchaseDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/MonthlyPurchaseDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/Preview.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/PurchaseDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/PurchaseItemDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/Selector.js">
+      <publishTime>07/07/2019 14:22:04</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Content/SuplierWisePurchaseDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Templates/DailyPurchaseDetails.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Templates/Preview.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Templates/PurchaseDetails.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Templates/PurchaseItemDetails.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Templates/Selector.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Views/Purchase/NonePharmacy.cshtml">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Views/Purchase/Pharmacy.cshtml">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductPurchaseArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/AddPurchaseByReturnController.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/AddReturnByItem.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/AppScript.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/Details.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/PurchaseBuReturnPreview.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/PurchaseByReturn.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/PurchaseByReturnDetails.js">
+      <publishTime>05/31/2019 11:46:21</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/ReturnByItemPreview.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/AddByItem.js">
+      <publishTime>05/31/2019 02:20:28</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/AddByVoucher.js">
+      <publishTime>05/31/2019 03:33:25</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/AppScript.js">
+      <publishTime>05/31/2019 03:25:38</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/Details.js">
+      <publishTime>05/31/2019 03:52:44</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/ItemSelector.js">
+      <publishTime>05/31/2019 02:18:06</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/Preview.js">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Content/SuplierReturn/PurchaseSelector.js">
+      <publishTime>05/29/2019 22:02:52</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/AddPurchaseByReturn.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/AddReturnByItem.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/PurchaseByReturnDetails.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/PurchaseByReturnPreview.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/ReturnByItemPreview.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/ReturnDetails.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/SuplierReturnByItem.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/SuplierReturnByVoucher.html">
+      <publishTime>05/30/2019 01:30:07</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/SuplierReturnDetails.html">
+      <publishTime>05/31/2019 03:23:35</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Templates/SuplierReturnPreview.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Views/ProductReturn/Index.cshtml">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Views/PurchaseByReturn/Index.cshtml">
+      <publishTime>05/27/2019 17:53:27</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Views/SuplierReturn/Index.cshtml">
+      <publishTime>05/29/2019 22:01:09</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ProductReturnArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/RackArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/ColumnSelector.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/PreviousStock.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/ProductStoreColumnSelector.js">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Purchase/ByCounter.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Purchase/ByItem.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Purchase/BySuplier.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Purchase/ReportBase.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Purchase/SummaryReport.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/PurchaseColumnSelector.js">
+      <publishTime>06/27/2019 14:22:00</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/RequiredItem/ByCounter.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/RequiredItem/BySuplier.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/RequiredItem/Preview.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/RequiredItem/ReportBase.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Sales/ByItem.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Sales/StockPosition.js">
+      <publishTime>05/27/2019 17:30:58</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Sales/SummaryReport.js">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Sales/Suplier.js">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Sales/SuplierStock.js">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/StockPosition.js">
+      <publishTime>05/28/2019 03:12:42</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/SummaryReport.js">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/Suplier.js">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Content/SuplierStock.js">
+      <publishTime>05/27/2019 17:49:20</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/OrderPreview.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/PreviousStock.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/PurchaseReport.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/RequiredItemReport.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/RequiredItemReportBySuplier.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/SaleReport.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Templates/StockPosition.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Views/ColumnSelector/Product.cshtml">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Views/ColumnSelector/Purchase.cshtml">
+      <publishTime>05/27/2019 17:30:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Views/ColumnSelector/Sales.cshtml">
+      <publishTime>06/26/2019 11:02:16</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/ReportArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Increment/AddEmployeeIncrement.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Increment/AddIncrement.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Increment/AppScript.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Salary/AddMonthlySalaryController.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Salary/AppScript.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Salary/GenerateSalary.js">
+      <publishTime>07/04/2019 17:42:40</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Salary/GenerateSalarySheet.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Salary/SalarySheet.js">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/Salary/SheetFromDMCH.js">
+      <publishTime>05/27/2019 17:28:49</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/SalaryPayment/AppScript.js">
+      <publishTime>07/09/2019 13:57:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Content/SalaryRepayment/OnDetails.js">
+      <publishTime>06/18/2019 13:44:55</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Templates/Increment/AddEmployeeIncrement.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Templates/Increment/AddIncrement.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Templates/Salary/AddMonthlySalary.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Templates/Salary/GenerateSalary.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Templates/Salary/GenerateSalarySheet.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Templates/Salary/SalarySheet.html">
+      <publishTime>05/26/2019 23:39:10</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Views/Increment/Index.cshtml">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Views/Salary/Index.cshtml">
+      <publishTime>05/27/2019 17:54:50</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Views/SalaryPayment/Index.cshtml">
+      <publishTime>07/09/2019 13:57:14</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SalaryArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/Due/DailyDueDetails.js">
+      <publishTime>05/27/2019 17:49:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/Due/PurchaseDue.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/Suplier/AddOrderCategoryController.js">
+      <publishTime>05/27/2019 17:25:18</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/Suplier/AdjustDue.js">
+      <publishTime>07/04/2019 12:58:46</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/Suplier/AppScript.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/Suplier/SuplierDetails.js">
+      <publishTime>05/27/2019 17:51:57</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierOrderCategory/AppScript.js">
+      <publishTime>05/27/2019 17:28:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/AddSuplierPayment.js">
+      <publishTime>07/04/2019 13:14:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/AddSuplierPaymentController.js">
+      <publishTime>05/27/2019 17:42:30</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/AdjustSuplierPayment.js">
+      <publishTime>07/04/2019 13:40:21</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/CounterWiseDetails.js">
+      <publishTime>05/27/2019 17:42:31</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/List/AppScript.js">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/SuplierPayment.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Content/SuplierPaymentAdjust/SuplierWiseDetails.js">
+      <publishTime>05/27/2019 17:52:51</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Templates/OrderCategory.html">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Templates/SuplierDetails.html">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/Shared/_Layout.cshtml">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/Suplier/AdjustDue.cshtml">
+      <publishTime>07/04/2019 12:58:15</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/Suplier/Due.cshtml">
+      <publishTime>05/27/2019 17:25:18</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/Suplier/Index.cshtml">
+      <publishTime>05/27/2019 17:25:19</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/SuplierOrderCategory/Index.cshtml">
+      <publishTime>05/27/2019 17:25:18</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/SuplierPaymentAdjust/Index.cshtml">
+      <publishTime>05/27/2019 17:25:24</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/web.config">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraPharmacy/SuplierArea/Views/_ViewStart.cshtml">
+      <publishTime>05/26/2019 23:39:11</publishTime>
+    </File>
+    <File Include="Content/IqraService/CSS/DatePicker.css">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/CSS/DropDown.css">
+      <publishTime>03/21/2020 19:57:04</publishTime>
+    </File>
+    <File Include="Content/IqraService/CSS/Global.css">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/CSS/Grid.css">
+      <publishTime>11/21/2021 19:33:06</publishTime>
+    </File>
+    <File Include="Content/IqraService/CSS/LogIn.css">
+      <publishTime>09/22/2020 18:07:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/CSS/Window.css">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/arrow_down.png">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/arrow_up.png">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/loading_img.gif">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/loading_line.gif">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/noCitizenPhoto.png">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/search.png">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/sprite.png">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Img/sprite_2x.png">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/AddController.js">
+      <publishTime>04/25/2022 13:58:12</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/AddFormController.js">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/AutoComplete.js">
+      <publishTime>04/15/2022 11:12:18</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/Barcode.js">
+      <publishTime>04/19/2021 21:41:57</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/DatePicker.js">
+      <publishTime>09/17/2021 19:23:04</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/DropDown.js">
+      <publishTime>04/22/2022 15:19:08</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/Global.js">
+      <publishTime>03/16/2022 16:57:18</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/Grid.js">
+      <publishTime>04/15/2022 14:01:39</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/IqraConfig.js">
+      <publishTime>03/27/2022 21:46:44</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/ListController.js">
+      <publishTime>04/12/2022 15:44:29</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/Login.js">
+      <publishTime>12/01/2021 17:12:18</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/OnDetailsWithGrid.js">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/OnDetailsWithTab.js">
+      <publishTime>12/06/2021 13:48:05</publishTime>
+    </File>
+    <File Include="Content/IqraService/Js/WarningController.js">
+      <publishTime>03/13/2020 12:06:54</publishTime>
+    </File>
+    <File Include="Content/Js/adminlte.min.js">
+      <publishTime>05/22/2019 15:28:23</publishTime>
+    </File>
+    <File Include="Content/Js/AppComponent.js">
+      <publishTime>05/19/2022 14:07:24</publishTime>
+    </File>
+    <File Include="Content/Js/bootstrap.min.js">
+      <publishTime>05/22/2019 15:28:23</publishTime>
+    </File>
+    <File Include="Content/Js/FileSelector.js">
+      <publishTime>05/27/2019 17:42:30</publishTime>
+    </File>
+    <File Include="Content/Js/IqraService/ArrGrid.js">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Js/IqraService/BarChart.js">
+      <publishTime>05/23/2019 11:26:11</publishTime>
+    </File>
+    <File Include="Content/Js/IqraService/DateTimePicker.js">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Js/IqraService/LineChart.js">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Js/UserProfile.js">
+      <publishTime>10/01/2019 20:16:26</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/22/2019 22:15:18</publishTime>
+    </File>
+    <File Include="Content/Style.css">
+      <publishTime>06/26/2019 12:02:39</publishTime>
+    </File>
+    <File Include="Content/Theme/Css/dashboard.css">
+      <publishTime>04/24/2022 19:46:34</publishTime>
+    </File>
+    <File Include="Content/Theme/Css/font-awesome.css">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/Css/ionicons.min.css">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/Css/_all-skins.min.css">
+      <publishTime>09/26/2021 20:28:39</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/fontawesome-webfont.eot">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/fontawesome-webfont.svg">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/fontawesome-webfont.ttf">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/fontawesome-webfont.woff">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/fontawesome-webfont.woff2">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/FontAwesome.otf">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="Content/Theme/Js/adminlte.min.js">
+      <publishTime>05/22/2019 22:15:15</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/22/2019 21:38:49</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/22/2019 21:38:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/22/2019 21:38:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/22/2019 21:38:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/22/2019 21:38:59</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/22/2019 21:38:49</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/17/2021 22:09:04</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.js">
+      <publishTime>05/22/2019 21:39:47</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>05/22/2019 21:39:47</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/22/2019 21:38:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/22/2019 21:38:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/22/2019 21:39:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/22/2019 21:39:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/22/2019 21:39:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/22/2019 21:39:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/22/2019 21:39:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/22/2019 21:39:18</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/22/2019 21:39:18</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/22/2019 21:39:16</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/22/2019 21:39:17</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/22/2019 21:39:17</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>01/09/2020 01:42:55</publishTime>
+    </File>
+    <File Include="Templates/FileSelector.html">
+      <publishTime>05/28/2019 03:32:11</publishTime>
+    </File>
+    <File Include="Templates/OnDetailsWithGrid.html">
+      <publishTime>05/28/2019 03:32:11</publishTime>
+    </File>
+    <File Include="Templates/OnDetailsWithTab.html">
+      <publishTime>05/28/2019 03:32:11</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>05/22/2019 15:28:23</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>05/22/2019 21:02:05</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/19/2022 14:34:00</publishTime>
+    </File>
+    <File Include="Views/Menu/Admin.cshtml">
+      <publishTime>06/27/2019 13:59:05</publishTime>
+    </File>
+    <File Include="Views/Shared/DefinedString.cshtml">
+      <publishTime>10/24/2021 15:38:35</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/22/2019 15:28:23</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>05/22/2019 15:28:23</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/18/2022 21:02:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>06/26/2019 12:24:55</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/22/2019 15:31:25</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/22/2019 15:28:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/22/2022 16:39:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,95 @@
+﻿<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;">Set Investigation Data</h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm" style="position:relative;">
+        <div class="">
+            <div class="row">
+                <section class="col-sm-6 col col-md-3">
+                    <div>
+                        <label for="Name">Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" data-binding="Name" class="form-control" disabled />
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-3">
+                    <div>
+                        <label for="Mobile">Mobile</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" data-binding="Mobile" class="form-control" disabled />
+                    </div>
+                </section>
+                <!--<section class="col-sm-6 col col-md-3">
+                    <div>
+                        <label for="Age">Age</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" data-binding="Age" class="form-control" disabled />
+                    </div>
+                </section>-->
+                <section class="col-sm-6 col col-md-3">
+                    <div>
+                        <label for="Gender">Gender</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" data-binding="Gender" class="form-control" disabled />
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label>Investigation Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" disabled="disabled" type="text" data-binding="InvestigationName" name="Investigation" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div><label>Total Amount</label></div>
+                    <div><span  disabled="disabled" data-binding="NetAmount" class="form-control auto_bind" /></div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="DoctorId">Doctor</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-type="string" data-binding="Doctor" name="Doctor" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="Referar">Referar</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-type="string" data-binding="Referar" name="Referar" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div id="investigation_grid_container"> </div>
+            <div class="row">
+                <section class="col-sm-12 col col-md-12">
+                    <div>
+                        <label for="Remarks">Note</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea data-binding="Remarks" style="width:100%; max-width:100%;min-width:100%; height:100px;" class="form-control" data-type="string"></textarea>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+</div>
+

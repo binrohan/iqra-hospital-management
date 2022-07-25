@@ -1,0 +1,160 @@
+﻿<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float: left" class="widget-title">
+                <h4 style="margin:5px;" class="auto_bind" data-binding="Title">Duplicate  Pharmacy Item</h4>
+            </div>
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+        <form class="middleForm" action="/">
+            <div class="row">
+                <section class="col-sm-12 col col-md-12">
+                    <div>
+                        <label for="Name">Trade Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" required="" data-binding="Name" name="Name" class="form-control" type="text">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="Strength">Strength</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" data-binding="Strength" name="Strength" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="CategoryId">Category</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" required="" data-binding="CategoryId" name="CategoryId" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label for="SuplierId">Suplier</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" required="" data-binding="SuplierId" name="SuplierId" class="form-control" type="text">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="UnitTradePrice">UnitTPPrice</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="float" required="" data-binding="UnitTradePrice" name="UnitTradePrice" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="UnitSalePrice">UnitMRPPrice</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="float" required="" data-binding="UnitSalePrice" name="UnitSalePrice" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-6" style="width:28%">
+                    <div>
+                        <label for="SoldDaysForParchaseRequired">SoldDaysForParchaseRequired</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="int" required="" data-binding="SoldDaysForParchaseRequired" name="SoldDaysForParchaseRequired" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-6" style="width:21%">
+                    <div>
+                        <label for="MinStockToAlert">MinStockToAlert</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="int" required="" data-binding="MinStockToAlert" name="MinStockToAlert" class="form-control" type="text">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="Vat">Vat</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="float|null" data-binding="Vat" name="Vat" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="Discount">Sale Discount</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="float|null" data-binding="Discount" name="Discount" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="PurchaseDiscount">Purchase Discount</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="float|null" data-binding="PurchaseDiscount" name="PurchaseDiscount" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label for="MaxSaleDiscount">Max Sale Discount</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="float" required="" data-binding="MaxSaleDiscount" name="MaxSaleDiscount" class="form-control" type="text">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label for="SalesUnitTypeId">SalesUnitType</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" required="" data-binding="SalesUnitTypeId" name="SalesUnitTypeId" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label for="PurchaseUnitTypeId">PurchaseUnitType</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" required="" data-binding="PurchaseUnitTypeId" name="PurchaseUnitTypeId" class="form-control" type="text">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label for="UnitConversion">UnitConversion</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="int" required="" data-binding="UnitConversion" name="UnitConversion" class="form-control" type="text">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label for="CounterId">Counter</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" required="" data-binding="CounterId" name="CounterId" class="form-control" type="text">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit"><span class="glyphicon glyphicon-save"></span> Save </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

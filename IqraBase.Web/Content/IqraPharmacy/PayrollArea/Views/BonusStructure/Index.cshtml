@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Bonus Structure | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Bonus Structure</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    var accessList=@Html.Raw(Pharmacy.Service.JParser.Parse(ViewBag.Access));
+</script>
+
+<div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-success btn-round pull-right" id="btn_add_new" style="margin-left: 1%"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/PayrollArea/Content/BonusStructure/AppScripts.js"></script>

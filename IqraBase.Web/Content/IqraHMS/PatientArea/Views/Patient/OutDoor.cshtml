@@ -1,0 +1,20 @@
+
+
+@{
+    ViewBag.Title = "OutDoor Patient | IqraHMS";
+}
+
+    <h2 class="empty_style">OutDoor Patient</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+
+    <script type="text/javascript">
+        var patientType = 'Out Patient';
+    </script>
+}
+<div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/PatientArea/Js/PatientType/AppScripts.js"></script>

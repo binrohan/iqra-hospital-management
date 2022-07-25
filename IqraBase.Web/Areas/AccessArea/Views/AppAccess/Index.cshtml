@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ControllerAccess";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="padding-top: 25px;">
+            <div class="">
+                <div id="security_table_container" class="dataTables_wrapper form-inline no-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="@Url.Content("~/Areas/AccessArea/Content/ControllerAccess.js")"></script>
+
+

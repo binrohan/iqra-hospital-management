@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Sales Report";
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/Theme/Css/font-awesome.css" rel="stylesheet" />
+<div id="page_container">
+    <div class="" style="padding:15px;">
+        <div id="bar_chart">
+            
+        </div>
+    </div>
+</div>
+<script src="~/Content/Js/IqraService/IqraConfig.js?v=1.16"></script>
+<script src="~/Content/IqraService/Js/global.js?v=1.16"></script>
+<script src="~/Content/Js/IqraService/BarChart.js"></script>
+<script type="text/javascript">
+    ///ReportArea/SalesReport/Graphical
+    Global.CallServer('/ReportArea/SalesReport/Graphical', function (response) {
+        if (!response.IsError) {
+            var dateObj = response.Data.pop();
+            console.log(response.Data)
+            Global.BarChart.Service.Bind({ Data: response.Data })
+        } else {
+        }
+    }, function (response) {
+        response.Id = -8;
+    }, null, 'Get');
+</script>

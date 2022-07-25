@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Sales Report";
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/Theme/Css/font-awesome.css" rel="stylesheet" />
+<div id="page_container">
+    <div class="" style="padding:15px;">
+        <div id="filter_container" class="row">
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                <div><label>From</label></div>
+                <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                <div><label>To</label></div>
+                <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                <div><label>Period</label></div>
+                <div><input type="text" data-binding="Period" class="form-control" /></div>
+            </div>
+        </div>
+        <div id="summary_container" class="row" style="margin-top:10px;margin-bottom:10px;">
+            <div id="total_item" class="col-sm-2 col-md-2 hide_on_mobile">
+                <label>TotalItems</label>
+                <div class="auto_bind form-control" data-binding="Total"></div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-xs-4">
+                <label>Total Stock</label>
+                <div class="auto_bind form-control" data-binding="TotalQuentity"></div>
+            </div>
+            <div class="col-sm-2 col-md-2 hide_on_mobile">
+                <label>UnitTradePrice</label>
+                <div class="auto_bind form-control" data-binding="UnitTradePrice"></div>
+            </div>
+            <div class="col-sm-2 col-md-2 hide_on_mobile">
+                <label>UnitSalePrice</label>
+                <div class="auto_bind form-control" data-binding="UnitSalePrice"></div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-xs-4">
+                <label>TotalTradePrice</label>
+                <div class="auto_bind form-control" data-binding="TotalTradePrice"></div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-xs-4">
+                <label>TotalSalePrice</label>
+                <div class="auto_bind form-control" data-binding="TotalSalePrice"></div>
+            </div>
+        </div>
+        <div id="bar_chart">
+            
+        </div>
+    </div>
+</div>
+<script src="~/Content/Js/IqraService/IqraConfig.js?v=1.16"></script>
+<script src="~/Content/IqraService/Js/global.js?v=1.16"></script>
+<script src="~/Content/Js/IqraService/BarChart.js"></script>
+<script type="text/javascript">
+    console.log(Global.BarChart.Service.Bind({ Data: [{ value: 1500, text: 'test1' }, { value: 1000, text: 'test2' }, { value: 800, text: 'test3' }, { value: 1200, text: 'test4' }, { value: 1700, text: 'test5' }] }));
+</script>

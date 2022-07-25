@@ -1,0 +1,47 @@
+﻿
+
+@{
+    ViewBag.Title = "Bank Transaction | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Bank Transaction</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div id="filter_container" class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>From</label></div>
+            <div><input type="text" data-binding="From" class="form-control" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>To</label></div>
+            <div><input type="text" data-binding="To" class="form-control" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>Period</label></div>
+            <div><input type="text" data-binding="Period" class="form-control" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>Deposit</label></div>
+            <div><span data-binding="Deposit" class="form-control auto_bind" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>Withdraw</label></div>
+            <div><span data-binding="Withdraw" class="form-control auto_bind" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>Balance</label></div>
+            <div><span data-binding="Balance" class="form-control auto_bind" /></div>
+        </div>
+    </div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_withdraw" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span>Withdraw</a>
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_deposite" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span>Deposite</a>
+        @*<a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_transfer" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span>Transfer</a>*@
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/Bank/Transaction.js"></script>

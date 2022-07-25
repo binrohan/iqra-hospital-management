@@ -1,0 +1,26 @@
+﻿
+
+@{
+    ViewBag.Title = "Opening Balance | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Opening Balance</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div id="filter_container" class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>FiscalYear</label></div>
+            <div><input type="text" data-binding="FiscalYearId" class="form-control" /></div>
+        </div>
+    </div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_opening_balance" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span>Set Openoing Balance</a>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/OpeningClosingBalance/AppScript.js"></script>
+

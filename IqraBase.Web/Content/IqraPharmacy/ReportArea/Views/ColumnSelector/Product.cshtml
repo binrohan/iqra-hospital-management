@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Product Stores";
+    
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+@using Pharmacy.Data.Model.Product
+<script type="text/javascript">
+    var filter = [], newColumns = [],
+        newColumnsPosition = -10,
+        dataUrl = '/ItemSalesArea/ItemSales/ItemData',
+        byDataUrl='';
+    $('.product_group').addClass('active menu-open').find('.report').addClass('active');
+    var PharmacyTypeId = '@ItemModel.Pharmacy',
+        NonePharmacyTypeId = '@ItemModel.NonePharmacy';
+</script>
+<h2 class="empty_style" id="type_container">
+    Product Stores
+    <small>
+        >>
+        <span style="margin-right: 20px;"><a data-type="0" class="selected"> All </a></span>
+        <span style="margin-right: 20px;"><a data-type="1"> Pharmacy </a></span>
+        <span style="margin-right: 20px;"><a data-type="2"> None-Pharmacy </a></span>
+    </small>
+</h2>
+
+
+<div>
+    <div id="selector_container" style="margin-top: 20px;">
+
+    </div>
+    <div id="grid_container" class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ReportArea/Content/ProductStoreColumnSelector.js"></script>

@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Product Return | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Customer Return</h2>
+<div>
+    <div class="panel-body">
+        <div class="empty_style button_container row">
+            <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_by_voucher" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span>Add By Voucher</a>
+            <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_by_items" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span>Add By Items</a>
+        </div>
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ProductReturnArea/Content/AppScript.js"></script>
+

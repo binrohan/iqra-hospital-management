@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Expense | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Expense</h2>
+<script type="text/javascript">
+    var hasApproveAccess=@Html.Raw(ViewBag.HasAccess.ToString().ToLower());
+</script>
+
+<div id="filter_container" class="row">
+
+    
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div id="grid_container">
+        @*<div id="grid"></div>*@
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ExpenseArea/Content/Expense.js"></script>

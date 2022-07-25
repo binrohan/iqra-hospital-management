@@ -1,0 +1,80 @@
+﻿
+<div class="formBody formContainer">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" class="auto_bind" data-binding="Title"></h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </span>
+    </div>
+    <div class="middleForm">
+        <style type="text/css">
+            .image_item {
+                width: 105px;
+                height: 105px;
+                position: relative;
+            }
+
+                .image_item .btn_delete {
+                    position: absolute;
+                    right: -10px;
+                    top: -3px;
+                }
+
+                    .image_item .btn_delete span.icon_container {
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        font-size: 0.8em;
+                        padding: 0 1px;
+                    }
+        </style>
+        <div class="row">
+            <center>
+                <div class="row col-md-12">
+                    <div class="col-md-4">
+                        <section class="btn_container" style="position: relative; margin-top: 5px;  overflow: hidden;">
+                            <button class="btn btn_upload btn-white btn-default btn-round" type="button">
+                                <span class="glyphicon glyphicon-plus">
+                                </span> Add Employee Picture
+                            </button>
+                            <input id="btn_emp_pic" multiple style="position: absolute; left: 0px; top: 0px; opacity: 0; padding: 3px;" class="btn btn_upload btn-white btn-default btn-round" type="file">
+                        </section>
+                    </div>
+
+                    <div class="col-md-4">
+                        <section class="btn_container" style="position: relative; margin-top: 5px;  overflow: hidden;">
+                            <button class="btn btn_upload btn-white btn-default btn-round" type="button">
+                                <span class="glyphicon glyphicon-plus">
+                                </span> Add NID
+                            </button>
+                            <input id="btn_nid" multiple style="position: absolute; left: 0px; top: 0px; opacity: 0; padding: 3px;" class="btn btn_upload btn-white btn-default btn-round" type="file">
+                        </section>
+                    </div>
+
+                    <div class="col-md-4">
+                        <section class="btn_container" style="position: relative; margin-top: 5px;  overflow: hidden;">
+                            <button class="btn btn_upload btn-white btn-default btn-round" type="button">
+                                <span class="glyphicon glyphicon-plus">
+                                </span> Add Certificates
+                            </button>
+                            <input id="btn_certificates" multiple style="position: absolute; left: 0px; top: 0px; opacity: 0; padding: 3px;" class="btn btn_upload btn-white btn-default btn-round" type="file">
+                        </section>
+                    </div>
+                </div>
+                <section class="row" id="image_container" style="padding-top: 5px;"></section>
+            </center>
+        </div>
+
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                    <span class="glyphicon glyphicon-remove">
+                    </span> Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

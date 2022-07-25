@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Fixed Asset Type | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Fixed Asset Type</h2>
+
+<div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+
+
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/FixedAssetType/AppScript.js"></script>

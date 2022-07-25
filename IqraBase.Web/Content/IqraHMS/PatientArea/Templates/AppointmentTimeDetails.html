@@ -1,0 +1,123 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content div.form-control, .tab-content span.form-control {
+            display: block;
+        }
+
+            .tab-content div.form-control a {
+                cursor: pointer;
+            }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+
+        #ordered_items_grid .i-header.table_header.sorting > div, #ordered_items_grid .i-grid-content td {
+            font-size: 0.85em;
+        }
+
+        .i-grid-content tr td {
+            padding: 3px;
+        }
+
+        .new_window .form_container .form {
+            max-width: 99%;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;"> Appointment Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <ul class="nav nav-tabs">
+                    <li data-field="AppointmentTime"><a>Appointment Details</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="appointment_time" class="tab-pane fade in active">
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Patient">Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Patient" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                          <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="CreatedAt">CreatedAt</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="CreatedAt" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Doctor">Doctor</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Doctor" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <!--<section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Room">Room</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Room" class="form-control auto_bind"></div>
+                                </div>
+                            </section>-->
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="PatientType">Patient Type</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PatientType" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="DateOfAppointment">Date Of Appointment</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="DateOfAppointment" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="UpdatedAt">Updated At</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="UpdatedAt" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

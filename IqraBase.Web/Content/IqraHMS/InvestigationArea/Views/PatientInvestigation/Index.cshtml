@@ -1,0 +1,25 @@
+
+
+@{
+    ViewBag.Title = "Patient Investigations | IqraHMS";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+    <h2 class="empty_style">Patient Investigations</h2>
+
+<div id="summary_container" class="row">
+
+</div>
+<div id="filter_container" class="row">
+
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+        <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new_none"><span class="glyphicon glyphicon-plus"></span> Non-Reg-Patient</a>
+        <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new" style="margin-right:10px;"><span class="glyphicon glyphicon-plus"></span> Reg-Patient</a>
+    </div>
+    <div id="grid_container">
+    </div>
+</div>
+<script src="~/Content/IqraHMS/InvestigationArea/Js/PatientInvestigation/AppScripts.js"></script>

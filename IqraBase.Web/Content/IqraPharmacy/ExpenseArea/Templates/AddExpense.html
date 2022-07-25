@@ -1,0 +1,84 @@
+﻿
+<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" class="auto_bind" data-binding="Title">Add New  Expense</h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <form class="middleForm" action="/">
+        <div class="row">
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="Type">Type</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" required="" data-binding="TypeId" name="TypeId" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="Responsible">ResponsibleUser</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" required="" data-binding="Responsible" name="Responsible" class="form-control" type="text">
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-6 col col-md-4">
+                <div>
+                    <label for="Amount">Amount</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="float" required="" data-binding="Amount" name="Amount" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-4">
+                <div>
+                    <label for="ExpenseAt">ExpenseAt</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" data-dateformat="dd/MM/yyyy HH:mm" required="" data-binding="ExpenseAt" name="ExpenseAt" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-4">
+                <div>
+                    <label for="">Image</label>
+                </div>
+                <div class="input-group">
+                    <input id="btn_image" type="file">
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-12 col col-md-12">
+                <div>
+                    <label for="Description">Description</label>
+                </div>
+                <div class="input-group">
+                    <textarea data-binding="Description" name="Description" style="width:100%; max-width:100%;min-width:100%; height:100px;" class="form-control" data-type="string"></textarea>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="progress_ba_container" style="display:none;">
+            <div class="col-md-12">
+                <section class="col-sm-12 col col-md-12 ">
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row status_container" style="max-height:100px;overflow:auto;">
+
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="submit"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,375 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content .form-control.auto_bind {
+            display: block;
+        }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> Product Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <ul class="nav nav-tabs">
+                    <li class="active" data-field="BasicInfo"><a>Basic Info</a></li>
+                    <li data-field="SalseInfo"><a>Salse Info</a></li>
+                    <li data-field="OrderInfo"><a>Order Info</a></li>
+                    <li data-field="PurchaseInfo"><a>Purchase Info</a></li>
+                    <li data-field="StockHistory"><a>Stock History</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="basic_info" class="tab-pane fade in active">
+                        <div class="row">
+                            <section class="col-sm-4 col col-md-4">
+                                <div>
+                                    <label for="Name">Trade Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Name" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-4 col col-md-4">
+                                <div>
+                                    <label for="DesignationId">Generic Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="GenericName" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2" style="width: calc(33.3333% - 110px);">
+                                <div>
+                                    <label for="Name">Strength</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Strength" class="form-control auto_bind">
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2" style="width:110px;">
+                                <div>
+                                    <label for="">Product Code</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Code" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Name">TotalStock</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="TotalStock" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="DesignationId">Stock In This Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="CurrentStock" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">Total Sold Qnty</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="TotalSoldQnty" class="form-control auto_bind">
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="">Sales Unit</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="SalesUnitType" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="">Sales Unit</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PurchaseUnitType" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">UnitSalePrice</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="UnitSalePrice" class="form-control auto_bind">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">UnitTradePrice</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="UnitPurchasePrice" class="form-control auto_bind">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">Discount</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Discount" class="form-control auto_bind">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">VAT</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Vat" class="form-control auto_bind">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="DesignationId">MaxSaleDiscount</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="MaxSaleDiscount" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="DesignationId">PurchaseDiscount</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PurchaseDiscount" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="UserName">Type</label>
+                                </div><div class="input-group">
+                                    <div data-binding="Type" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="UserName">Category</label>
+                                </div><div class="input-group">
+                                    <div data-binding="Category" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Password">
+                                        PackSize
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PackSize" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Password">
+                                        UnitConversion
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="UnitConversion" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Password">
+                                        MinStockToAlert
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="MinStockToAlert" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Password">
+                                        Days For PR
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="SoldDaysForParchaseRequired" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="UserName">Suplier</label>
+                                </div><div class="input-group">
+                                    <div class="form-control"><a id="btn_suplier" data-binding="Suplier" class="auto_bind"></a></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Password">
+                                        Default Discount
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="DefaultDiscount" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Password">
+                                        Default VAT
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="DefaultVAT" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div>
+                                    <label for="Password">
+                                        Default PurchaseDiscount
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="DefaultPurchaseDiscount" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-3 col col-md-3">
+                                <div><label for="UserName">Creator</label></div>
+                                <div class="input-group">
+                                    <div class="form-control"><a id="btn_creator" data-binding="Creator" class="auto_bind"></a></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div><label for="Password">CreatedAt</label></div>
+                                <div class="input-group">
+                                    <div data-binding="CreatedAt" class="form-control auto_bind"></div>
+                                    </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div><label for="Password">UpdatedAt</label></div>
+                                <div class="input-group">
+                                    <div data-binding="UpdatedAt" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-3 col col-md-3">
+                                <div><label for="Password">Updator</label></div>
+                                <div class="input-group">
+                                    <div class="form-control"><a id="btn_updator" data-binding="Updator" class="auto_bind"></a></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div><label for="UserName">Description</label></div>
+                                <div class="input-group">
+                                    <div data-binding="Description" class="form-control auto_bind"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sales_info" class="tab-pane fade">
+                        <div class="filter_container row" style="margin:10px 0">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>Quentity</label></div>
+                                <div><span data-binding="UnitQuentity" class="form-control auto_bind" /></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>TradePrice</label></div>
+                                <div><span data-binding="TradePrice" class="form-control auto_bind" /></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>NetTaka</label></div>
+                                <div><span data-binding="NetTaka" class="form-control auto_bind" /></div>
+                            </div>
+                        </div>
+                        <div class="button_container" style="margin:10px 0"></div>
+                        <div id="salse_info_grid" class="margin-top-10">
+                        </div>
+                    </div>
+                    <div id="order_info" class="tab-pane fade">
+                        <div class="filter_container row" style="margin:10px 0">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>Ordered Quentity</label></div>
+                                <div><span data-binding="OrderedQuentity" class="form-control auto_bind" /></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>Total Trade Price</label></div>
+                                <div><span data-binding="TotalTradePrice" class="form-control auto_bind" /></div>
+                            </div>
+                        </div>
+                        <div class="button_container" style="margin:10px 0"></div>
+                        <div id="order_info_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="purchase_info" class="tab-pane fade">
+                        <div class="filter_container row" style="margin:10px 0"> 
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>Purchase Quentity</label></div>
+                                <div><span data-binding="UnitQuentity" class="form-control auto_bind" /></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>Total TP Price</label></div>
+                                <div><span data-binding="TotalTradePrice" class="form-control auto_bind" /></div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>Total MRP Price</label></div>
+                                <div><span data-binding="TotalSoldPrice" class="form-control auto_bind" /></div>
+                            </div>
+                        </div>
+                        <div class="button_container" style="margin:10px 0"></div>
+                        <div id="purchase_info_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="stock_history" class="tab-pane fade">
+                        <div class="filter_container row" style="margin:10px 0">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>StockChanged</label></div>
+                                <div><span data-binding="StockChanged" class="form-control auto_bind" /></div>
+                            </div>
+                        </div>
+                        <div class="button_container" style="margin:10px 0"></div>
+                        <div id="stock_history_grid" class="margin-top-10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

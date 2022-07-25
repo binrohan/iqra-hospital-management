@@ -1,0 +1,172 @@
+﻿<div class="formBody" style="position:relative;">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" >Add Prescription</h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm" >
+        <div class="">
+            <!--Complain & Information-->
+            <div class="row">
+                <section class="col-sm-4 col col-md-4">
+                    <div>
+                        <label for="Name">Complain</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea data-type="string" type="text" required="" data-binding="Complain" name="Complain" class="form-control"></textarea>
+                     </div>
+                </section>
+                <section class="col-sm-4 col col-md-4">
+                    <div>
+                        <label for="Name">Previuos Information</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea data-type="string" type="text"  data-binding="PreviuosInformation" name="Previuos Information" class="form-control"></textarea>
+                    </div>
+                </section>
+                <section class="col-sm-4 col col-md-4">
+                    <div>
+                        <label for="Name">Additional Information</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea data-type="string" type="text" data-binding="AdditionalInformation" name="AdditionalInformation" class="form-control"></textarea>
+                    </div>
+                </section>
+            </div>
+
+            <!--Medicine-->
+            <div class="row">
+                <section class="col-sm-3 col col-md-3">
+                    <div>
+                        <label>Medicine Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" data-binding="DrugBrandId" name="DrugBrandId" class="form-control">
+                    </div>
+                </section>
+                <!--<section class="col-sm-2 col col-md-2">
+                    <div>
+                        <label for="Contains">Contains</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" data-binding="Contains" name="Contains" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-2 col col-md-2">
+                    <div>
+                        <label>Doses</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" required="" data-binding="Doses" name="Doses" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-2 col col-md-2">
+                    <div>
+                        <label>Timing</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" required="" data-binding="Timing" name="Timing" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-2 col col-md-2">
+                    <div>
+                        <label> Doses Period</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" required="" data-binding="DosesPeriod" name="DosesPeriod" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-1 col col-md-1">
+                    <div>
+                        <label>Add</label>
+                    </div>
+                    <button type="button" class="form-control">+</button>
+                </section>-->
+            </div>
+            <div id="medicine_grid_container">
+
+            </div>
+            <!--Investigation & Advice-->
+            <div class="row">
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label>Investigation Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" data-binding="InvestigationRefferenceId" name="InvestigationRefferenceId" class="form-control">
+                    </div>
+                    <!--<div>
+                        <label for="InvestigationRefferenceId">Investigation</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="string" type="text" required="" data-binding="InvestigationRefferenceId" name="InvestigationRefferenceId" class="form-control">
+                    </div>-->
+                </section>
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label>Next Meeting Date</label>
+                    </div>
+                    <div class="input-group">
+                        <input data-type="datetime" data-dateformat="yyyy/MM/dd hh:mm" data-binding="" name="NextMeetingDate" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div id="investigation_grid_container">
+
+            </div>
+            <!--next meeting date-->
+            <div class="row">
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label>Advice</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea data-binding="Advice" name="Advice" style="width:100%; max-width:100%;min-width:100%; height:100px;" class="form-control" data-type="string"></textarea>
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-6">
+                    <div>
+                        <label for="Remarks">Remarks</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea data-binding="Remarks" name="Remarks" style="width:100%; max-width:100%;min-width:100%; height:100px;" class="form-control" data-type="string"></textarea>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--save or cancle-->
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+    <div id="search_grid_container" style="position:absolute;">
+
+    </div>
+    <div id="inv_search_grid_container" style="position:absolute;">
+
+    </div>
+   
+</div>
+
+<style>
+    #medicine_grid_container .contains input{
+        width:80%;
+    }
+    #medicine_grid_container .doses input{
+        width:80%;
+    }
+      #medicine_grid_container .period input{
+        width:80%;
+    }
+        #medicine_grid_container .timing input{
+        width:80%;
+    }
+</style>
+
+
+

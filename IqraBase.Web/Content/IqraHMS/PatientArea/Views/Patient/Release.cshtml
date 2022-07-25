@@ -1,0 +1,22 @@
+
+
+@{
+    ViewBag.Title = "Patient release | IqraHMS";
+}
+
+<h2 class="empty_style">Patient release</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+
+    <script type="text/javascript">
+        var patientAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.PatientAccess));
+        var releaseAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.ReleaseAccess));
+
+    </script>
+}
+<div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/PatientArea/Js/Patient/LinkScript/Release.js"></script>

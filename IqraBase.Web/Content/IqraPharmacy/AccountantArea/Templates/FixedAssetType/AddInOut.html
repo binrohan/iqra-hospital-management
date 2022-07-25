@@ -1,0 +1,105 @@
+﻿
+<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Add Asset Type</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <div class="middleForm">
+            <div class="group_header_text">Type & Accounts</div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Date">Asset Type</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="Name" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Date">Asset Account</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="AssetAccountId" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Date">Accumulated Depreciation Account</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="AccumulatedDepreciationAccountId" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Date">Depreciation Expense Account</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="DepreciationExpenseAccountId" class="form-control">
+                    </div>
+                </section>
+            </div>
+
+            <div class="group_header_text margin-top-10">Book Depreciation Default</div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Date">Depreciation Method</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="DepreciationMethod" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Date">Averaging Method</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="AvaragingMethod" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <div class="row">
+                        <section class="col-sm-12 col col-md-5 margin_0">
+                            <div class="row">
+                                <section class="col-sm-3 col col-md-3 margin_0" style="height: 30px; margin-top: 20px ! important; width: 40px;">
+                                    <div class="input-group">
+                                        <input type="radio" name="IsDepreciationRate" data-binding="IsDepreciationRate" class="form-control">
+                                    </div>
+                                </section>
+                                <section class="col-sm-9 col col-md-9 margin_0" style="width: calc(100% - 40px);">
+                                    <label for="Date">Rate<small>(%)</small></label>
+                                    <div class="input-group">
+                                        <input data-type="float|null" type="text" data-binding="Rate" class="form-control">
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-sm-12 col col-md-7 margin_0">
+                            <div class="row">
+                                <section class="col-sm-3 col col-md-3 margin_0" style="height: 30px; margin-top: 20px ! important; width: 40px;">
+                                    <div class="input-group">
+                                        <input type="radio" name="IsDepreciationRate" class="form-control">
+                                    </div>
+                                </section>
+                                <section class="col-sm-9 col col-md-9 margin_0" style="width: calc(100% - 40px);">
+                                    <label for="Date">Effective Life<small>(Yrs)</small></label>
+                                    <div class="input-group">
+                                        <input data-type="int|null" type="text" data-binding="DepreciationLife" class="form-control">
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

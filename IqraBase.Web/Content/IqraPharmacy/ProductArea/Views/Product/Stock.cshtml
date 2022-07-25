@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Stock";
+}
+
+<form id="submit_form" action="/ReportArea/Generator/StockBySuplier" method="post">
+    <div>
+        <label for="Name">Suplier Name</label>
+    </div>
+    <div class="input-group">
+        <input data-type="string" required="" name="Suplier" class="form-control" type="text">
+    </div>
+    <div id="column_container">
+
+    </div>
+</form>
+    
+    <div id="field_container">
+        <div class="row">
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="0" />Category </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="1" />Suplier </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="2" />Creator </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="3" />Updator </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="4" />Id </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="5" />TradeName </label>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="6" /> GenericName</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="7" />Strength </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="8" />BatchName </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="9" />Counter </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="10" />SalesUnitType </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="11" />PurchaseUnitType </label>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="12" /> UnitConversion</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="13" /> Barcode</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="14" />UnitSalePrice </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="15" /> UnitTradePrice</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="16" />CurrentStock </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="17" />TotalStock </label>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="18" /> MinStockToAlert</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="19" /> SoldDaysForParchaseRequired</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="20" />Vat </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="21" /> Discount</label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="22" />PurchaseDiscount </label>
+            </section>
+            <section class="col-sm-4 col col-md-2">
+                <label><input type="checkbox" value="23" />MaxSaleDiscount </label>
+            </section>
+        </div>
+    </div>
+    <input id="btn_report" type="button" value="Get Report" />
+<script type="text/javascript">
+    $('#btn_report').click(function () {
+        var form = $('#submit_form');
+        var container=form.find('#column_container').empty(),i=0;
+        $('#field_container input:checked').each(function () {
+            container.append('<input name="Columns[' + i + ']" value="' + this.value + '" type="hidden">');
+            i++;
+        });
+        form.submit();
+    });
+</script>
+
+

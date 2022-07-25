@@ -1,0 +1,22 @@
+
+
+@{
+    ViewBag.Title = "Sample Collections | IqraHMS";
+}
+
+<h2 class="empty_style">Sample Collections</h2>
+<br />
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div class="empty_style button_container row">
+        <div class="col-md-6">
+            <input id="txt_search" data-type="string" type="text" data-binding="" name="" class="form-control">
+        </div>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/InvestigationArea/Js/SampleCollection/AppScripts.js"></script>>

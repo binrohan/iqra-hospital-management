@@ -1,0 +1,20 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Salary Payment | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    var accessList=@Html.Raw(Pharmacy.Service.JParser.Parse(ViewBag.Access));
+    console.log(accessList);
+</script>
+<h2 class="empty_style">Salary Payment</h2>
+<div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/SalaryArea/Content/SalaryPayment/AppScript.js"></script>

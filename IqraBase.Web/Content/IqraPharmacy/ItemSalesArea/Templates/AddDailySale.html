@@ -1,0 +1,107 @@
+﻿
+<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Add Daily Sale</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <form class="middleForm" action="#">
+            <div class="row">
+                <section class="col-sm-12 col col-md-6">
+                    <label for="From">From</label>
+                    <div class="input-group">
+                        <input disabled="disabled" required type="text" data-binding="From" data-dateformat="dd/MM/yyyy HH:mm:ss" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-6">
+                    <label for="To">To</label>
+                    <div class="input-group">
+                        <input required type="text" data-binding="To" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-3">
+                    <label for="SoldPrice">Sold Price</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="SoldPrice" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-3">
+                    <label for="Discount">Sale Discount</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="Discount" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-3">
+                    <label for="ReturnAmount">Return Amount</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="ReturnAmount" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-3">
+                    <label for="Due">Due</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="Due" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-12 col col-md-4">
+                    <label for="CashInHand">Cash In Hand</label>
+                    <div class="input-group">
+                        <input type="text" data-type="float|null" data-binding="CashInHand" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-4">
+                    <label for="CashInBank">Cash In Bank</label>
+                    <div class="input-group">
+                        <input type="text" data-type="float|null" data-binding="CashInBank" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-4">
+                    <label for="CashMismatch">Cash Mismatch</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="CashMismatch" class="form-control">
+                    </div>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col-sm-12 col col-md-6">
+                    <label for="TradePrice">Trade Price</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="TradePrice" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-12 col col-md-6">
+                    <label for="PurchaseDiscount">Purchase Discount</label>
+                    <div class="input-group">
+                        <input type="text" disabled="disabled" data-binding="PurchaseDiscount" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <section>
+                <label for="Remarks">Remarks</label>
+                <div class="input-group">
+                    <textarea data-binding="Remarks" name="Remarks" class="form-control"></textarea>
+                </div>
+            </section>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

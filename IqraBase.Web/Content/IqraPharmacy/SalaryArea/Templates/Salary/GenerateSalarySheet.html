@@ -1,0 +1,129 @@
+﻿<div class="formContainer">
+    <style type="text/css">
+        .input-group > .field {
+          border: 1px solid silver;
+          height: 18px;
+          margin-bottom: 1px;
+          padding: 0 2px;
+          width: calc(100% - 2px);
+        }
+        #data_container .i-grid-content tr td {
+          border-bottom: 5px solid silver;
+        }
+    </style>
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Salary Generator</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <div class="middleForm" action="#">
+            <div id="summary_container" style="margin-bottom: 20px; border-bottom: 5px solid silver; padding-bottom: 10px;">
+                <div class="row">
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Total Employee</label></div>
+                        <div class="input-group day_container"><span data-binding="EmployeeCount" class="field auto_bind">6, 000.00</span></div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Attendance</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="AttendanceDay" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group hour_container"><span data-binding="AttendanceHour" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group total_container"><span data-binding="AttendanceTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Leave</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="LeaveItemDay" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group hour_container"><span data-binding="LeaveItemHour" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group total_container"><span data-binding="LeaveItemTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Late Entry</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="LateEntryDay" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group hour_container"><span data-binding="LateEntryHour" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group total_container"><span data-binding="LateEntryTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Absent</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="AbsentDay" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group hour_container"><span data-binding="AbsentHour" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group total_container"><span data-binding="AbsentTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Over Time</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="OverTimeDay" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group hour_container"><span data-binding="OverTimeHour" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group total_container"><span data-binding="OverTimeTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Bonus</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="BonusCount" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group hour_container"><span data-binding="BonusTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Loan</label></div>
+                        <div>
+                            <div class="input-group day_container"><span data-binding="LoanCount" class="field auto_bind">6, 000.00</span></div>
+                            <div class="input-group total_container"><span data-binding="LoanTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Advance</label></div>
+                        <div>
+                            <div class="input-group total_container"><span data-binding="AdvanceTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Allowance</label></div>
+                        <div>
+                            <div class="input-group total_container"><span data-binding="AllowanceTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Deduction</label></div>
+                        <div>
+                            <div class="input-group total_container"><span data-binding="DeductionTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-lg-1">
+                        <div><label>Payable</label></div>
+                        <div>
+                            <div class="input-group total_container"><span data-binding="PayableTotal" class="field auto_bind">6, 000.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="data_container">
+
+            </div>
+            <div id="footer_container" style="margin-top:20px; padding-top: 10px;">
+
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

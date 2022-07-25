@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Expense | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Expense</h2>
+
+<div id="filter_container" class="row">
+    <div class="col-md-2">
+        <div><label>From</label></div>
+        <div><input type="text" data-binding="ExpenseFrom" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>To</label></div>
+        <div><input type="text" data-binding="ExpenseTo" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>Amount From</label></div>
+        <div><input type="text" data-type="float|null" data-binding="AmountFrom" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>Amount To</label></div>
+        <div><input type="text" data-type="float|null" data-binding="AmountTo" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>Period</label></div>
+        <div><input type="text" data-binding="Period" class="form-control" /></div>
+    </div>
+</div>
+<div id="Expense_summary_container" style="font-size: 1.5em; font-weight: bold; margin: 10px 0px;" class="row">
+    <div class="col-md-6">
+        <span class="auto_bind" data-binding="TotalPrice"></span>
+    </div>
+    <div class="col-md-6">
+        <span class="auto_bind" data-binding="TotalDiscount"></span>
+    </div>
+</div>
+<div>
+    <div class="empty_style button_container row">
+        
+    </div>
+    <div>
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ExpenseArea/Content/ExpenseOld.js"></script>

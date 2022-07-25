@@ -1,0 +1,30 @@
+
+
+@{
+    ViewBag.Title = "Commission | IqraHMS";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+    <h2 class="empty_style">Commission</h2>
+
+<div class="row filter_container">
+
+</div>
+<div class="row summary_container">
+
+</div>
+<div style="margin-top:10px;">
+    <div id="button_container" class="empty_style button_container row">
+    </div>
+    <div id="grid_container">
+    </div>
+</div>
+<script src="~/Content/IqraHMS/CommissionArea/Js/Commission/AppScripts.js"></script>
+<script type="text/javascript">
+    (function(){
+        var model={};
+        Controller.Show(model);
+        model.BaseModel.Reload();
+    })()
+</script>

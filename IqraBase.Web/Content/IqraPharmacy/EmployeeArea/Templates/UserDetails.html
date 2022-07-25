@@ -1,0 +1,123 @@
+﻿<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> User Details </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <form role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <ul class="nav nav-tabs">
+                    <li class="active" data-field="BasicInfo"><a>Basic Info</a></li>
+                    <li data-field="SalseInfo"><a>Salse Info</a></li>
+                    <li data-field="SalaryInfo"><a>Salary Info</a></li>
+                    <li data-field="IncrementInfo"><a>Increment Info</a></li>
+                    <li data-field="LeaveInfo"><a>Attendance Info</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="basic_info" class="tab-pane fade in active">
+                        <div class="row">
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="Name">Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Name" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="DesignationId">Designation</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Designation" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-6 col col-md-6">
+                                <div><label for="Phone">Phone</label></div>
+                                <div class="input-group">
+                                    <div data-binding="Phone" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="Email">Email</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Email" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="UserName">UserName</label>
+                                </div><div class="input-group">
+                                    <div data-binding="UserName" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="Password">
+                                        Password
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Password" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="PAddress">Current Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="PAddress" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-6 col col-md-6">
+                                <div>
+                                    <label for="CAddress">Current Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="CAddress" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="sales_info" class="tab-pane fade">
+                        <div id="salse_info_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="salary_info" class="tab-pane fade">
+                        <div class="empty_style row" style="margin: 5px 0px 0px;">
+                            <a class="btn btn-white btn-default btn-round pull-right" id="btn_generate_salary"><span class="glyphicon glyphicon-plus"></span>Generate Salary</a>
+                        </div>
+                        <div id="salary_info_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="increment_info" class="tab-pane fade">
+                        <div class="empty_style row" style="margin: 5px 0px 0px;">
+                            <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new_salary"><span class="glyphicon glyphicon-plus"></span>Change Salary</a>
+                        </div>
+                        <div id="increment_info_grid" class="margin-top-10"></div>
+                    </div>
+                    <div id="leave_info" class="tab-pane fade">
+                        <div id="leave_info_grid" class="margin-top-10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

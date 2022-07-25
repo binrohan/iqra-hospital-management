@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Stock Report";
+}
+
+@Html.Partial("~/Areas/MobileArea/Views/Shared/StockPartial.cshtml")
+<script src="~/Content/Js/IqraService/IqraConfig.js"></script>
+<script src="~/Content/IqraService/Js/global.js"></script>
+<script src="~/Content/IqraPharmacy/ReportArea/Content/StockPosition.js"></script>
+
+<script type="text/javascript">
+    var reportType = 0;
+    var columns = [
+                    { field: 'CounterName', title: 'Counte' },
+                    { field: 'TotalTradePriceByCounter', title: 'TP Price' },
+                    { field: 'TotalSalePriceByCounter', title: 'MRP Price' }
+    ];
+    Controller.Bind();
+</script>

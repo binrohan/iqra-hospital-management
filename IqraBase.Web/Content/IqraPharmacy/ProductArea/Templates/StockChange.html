@@ -1,0 +1,161 @@
+﻿<div class="">
+    <style type="text/css">
+        .tab-content .form-control.auto_bind {
+            display: block;
+        }
+
+        .nav.nav-tabs li a {
+            cursor: pointer;
+        }
+
+        .nav.nav-tabs li.active a {
+            cursor: default;
+        }
+
+        .margin-top-10 {
+            margin-top: 10px;
+        }
+    </style>
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> Product Stock </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <div role="form" method="post" class="form-horizontal smart-form middleForm" action="/">
+            <div class="">
+                <ul class="nav nav-tabs">
+                    <li class="active" data-field="BasicInfo"><a>Basic Info</a></li>
+                    <li data-field="StockHistory"><a>Stock History</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="basic_info" class="tab-pane fade in active">
+                        <div class="row">
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">Trade Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Name" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Strength">Strength</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Strength" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">Category</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Category" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Suplier">Suplier</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="Suplier" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="TotalStock">Total Stock</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="TotalStock" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="CurrentStock">Current Stock</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" data-binding="ChangedStock" class="form-control" data-type="float" />
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">Unit TP Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="UnitTradePrice" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="UnitSalePrice">Unit MRP Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="UnitSalePrice" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="Name">Total TP Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="TotalTPPrice" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="TotalMRPPrice">Total MRP Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="TotalMRPPrice" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="CSTTotalPrice">CST Total TP Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="CSTTPPrice" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                            <section class="col-sm-2 col col-md-2">
+                                <div>
+                                    <label for="CSTMRPPrice">CST MRP Price</label>
+                                </div>
+                                <div class="input-group">
+                                    <div data-binding="CSTMRPPrice" class="form-control auto_bind"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="stock_history" class="tab-pane fade">
+                        <div class="filter_container row" style="margin:10px 0">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div><label>StockChanged</label></div>
+                                <div><span data-binding="StockChanged" class="form-control auto_bind" /></div>
+                            </div>
+                        </div>
+                        <div class="button_container" style="margin:10px 0"></div>
+                        <div id="stock_history_grid" class="margin-top-10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-save"></span> Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

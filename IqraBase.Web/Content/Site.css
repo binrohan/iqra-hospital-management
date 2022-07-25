@@ -1,0 +1,113 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.empty_style{
+    margin:0;
+    padding:0;
+}
+.body-content.container,.navbar-fixed-top .container {
+    max-width: 1250px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom:0;
+}
+.form-control {
+  height: 30px;
+  padding: 2px 12px;
+}
+.input-group div.form-control,.input-group span.form-control{
+    height: auto;
+    min-height:30px;
+    padding: 3px 5px;
+    display: block;
+}
+div.form-control a {
+    cursor: pointer;
+}
+.grid_form table .form-control {
+  border-radius: 0;
+  max-height: 18px;
+  padding: 0 5px;
+}
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navbar-fixed-top{
+    z-index:30;
+}
+.grid_small_text table .btn.btn_cancel.btn-white.btn-default.btn-round {
+  padding: 2px 5px 0;
+}
+.grid_small_text .i-grid-content td {
+  padding: 3px;
+}
+.i-grid-content tr:first-child td {
+  padding-top: 3px;
+}
+td.action {
+  text-align: center;
+}
+div.form-control.auto_bind{
+    display:block;
+}
+.nav.nav-tabs li a,table a{
+    cursor:pointer;
+}
+.nav.nav-tabs li.active a{
+    cursor:default;
+}
+.margin-top-10{
+    margin-top:10px;
+}
+.btn-default {
+  border-color: rgb(69, 135, 68);
+}
+.navbar-inverse,.btn-default:hover,.btn-default:active,.btn-default:focus,.btn_container:hover .btn_upload {
+    background-color: rgb(92, 180, 91);
+    border-color: rgb(69, 135, 68);
+    color:#fefefe;
+}
+.navbar-inverse .navbar-brand {
+    color: #333;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #333;
+}
+.grid_small_text .i-header.table_header.sorting > div ,.grid_small_text .i-grid-content td, .grid_small_text .i-grid-content td input{
+    font-size: 0.85em;
+}
+.grid_small_text table .form-control {
+    padding: 0 3px;
+}
+.i-grid-content hr {
+  margin: 2px -2px;
+  border-color: #ccc;
+}

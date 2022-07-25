@@ -1,0 +1,28 @@
+
+@{
+    ViewBag.Title = "Admission |  IqraHMS";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+
+<script type="text/javascript">
+    var accessModel = {};
+</script>
+<div id="page_container">
+    <div class="row filter_container">
+
+    </div>
+    <div class="summary_container row">
+
+    </div>
+    <div style="margin-top:10px;">
+        <div class="empty_style button_container row">
+            <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+        </div>
+        <div id="grid_container" style="margin-top:10px;">
+
+        </div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/AdmissionArea/Js/Admission/AppScripts.js"></script>

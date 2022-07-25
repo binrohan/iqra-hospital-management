@@ -1,0 +1,21 @@
+﻿
+
+@{
+    ViewBag.Title = "Purchase Report";
+}
+
+@Html.Partial("~/Areas/MobileArea/Views/Shared/PurchasePartial.cshtml")
+<script src="~/Content/Js/IqraService/IqraConfig.js"></script>
+<script src="~/Content/IqraService/Js/global.js"></script>
+<script src="~/Content/IqraPharmacy/ReportArea/Content/Purchase/ReportBase.js"></script>
+
+<script type="text/javascript">
+    var reportType = 0;
+    var columns = [
+                    { field: 'Name', filter: true },
+                    { field: 'TotalTradePrice', title: 'TP Price' },
+                    { field: 'TotalDiscount', title: 'Discount' },
+                    { field: 'PayableAmount', title: 'Amount' }
+    ];
+    Controller.Bind();
+</script>

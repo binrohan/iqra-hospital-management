@@ -1,0 +1,25 @@
+
+
+@{
+    ViewBag.Title = "Patient Service | IqraHMS";
+}
+
+<h2 class="empty_style">Patient Service</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+
+    <script type="text/javascript">
+        var patientAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.PatientAccess));
+        
+    </script>
+}
+<div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right margin-l-5" id="btn_registration"><span class="glyphicon glyphicon-plus"></span>New Registration</a>
+    </div>
+
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/PatientArea/Js/Patient/LinkScript/Service.js"></script>

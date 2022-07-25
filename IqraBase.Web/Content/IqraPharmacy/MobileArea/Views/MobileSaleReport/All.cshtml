@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Sales Report";
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/Theme/Css/font-awesome.css" rel="stylesheet" />
+<div id="page_container">
+    <div class="" style="padding:15px;">
+        <div id="filter_container" class="row">
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div><label>From</label></div>
+                <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div><label>To</label></div>
+                <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6 hide_on_mobile">
+                <div><label>Period</label></div>
+                <div><input type="text" data-binding="Period" class="form-control" /></div>
+            </div>
+        </div>
+        <div id="summary_container" class="row" style="margin:10px -15px">
+            <div id="total_item" class="col-sm-2 col-md-2 hide_on_mobile">
+                <label>Sold Items</label>
+                <div class="auto_bind form-control" data-binding="TotalItem"></div>
+            </div>
+            <div class="col-sm-2 col-md-2 hide_on_mobile">
+                <label>Sold Quantity</label>
+                <div class="auto_bind form-control" data-binding="TotalQuentity"></div>
+            </div>
+            <div class="col-sm-3 col-md-2 col-xs-6">
+                <label>Trade Price</label>
+                <div class="auto_bind form-control" data-binding="TotalTradePrice"></div>
+            </div>
+            <div class="col-sm-3 col-md-2 col-xs-6">
+                <label>Sold Price</label>
+                <div class="auto_bind form-control" data-binding="TotalSalePrice"></div>
+            </div>
+            <div class="col-sm-3 col-md-2 col-xs-6">
+                <label>Sold Discount</label>
+                <div class="auto_bind form-control" data-binding="TotalDiscount"></div>
+            </div>
+            <div class="col-sm-3 col-md-2 col-xs-6">
+                <label>Trade Margin</label>
+                <div class="auto_bind form-control" data-binding="TradeMargin"></div>
+            </div>
+        </div>
+        <div id="grid">
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var reportType = 0;
+</script>
+@*<script src="~/mobilearea/salesreport?v=1.16"></script>*@
+<script src="~/Content/Js/IqraService/IqraConfig.js"></script>
+<script src="~/Content/IqraService/Js/global.js"></script>
+<script src="~/Content/IqraPharmacy/ReportArea/Content/Sales/StockPosition.js"></script>
+<script type="text/javascript">
+    var columns = [
+                    { field: 'Counter', filter: true },
+                    { field: 'TotalTradePrice', title: 'TP' },
+                    { field: 'TotalSalePrice', title: 'MRP' },
+                    { field: 'TotalDiscount', title: 'Disc' },
+                    { field: 'TradeMargin', title: 'TM', sorting: false }
+    ];
+    Controller.Bind();
+</script>

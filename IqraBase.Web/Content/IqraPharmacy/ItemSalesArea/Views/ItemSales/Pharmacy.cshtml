@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Pharmacy Item Sales";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+@section SubMenuItems{
+    <a id="btn_by_item">By Item</a>
+    <a id="btn_by_suplier">By Suplier</a>
+    <a id="btn_by_counter">By Counter</a>
+}
+<script type="text/javascript">
+    var filter = [{ field: 'itemsaleinfotype', value: 0, Operation: 0 }];
+    $('.sales_group').addClass('active menu-open').find('.pharmacy').addClass('active');
+
+</script>
+<h2 class="empty_style">Item Sales</h2>
+<div id="filter_container" class="row">
+    <div class="col-md-2">
+        <div><label>From</label></div>
+        <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>To</label></div>
+        <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>Period</label></div>
+        <div><input type="text" data-binding="Period" /></div>
+    </div>
+</div>
+<div id="sale_summary_container" style="font-size: 1.5em; font-weight: bold; margin: 10px 0px;" class="row">
+    <div class="col-md-6">
+        <span class="auto_bind" data-binding="TotalPrice"></span>
+    </div>
+    <div class="col-md-6">
+        <span class="auto_bind" data-binding="TotalDiscount"></span>
+    </div>
+</div>
+<div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ItemSalesArea/Content/ItemSales.js"></script>

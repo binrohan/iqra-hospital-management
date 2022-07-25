@@ -1,0 +1,104 @@
+﻿
+<div class="">
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 class="widget-title" style="margin: 5px;">Print Appointment</h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <div id="print_container" class="form-horizontal smart-form middleForm">
+            <div id="page-wrap">
+                <style type="text/css">
+                    /*From Anik*/
+
+                    table {
+                        border-collapse: collapse;
+                    }
+                    table td, table th {
+                        border: 1px solid black;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    #customer {
+                        overflow: hidden;
+                    }
+
+                    #customer-title {
+                        font-size: 20px;
+                        font-weight: bold;
+                        float: left;
+                    }
+                    tr.noBorder td {
+                        border: 0;
+                        padding: 1px;
+                        text-align: left;
+                    }
+                    td.noBorder {
+                        border: 0;
+                    }
+                </style>
+                <center> <h2 style="border-radius: 25px; margin-bottom: 5px; border: 1px dotted green; width: 30%">Patient Appointment</h2></center>
+
+                <div style="clear:both"></div>
+                <div id="printAppointment">
+                    <div id="customer">
+                        <center>
+                            <div style="width:30%; border-radius: 10px; border: 1px solid green; padding: 5px;margin-top:30px;">
+
+                                <table style="text-align: right;font-size:14px;">
+                                    <tr class="noBorder" style="font-size:20px;">
+                                        <td><label><span class="total-value auto_bind" data-binding="DoctorName"></span></label></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Patient Code: </label> <span class="total-value auto_bind" data-binding="Code"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Name: </label> <span class="total-value auto_bind" data-binding="Name"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Age: </label> <span class="auto_bind" data-binding="PatientAge"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Address: </label><span data-binding="CAddress" class="auto_bind"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Gender: &nbsp; </label><span width="6%" data-binding="Gender" class="auto_bind"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Mobile: &nbsp; </label><span data-binding="Mobile" class="auto_bind"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Room No: &nbsp; </label><span data-binding="ChamberAddress" class="auto_bind"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Appointment Date: &nbsp; </label><span data-binding="DateOfAppointment" class="auto_bind"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td><label>Serial No: &nbsp; </label><span data-binding="SerialNo" class="auto_bind"></span></td>
+                                    </tr>
+                                    <tr class="noBorder">
+                                        <td id="ptnt_barcode" style="text-align: right; margin-top: 2px"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <button class="btn btn_print btn-white btn-warning btn-round" type="button">
+                    <span class="glyphicon glyphicon-print"></span> Print
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

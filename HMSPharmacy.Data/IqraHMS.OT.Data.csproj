@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1486BBF5-A90B-4D2E-9A0F-C896F9E31203}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IqraHMS.OT.Data</RootNamespace>
+    <AssemblyName>IqraHMS.OT.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraBase.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\IqraBase.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraHMS.Data">
+      <HintPath>..\DLLs\IqraHMS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDB.cs" />
+    <Compile Include="Entities\AccountArea\AccountReference.cs" />
+    <Compile Include="Entities\OperationArea\OperationHistory.cs" />
+    <Compile Include="Entities\OperationArea\OperationPaymentHistory.cs" />
+    <Compile Include="Entities\OperationArea\OperationOTService.cs" />
+    <Compile Include="Entities\OperationArea\OperationStatusHistory.cs" />
+    <Compile Include="Entities\OperationArea\Operation.cs" />
+    <Compile Include="Entities\OperationArea\OperationSurgon.cs" />
+    <Compile Include="Entities\OTServiceArea\OTService.cs" />
+    <Compile Include="Entities\SurgeryArea\OperationPackageOTService.cs" />
+    <Compile Include="Entities\SurgeryArea\OperationPackage.cs" />
+    <Compile Include="Entities\SurgeryArea\Surgon.cs" />
+    <Compile Include="Entities\SurgeryArea\Surgery.cs" />
+    <Compile Include="Enums\Operation.cs" />
+    <Compile Include="Models\AccountArea\AccountReferenceModel.cs" />
+    <Compile Include="Models\OperationArea\OperationModel.cs" />
+    <Compile Include="Models\OperationArea\OperationPaymentModel.cs" />
+    <Compile Include="Models\OperationArea\OperationChangeStatusModel.cs" />
+    <Compile Include="Models\OperationArea\OperationOTServiceModel.cs" />
+    <Compile Include="Models\OperationArea\OperationHistoryModel.cs" />
+    <Compile Include="Models\OperationArea\OperationSurgonModel.cs" />
+    <Compile Include="Models\OTServiceArea\OTServiceModel.cs" />
+    <Compile Include="Models\SurgeryArea\OperationPackageModel.cs" />
+    <Compile Include="Models\SurgeryArea\OperationPackageOTServiceModel.cs" />
+    <Compile Include="Models\SurgeryArea\SurgeryModel.cs" />
+    <Compile Include="Models\SurgeryArea\SurgonModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.SetUp\App.SetUp.csproj">
+      <Project>{25adc28c-096a-47cf-a977-d1a3b0e661dd}</Project>
+      <Name>App.SetUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

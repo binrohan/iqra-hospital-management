@@ -1,0 +1,18 @@
+@{
+    ViewBag.Title = "Operation Packages | IqraHMS";
+}
+
+<script defer type="module" src="~/Content/HMSPharmacy/SurgeryArea/Content/Js/operation-packages.js"></script>
+
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+
+<div id="page_container">
+    <div class="row filter_container"></div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="add-record"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div id="grid_container"></div>
+</div>
+

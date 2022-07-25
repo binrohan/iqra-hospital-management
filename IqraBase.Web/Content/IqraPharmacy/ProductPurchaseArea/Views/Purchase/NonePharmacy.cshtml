@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "None-Pharmacy Item Receive | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    var ItemType = 1;
+    var OrderTypeId = '@ViewBag.OrderTypeId';
+    var addScriptUrl = '/Content/IqraPharmacy/NonePharmacy/Content/Content/Item/AddReceived.js';
+    $('.purchase_group').addClass('active menu-open');
+</script>
+<h2 class="empty_style">None-Pharmacy Items</h2>
+<div>
+    <div id="filter_container" class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>From</label></div>
+            <div><input type="text" data-binding="PurchaseFrom" class="form-control" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>To</label></div>
+            <div><input type="text" data-binding="PurchaseTo" class="form-control" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>Period</label></div>
+            <div><input type="text" data-binding="Period" class="form-control" /></div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <div><label>TP Price</label></div>
+            <div><span data-binding="TotalTP" class="form-control auto_bind" /></div>
+        </div>
+    </div>
+    <div class="empty_style button_container row" style="margin-top:15px;">
+        <a href="#" class="btn btn-white btn-default btn-round pull-left" id="btn_day_wise"><span class="glyphicon glyphicon-asterisk"></span> Daily</a>
+        <a href="#" class="btn btn-white btn-default btn-round pull-left" id="btn_month_wise" style="margin-left: 1%;"><span class="glyphicon glyphicon-align-justify"></span> Monthly</a>
+        <a href="#" class="btn btn-white btn-default btn-round pull-left" id="btn_suplier_wise" style="margin-left: 1%;"><span class="glyphicon glyphicon-align-justify"></span> SuplierWise</a>
+        <a href="#" class="btn btn-white btn-default btn-round pull-left btn-active" id="btn_voucher_wise" style="margin-left: 1%;"><span class="glyphicon glyphicon-compressed"></span> VoucherWise</a>
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div class="">
+        <div id="grid" class="tab_taggle"></div>
+        <div id="suplier_grid" class="tab_taggle"></div>
+        <div id="daily_grid" class="tab_taggle"></div>
+        <div id="monthly_grid" class="tab_taggle"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ProductPurchaseArea/Content/AppScript.js"></script>
+<link href="~/Content/IqraService/CSS/Window.css" rel="stylesheet" />

@@ -1,0 +1,108 @@
+﻿/* Start Style For New Window*/
+.new_window .form_container .form {
+    position: absolute;
+    width: 900px;
+    max-width: 99%;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #286789;
+    top: 150px;
+    left: calc(50% - 400px);
+}
+.form .middleForm {
+    margin-top: 10px;
+    padding:0 15px 0 15px;
+}
+@media screen and (max-width: 1000px) {
+    .new_window .form_container .form {
+        width: 90%;
+        left: 5%;
+    }
+}
+.pull-right{
+    float:right;
+}
+.new_window .form_container {
+    position: relative;
+    width: 100%;
+}
+.new_window {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1009;
+}
+.window_layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #c0c0c0;
+    opacity: 0.6;
+}
+.new_window .formHeader {
+    background-color: #3b5998;
+    background-image: none, linear-gradient(to bottom, #3b5998 0px, #3b5998 100%);
+    background-position: 50% 50%;
+    border: 1px solid transparent;
+    border-color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    margin: 0 !important;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+.new_window .formHeader .button_container {
+  margin: 4px 5px;
+}
+.button_container{
+    text-align:center;
+}
+.new_window .formHeader a.button {
+    border: 1px solid #FFFFFF;
+    border-radius: 60%;
+    color: rgb(238, 252, 245);
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1em;
+    padding: 0 0 0 4px;
+    width: 1.5em;
+}
+.new_window .formFooter.FooterFormMenu {
+    padding: 15px 0;
+}
+.new_window input, .new_window select, .new_window textarea{
+    max-width:100%;
+}
+.new_window .input-group {
+  display: inherit;
+}
+
+.new_window .formHeader .widget-title {
+    color: #FFFFFF;
+}

@@ -1,0 +1,23 @@
+
+
+@{
+    ViewBag.Title = "Doctors | IqraHMS";
+}
+
+<h2 class="empty_style">Doctors</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<script type="text/javascript">
+    var doctorTypeId = '@IqraHMS.Data.Models.CommonArea.EmployeeTypeModel.DoctorTypeId';
+    var accessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.Access));
+</script>
+<div>
+    <div class="empty_style button_container row">
+        <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/DoctorsArea/Js/Doctor/AppScripts.js"></script>

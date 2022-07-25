@@ -1,0 +1,122 @@
+﻿<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Add Manual Journal</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <div class="middleForm">
+            <div class="row">
+                <section class="col-sm-4 col col-md-4">
+                    <label for="PaidFromAccountId">Amounts are - </label>
+                    <div class="input-group">
+                        <input required type="text" value="0" data-binding="TaxType" class="form-control">
+                    </div>
+                </section>
+            </div>
+            
+            <div id="grid_container">
+                
+            </div>
+            <div id="summary_container">
+                <table style="width: calc(100% - 17px); text-align:right; margin-top:15px;">
+                    <colgroup>
+                    <col style="width: 49%;">
+                    <col>
+                    <col style="width: 12%;">
+                    <col style="width: 12%;">
+                    <col style="width: 8%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" style="text-align:left">
+                                <div>
+                                    <a style="cursor:pointer" id="btn_add_row">Add a new line</a>
+                                </div>
+                                <div>
+                                    <label for="Description">Description</label>
+                                </div>
+                                <div class="">
+                                    <textarea data-binding="Remarks" name="Description" style="width:calc(100% - 20px); max-width:calc(100% - 20px);min-width:calc(100% - 20px); height:100px;" class="form-control" data-type="string"></textarea>
+                                </div>
+                            </td>
+                            <td>
+                                <label for="">SubTotal</label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="Debit">0.00</label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="Credit">0.00</label>
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #888;">
+                            <td>
+                                <label for="">Total Tax</label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="DebitTax">0.00</label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="CreditTax">0.00</label>
+                            </td>
+
+                            <td></td>
+                        </tr>
+                        <tr style="border-bottom: 2px solid #888;">
+                            <td>
+                                <label for="">Total</label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="Amount">0.00</label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="TotalCreditAmount">0.00</label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="auto_bind" data-binding="OutText" style="color:red;"></label>
+                            </td>
+                            <td>
+                                <label class="auto_bind" data-binding="TotalOut" style="color:red;"></label>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+            <style type="text/css">
+                #grid_container table td{
+                    padding:0 2px;
+                    text-align:center;
+                }
+                #grid_container table td .k-dropdown{
+                    width:calc(100% - 2px) !important;
+                }
+            </style>
+        </div>
+    </div>
+</div>
+
+
+

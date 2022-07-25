@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+
+    <link rel="icon" href="https://www.lazzpharma.com/wp-content/uploads/2018/07/cropped-Lazz-APK-Logo_512x512-1-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://www.lazzpharma.com/wp-content/uploads/2018/07/cropped-Lazz-APK-Logo_512x512-1-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="https://www.lazzpharma.com/wp-content/uploads/2018/07/cropped-Lazz-APK-Logo_512x512-1-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://www.lazzpharma.com/wp-content/uploads/2018/07/cropped-Lazz-APK-Logo_512x512-1-270x270.png" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Theme/Css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/Theme/Css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/Content/Theme/Css/dashboard.css" rel="stylesheet" />
+    <link href="~/Content/Theme/Css/_all-skins.min.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    @Html.Partial("DefinedString")
+    <script src="~/Content/IqraService/Js/IqraConfig.js?v=1.17"></script>
+
+    <script src="~/Content/IqraService/Js/Global.js?v=1.17"></script>
+    <script src="~/Content/Js/bootstrap.min.js"></script>
+    <script src="~/Content/Js/AppComponent.js"></script>
+    <script type="text/javascript">
+        Global.DatePicker.ServerFormat = 'dd/MM/yyyy HH:mm'
+    </script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="/" class="logo">
+                <span class="logo-mini"><b>LP</b></span>
+                <span class="logo-lg"><b>Iqra HMS </b></span>
+            </a>
+            <nav class="navbar navbar-static-top">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="submenu_container" style="display: inline-block;">
+                    @RenderSection("SubMenuItems", required: false)
+                </div>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul id="menu_container" class="sidebar-menu" data-widget="tree">
+                    @RenderSection("MenuItems", required: false)
+                </ul>
+                <script src="/Content/Js/UserProfile.js"></script>
+                <script src="~/Content/Theme/Js/adminlte.min.js"></script>
+            </section>
+        </aside>
+        <div class="content-wrapper" id="page_container">
+            <!-- Content Header (Page header) -->
+            @RenderBody()
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+            </div>
+            <strong>Copyright &copy; 2017 <a href="http://www.iqrasys.com/">Iqrasys Solution Ltd.</a>.</strong> All rights
+            reserved.
+        </footer>
+    </div>
+</body>
+</html>

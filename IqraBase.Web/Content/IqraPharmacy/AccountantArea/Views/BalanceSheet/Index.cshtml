@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="header">
+    <center>
+        <h1 class="empty_style"> Lazz Pharma Ltd.</h1>
+        <h3 class="empty_style">DMCH BRANCH</h3>
+        <h3 class="empty_style">Balance Sheet</h3>
+    </center>
+</div>
+<div id="filter_container" class="row">
+
+</div>
+<div id="data_container">
+    <div id="asset_section" class="section_container">
+        <div class="section_header">
+            Assets
+        </div>
+        <div class="section_item_container row">
+            
+        </div>
+        <div class="section_total_container row">
+
+        </div>
+    </div>
+    <div id="liability_section" class="section_container">
+        <div class="section_header">
+            Liabilities
+        </div>
+        <div class="section_item_container row">
+
+        </div>
+        <div class="section_total_container row">
+
+        </div>
+        <div class="section_net_asset_container row">
+
+        </div>
+    </div>
+    <div id="equity_section" class="section_container">
+        <div class="section_header">
+            Equity
+        </div>
+        <div class="section_item_container row">
+
+        </div>
+        <div class="section_total_container row">
+
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .section_header{
+        text-decoration:underline;
+         font-size: 1.5em;
+    }
+    .section_item_container,.section_gross_item_container{
+        border-bottom:1px solid silver;
+    }
+    .section_container .total{
+        text-align:right;
+    }
+    .section_container {
+      margin-bottom: 15px;
+    }
+    .section_gross_total_container,.section_total_container.row,.section_net_asset_container.row {
+      font-weight: bold;
+    }
+    .section_net_asset_container{
+        margin-top:10px;
+        padding-top:5px;
+        border-top:2px solid silver;
+    }
+</style>
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/BalanceSheet/AppScript.js"></script>

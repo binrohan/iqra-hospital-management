@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Account Reference | IqraHMS" ;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+
+<div>
+    <div class="panel-body">
+        <div class="row filter_container">
+
+        </div>
+        <div class="summary_container row">
+
+        </div>
+        <div class="empty_style button_container row">
+            <a class="btn btn-white btn-default btn-round pull-right" id="btn_add_new" style="margin-left:10px;"><span class="glyphicon glyphicon-plus"></span> New</a>
+        </div>
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/HMSPharmacy/AccountArea/Content/Js/AccountReference/AppScript.js"></script>

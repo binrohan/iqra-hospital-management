@@ -1,0 +1,39 @@
+﻿<div id="page_container">
+    <div class="" style="padding:15px;">
+        <div id="filter_container" class="row">
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div><label>From</label></div>
+                <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div><label>To</label></div>
+                <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6 hide_on_mobile">
+                <div><label>Period</label></div>
+                <div><input type="text" data-binding="Period" class="form-control" /></div>
+            </div>
+        </div>
+        <div id="summary_container" class="row" style="margin:10px -15px">
+            <div class="col-sm-6 col-xs-6 col-md-2">
+                <label>Items</label>
+                <div class="auto_bind form-control" data-binding="TotalItem"></div>
+            </div>
+            <div class="col-sm-6 col-xs-6 col-md-2">
+                <label>TP Price</label>
+                <div class="auto_bind form-control" data-binding="TotalTradePrice"></div>
+            </div>
+            <div class="col-sm-6 col-xs-6  col-md-2">
+                <label>Discount</label>
+                <div class="auto_bind form-control" data-binding="TotalDiscount"></div>
+            </div>
+            <div class="col-sm-6 col-xs-6  col-md-2">
+                <label>Amount</label>
+                <div class="auto_bind form-control" data-binding="PayableAmount"></div>
+            </div>
+        </div>
+        <div id="grid">
+
+        </div>
+    </div>
+</div>

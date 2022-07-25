@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Inventory Alert | " + LazzPharma.Web.Service.AppService.Name;
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<h2 class="empty_style">Inventory Alert</h2>
+<div>
+    <div class="empty_style button_container row">
+        <input type="text" id="date" class="form-control" style="max-width:200px;" />
+    </div>
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+

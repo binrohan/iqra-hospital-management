@@ -1,0 +1,55 @@
+﻿
+
+<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" class="auto_bind" data-binding="Title">Add New Payment</h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm" action="/">
+        <div class="row">
+            <section class="col-sm-6 col col-md-4">
+                <div>
+                    <label for="Type">Bill Amount</label>
+                </div>
+                <div class="input-group">
+                    <span data-binding="Due" class="form-control auto_bind"></span>
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-4">
+                <div>
+                    <label for="Responsible">Pay Amount</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="float" required="" data-binding="PaidAmount" name="PaidAmount" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-4">
+                <div>
+                    <label for="Responsible">Due Amount</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="float|null"  data-binding="StillDue" name="StillDue" class="form-control" type="text">
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-12 col col-md-12">
+                <div>
+                    <label for="Type">Description</label>
+                </div>
+                <div class="input-group">
+                    <textarea data-binding="Description" name="Description" class="form-control" data-type="string"></textarea>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+</div>

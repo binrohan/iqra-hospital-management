@@ -1,0 +1,92 @@
+﻿<div class="">
+    
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> New Order </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <div style="position:relative" class="widget-body">
+            <div class="widget-main no-padding">
+                <div role="form" method="post" class="" action="/">
+                    <div class="row" style="margin-bottom: 10px;">
+                        <section class="col-sm-6 col col-md-6">
+                            <div><label for="Name">Suplier</label></div>
+                            <div class="input-group">
+                                <input required="" data-binding="SuplierId" name="SuplierId" class="form-control" type="text">
+                            </div>
+                        </section>
+                        <section class="col-sm-6 col col-md-6">
+                            <div><label for="Name">&nbsp;</label></div>
+                            <button style="margin-left:10px;" class="btn btn_clear_item btn-white btn-default btn-round pull-right" type="button">
+                                <span class="glyphicon glyphicon-plus"></span> Clear All
+                            </button>
+                            <button class="btn btn_add_item btn-white btn-default btn-round pull-right" type="button">
+                                <span class="glyphicon glyphicon-plus"></span> Add Item
+                            </button>
+                        </section>
+                    </div>
+                    <div id="item_grid" class="grid_form grid_small_text"></div>
+                    <div class="row" style="margin-top:10px;">
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Total Items</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalItems" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Total TPPrice</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalPrice" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Total MRPPrice</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalMRPPrice" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Total VAT</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalVAT" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Total Discount</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalDiscount" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Payable Price</label></div>
+                            <div class="input-group">
+                                <span data-binding="PayablePrice" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <!--<section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Payment Type</label></div>
+                            <div class="input-group">
+                                <input required="" data-binding="PaymentType" name="PaymentType" class="form-control" type="text">
+                            </div>
+                        </section>-->
+                    </div>
+                    <div class="">
+                        <img style="max-width:100px;" id="img_prev" />
+                    </div>
+                    <div class="row">
+                        <div class="text-center formFooter FooterFormMenu">
+                            <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Create Order </button>
+                            <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

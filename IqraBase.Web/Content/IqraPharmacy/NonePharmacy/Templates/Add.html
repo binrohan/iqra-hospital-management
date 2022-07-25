@@ -1,0 +1,251 @@
+﻿
+<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;" class="auto_bind" data-binding="Title"></h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm" action="/">
+        <div class="row">
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="Name">Trade Name</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" required="" data-binding="Name" name="Name" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="Name">Barcode</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" data-binding="Code" name="Code" class="form-control" type="text">
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-sm-3 col col-md-3">
+                <div>
+                    <label for="Strength">Strength</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" data-binding="Strength" name="Strength" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-3 col col-md-3">
+                <div>
+                    <label for="CategoryId">Category</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" required="" data-binding="CategoryId" name="CategoryId" class="form-control" style="display: none;" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="SuplierId">Suplier</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" required="" data-binding="SuplierId" name="SuplierId" class="form-control" style="display: none;" type="text">
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <!--<section class="col-sm-4 col col-md-4">
+                <div>
+                    <label for="CounterId">Counter</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="string" required="" data-binding="CounterId" name="CounterId" class="form-control" style="display: none;" type="text">
+                </div>
+            </section>-->
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="SoldDaysForParchaseRequired">Sold Days For Parchase Required</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="int" required="" data-binding="SoldDaysForParchaseRequired" name="SoldDaysForParchaseRequired" class="form-control" type="text">
+                </div>
+            </section>
+            <section class="col-sm-6 col col-md-6">
+                <div>
+                    <label for="MinStockToAlert">Min Stock To Alert</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="int" required="" data-binding="MinStockToAlert" name="MinStockToAlert" class="form-control" type="text">
+                </div>
+            </section>
+        </div>
+        <div class="hr"></div>
+        <div class="row">
+            <div class="col-md-5">
+                <p class="title_p">Purchase Area</p>
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <label for="UnitConversion">Unit Conversion</label>
+                </div>
+                <div class="input-group">
+                    <input data-type="int" required="" data-binding="UnitConversion" name="UnitConversion" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <p class="title_p" style="text-align:right">Sale Area</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+            <div class="col-md-6">
+                <div style="border:2px solid silver;  padding:10px 10px 70px 10px;">
+                    <section class="">
+                        <div>
+                            <label for="PurchaseUnitTypeId">Purchase Unit Type</label>
+                        </div>
+                        <div class="input-group">
+                            <input data-type="string" required="" data-binding="PurchaseUnitTypeId" name="PurchaseUnitTypeId" class="form-control" style="display: none;" type="text">
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="UnitTradePrice">Unit TP Price(S/P)</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input data-type="float" required="" data-binding="UnitTradePrice" name="UnitTradePrice" placeholder="Sales Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <input data-type="float" required="" data-binding="PUnitTradePrice" name="PUnitTradePrice" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="PurchaseVat">Purchase Vat</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PurchaseVat" name="PurchaseVat" placeholder="%" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="SUnitPurchaseVat" name="SUnitPurchaseVat" placeholder="Sale Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PUnitPurchaseVat" name="PUnitPurchaseVat" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="PurchaseDiscount">Purchase Discount</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PurchaseDiscount" name="PurchaseDiscount" placeholder="%" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="SUnitPurchaseDiscount" name="SUnitPurchaseDiscount" placeholder="Sale Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PUnitPurchaseDiscount" name="PUnitPurchaseDiscount" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="border:2px solid silver; padding:10px;">
+                    <section class="">
+                        <div>
+                            <label for="SalesUnitTypeId">Sales Unit Type</label>
+                        </div>
+                        <div class="input-group">
+                            <input data-type="string" required="" data-binding="SalesUnitTypeId" name="SalesUnitTypeId" class="form-control" style="display: none;" type="text">
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="UnitSalePrice">Unit MRP Price(S/P)</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input data-type="float" required="" data-binding="UnitSalePrice" name="UnitSalePrice" placeholder="Sale Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <input data-type="float" required="" data-binding="PUnitSalePrice" name="PUnitSalePrice" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="Vat">Sales Vat</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="Vat" name="Vat" placeholder="%" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="SUnitVat" name="SUnitVat" placeholder="Sale Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PUnitVat" name="PUnitVat" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="Discount">Sale Discount</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="Discount" name="Discount" placeholder="%" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="SUnitDiscount" name="SUnitDiscount" placeholder="Sale Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PUnitDiscount" name="PUnitDiscount" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="">
+                        <div>
+                            <label for="MaxSaleDiscount">Max Sale Discount</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="MaxSaleDiscount" name="MaxSaleDiscount" placeholder="%" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="SUnitMaxSaleDiscount" name="SUnitMaxSaleDiscount" placeholder="Sale Unit" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-4">
+                                    <input data-type="float|null" data-binding="PUnitMaxSaleDiscount" name="PUnitMaxSaleDiscount" placeholder="Purchase Unit" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+</div>

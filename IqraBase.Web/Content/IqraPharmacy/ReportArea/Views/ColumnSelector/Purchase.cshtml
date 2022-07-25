@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Purchase Items";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+@using Pharmacy.Data.Model.Product
+<script type="text/javascript">
+    var filter = [], newColumns = [],
+        newColumnsPosition = -10,
+        dataUrl = '/ItemSalesArea/ItemSales/ItemData',
+        byDataUrl='';
+    $('.purchase_group').addClass('active menu-open').find('.report').addClass('active');
+    var PharmacyTypeId = '@ItemModel.Pharmacy',
+        NonePharmacyTypeId = '@ItemModel.NonePharmacy';
+</script>
+<h2 class="empty_style" id="type_container">
+    Purchase Items
+    <small>
+        >>
+        <span style="margin-right: 20px;"><a data-type="0" class="selected"> All </a></span>
+        <span style="margin-right: 20px;"><a data-type="1"> Pharmacy </a></span>
+        <span style="margin-right: 20px;"><a data-type="2"> None-Pharmacy </a></span>
+    </small>
+</h2>
+<div id="filter_container" class="row" style="margin-top:20px;">
+    <div class="col-md-2">
+        <div><label>From</label></div>
+        <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>To</label></div>
+        <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>Period</label></div>
+        <div><input type="text" data-binding="Period" /></div>
+    </div>
+</div>
+
+<div>
+    <div id="selector_container">
+
+    </div>
+    <div id="grid_container" class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ReportArea/Content/PurchaseColumnSelector.js"></script>

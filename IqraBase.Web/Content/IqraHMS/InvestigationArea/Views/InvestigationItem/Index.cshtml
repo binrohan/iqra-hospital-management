@@ -1,0 +1,27 @@
+
+
+@{
+    ViewBag.Title = "Investigation Items | IqraHMS";
+}
+
+<h2 class="empty_style">Investigation Items</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div class="empty_style button_container row">
+        <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new_item"><span class="glyphicon glyphicon-plus"></span>New</a>
+    </div>
+    <div class="">
+        <div id="grid_container"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/InvestigationArea/Js/InvestigationItem/AppScripts.js"></script>
+<script type="text/javascript">
+    (function(){
+        var model={};
+        Controller.Show(model);
+        model.BaseModel.Reload();
+    })()
+</script>
+<script src="~/Content/IqraHMS/InvestigationArea/Js/InvestigationItemRelation/Investigation.js"></script>

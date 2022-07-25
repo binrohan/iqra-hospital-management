@@ -1,0 +1,33 @@
+
+
+@{
+    ViewBag.Title = "Patients | IqraHMS";
+}
+
+<h2 class="empty_style">Patients</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+
+    <script type="text/javascript">
+        var patientAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.PatientAccess));
+        var bedAllocationAccessList =@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.BedAllocationAccess));
+        var patientInvestigationAccessList =@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.PatientInvestigationAccess));
+        var billClearanceAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.BillClearanceAccess));
+        var bedChargeInvoiceAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.BedChargeInvoiceAccess));
+        var releaseAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.ReleaseAccess));
+        var patientTransectionAccessList=@Html.Raw(IqraBase.Service.JParser.Parse(ViewBag.PatientTransectionAccess));
+
+    </script>
+}
+<div>
+    <div class="empty_style button_container row">
+        @*<a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New Appointment</a>
+            <a href="#" class="btn btn-white btn-default btn-round pull-right margin-l-5" id="btn_add_room_allocation"><span class="glyphicon glyphicon-plus"></span>New Room Allocation</a>*@
+        <a href="#" class="btn btn-white btn-default btn-round pull-right margin-l-5" id="btn_registration"><span class="glyphicon glyphicon-plus"></span>New Registration</a>
+    </div>
+
+    <div class="">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraHMS/PatientArea/Js/Patient/AppScripts.js"></script>

@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "DailyInfo | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Item Types</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div class="panel-body">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/DailyInfoItemArea/Content/DailyInfo.js"></script>

@@ -1,0 +1,68 @@
+﻿
+<div class="formContainer">
+    <div class="formBody">
+        <div class="row formHeader headerFormMenu">
+            <div style="float:left" class="widget-title"><h4 style="margin:5px;">Add Invntory Due Payment</h4></div>
+            <span class="pull-right button_container"><a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a></span>
+        </div>
+        <div class="middleForm">
+            <div class="row">
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Patient">Patient</label>
+                    <div class="input-group">
+                        <span data-binding="Patient" class="form-control auto_bind"></span>
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Due">Due</label>
+                    <div class="input-group">
+                        <span data-binding="Due" class="form-control auto_bind"></span>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Paid">Paid</label>
+                    <div class="input-group">
+                        <input required type="text" data-type="float|null" data-binding="Paid" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <label for="DiscountP">Discount(P)</label>
+                    <div class="input-group">
+                        <input required type="text" data-type="float|null" data-binding="DiscountP" class="form-control">
+                    </div>
+                </section>
+                <section class="col-sm-6 col col-md-4">
+                    <label for="Discount">Discount(T)</label>
+                    <div class="input-group">
+                        <input required type="text" data-type="float|null" data-binding="Discount" class="form-control">
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-sm-12 col col-md-12">
+                    <label for="Description">Remarks</label>
+                    <div class="input-group">
+                        <textarea data-binding="Description" name="Description" class="form-control"></textarea>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="text-center formFooter FooterFormMenu">
+                    <button class="btn btn_save btn-white btn-default btn-round" type="submit">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save
+                    </button>
+                    <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Customer | " + LazzPharma.Web.Service.AppService.Name;
+}
+
+<h2 class="empty_style">Unit Types</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <p>
+        <div class="empty_style button_container row">
+            <a href="#" class="btn btn-white btn-default btn-round pull-right" id="btn_add_new"><span class="glyphicon glyphicon-plus"></span>New</a>
+        </div>
+    </p>
+    <div class="panel-body">
+        <div id="grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/CustomerArea/Content/Customer/AppScript.js"></script>

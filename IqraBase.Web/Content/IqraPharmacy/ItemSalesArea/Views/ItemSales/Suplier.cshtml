@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Pharmacy Item Sales";
+}
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+@section SubMenuItems{
+    <a id="btn_by_item" href="/ItemSalesArea/ItemSales/Item">By Item</a>
+    <a id="btn_by_counter" href="/ItemSalesArea/ItemSales/Counter">By Counter</a>
+<a id="btn_by_suplier" href="/ReportArea/ColumnSelector/Sales">Field Selector</a>
+}
+<script type="text/javascript">
+    var filter = [],
+        newColumns = [{ field: 'Suplier', filter: true, click: function (model) { onSuplierDetails.call(this,model) } }],
+        newColumnsPosition = 1,
+        dataUrl = '/ItemSalesArea/ItemSales/SuplierData',
+        byDataUrl = '/ItemSalesArea/ItemSales/SuplierByData',
+        byGridColumn = { field: 'Suplier' };
+    $('.sales_group').addClass('active menu-open').find('.report').addClass('active');
+</script>
+<h2 class="empty_style" id="type_container">Item Sales
+    <small>
+        >>
+        <span><a data-type="0" class="selected"> All </a></span>
+        <span><a data-type="1"> Pharmacy </a></span>
+        <span><a data-type="2"> None-Pharmacy </a></span>
+    </small> 
+</h2>
+<div id="filter_container" class="row">
+    <div class="col-md-2">
+        <div><label>From</label></div>
+        <div><input type="text" data-binding="SaleFrom" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>To</label></div>
+        <div><input type="text" data-binding="SaleTo" class="form-control" /></div>
+    </div>
+    <div class="col-md-2">
+        <div><label>Period</label></div>
+        <div><input type="text" data-binding="Period" /></div>
+    </div>
+</div>
+<div id="sale_summary_container" style="font-size: 1.5em; font-weight: bold; margin: 10px 0px;" class="row">
+    <div class="col-md-4">
+        <span class="auto_bind" data-binding="TotalPrice"></span>(<small class="auto_bind" data-binding="SalePrice"></small>)
+    </div>
+    <div class="col-md-4">
+        <span class="auto_bind" data-binding="TotalDiscount"></span>(<small class="auto_bind" data-binding="Discount"></small>)
+    </div>
+    <div class="col-md-4">
+        <span class="auto_bind" data-binding="TotalTradePrice"></span>(<small class="auto_bind" data-binding="TradePrice"></small>)
+    </div>
+</div>
+<div>
+    <div class="">
+        <div id="grid"></div>
+        <h2>Sales By Suplier</h2>
+        <div id="by_grid"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/ItemSalesArea/Content/SalesReport.js"></script>

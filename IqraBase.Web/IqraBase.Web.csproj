@@ -1,0 +1,1524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF51E9B7-8915-495A-AF06-E4106AED142F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IqraBase.Web</RootNamespace>
+    <AssemblyName>IqraBase.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IqraBase.Data">
+      <HintPath>..\DLLs\IqraBase.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraBase.Service">
+      <HintPath>..\DLLs\IqraBase.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraBaseService">
+      <HintPath>..\DLLs\IqraBaseService.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraHMS.Data">
+      <HintPath>..\DLLs\IqraHMS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraHMS.Service">
+      <HintPath>..\DLLs\IqraHMS.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraHMS.Values">
+      <HintPath>..\DLLs\IqraHMS.Values.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraHMS.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\IqraHMS.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraPathProvider">
+      <HintPath>..\DLLs\IqraPathProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraService">
+      <HintPath>..\DLLs\IqraService.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraService.DB">
+      <HintPath>..\DLLs\IqraService.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="IqraService.Search">
+      <HintPath>..\DLLs\IqraService.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Pharmacy.Data">
+      <HintPath>..\DLLs\Pharmacy.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\AccessArea\AccessAreaAreaRegistration.cs" />
+    <Compile Include="Areas\AccessArea\Controllers\AppAccessController.cs" />
+    <Compile Include="Areas\AccessArea\Menu\MenuItem.cs" />
+    <Compile Include="Areas\AccessArea\Menu\ProductItems.cs" />
+    <Compile Include="Areas\LicenceArea\Controllers\LicenceController.cs" />
+    <Compile Include="Areas\LicenceArea\LicenceAreaAreaRegistration.cs" />
+    <Compile Include="Areas\MenuArea\Controllers\ManuCategoryController.cs" />
+    <Compile Include="Areas\MenuArea\Controllers\MenuAccessController.cs" />
+    <Compile Include="Areas\MenuArea\Controllers\MenuItemController.cs" />
+    <Compile Include="Areas\MenuArea\Controllers\SubMenuItemController.cs" />
+    <Compile Include="Areas\MenuArea\MenuAreaAreaRegistration.cs" />
+    <Compile Include="Controllers\AppBaseController.cs" />
+    <Compile Include="Controllers\DropDownBaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetUp\AccessService.cs" />
+    <Compile Include="SetUp\Computer.cs" />
+    <Compile Include="SetUp\ControllerService.cs" />
+    <Compile Include="SetUp\LogInResult.cs" />
+    <Compile Include="SetUp\LogInService.cs" />
+    <Compile Include="SetUp\LogService.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\AccessArea\Content\ActionMethod.js" />
+    <Content Include="Areas\AccessArea\Content\ControllerAccess.js" />
+    <Content Include="Areas\AccessArea\Content\SetAccess.js" />
+    <Content Include="Areas\AccessArea\Content\SetControllerAccess.js" />
+    <Content Include="Areas\AccessArea\Templates\Add.html" />
+    <Content Include="Areas\AccessArea\Templates\AssignRole.html" />
+    <Content Include="Areas\AccessArea\Templates\AssignRoleToUser.html" />
+    <Content Include="Areas\AccessArea\Templates\ForgetPassword.html" />
+    <Content Include="Areas\AccessArea\Templates\SetAppAccess.html" />
+    <Content Include="Areas\AccessArea\Templates\SetControllerAccess.html" />
+    <Content Include="Areas\AccessArea\Templates\SubMenu.html" />
+    <Content Include="Areas\LicenceArea\Content\Js\AddLicence.js" />
+    <Content Include="Areas\LicenceArea\Content\Js\AppScript.js" />
+    <Content Include="Areas\LicenceArea\Tenplates\AddLicence.html" />
+    <Content Include="Areas\MenuArea\Content\MenuAccess\CategoryAccess.js" />
+    <Content Include="Areas\MenuArea\Content\MenuAccess\MenuAccess.js" />
+    <Content Include="Areas\MenuArea\Content\MenuAccess\SetCategoryDesignationAccess.js" />
+    <Content Include="Areas\MenuArea\Content\MenuAccess\SetCategoryUserAccess.js" />
+    <Content Include="Areas\MenuArea\Content\MenuAccess\SetMenuAccess.js" />
+    <Content Include="Areas\MenuArea\Content\MenuCategory\AppScript.js" />
+    <Content Include="Areas\MenuArea\Content\MenuItem\AppScript.js" />
+    <Content Include="Areas\MenuArea\Content\SubMenuItem\AppScript.js" />
+    <Content Include="Areas\MenuArea\Templates\SetMenuAccess.html" />
+    <Content Include="bootstrap.css" />
+    <Content Include="bootstrap.min.css" />
+    <Content Include="Content\HMSPharmacy\AccountArea\Content\Js\AccountReference\AppScript.js" />
+    <Content Include="Content\HMSPharmacy\OperationArea\Content\Js\assign-surgon.js" />
+    <Content Include="Content\HMSPharmacy\OperationArea\Content\Js\operation.js" />
+    <Content Include="Content\HMSPharmacy\OperationArea\Content\Js\OperationSurgon\AddSurgon.js" />
+    <Content Include="Content\HMSPharmacy\SurgeryArea\Content\Js\surgery.js" />
+    <Content Include="Content\HMSPharmacy\SurgeryArea\Content\Js\surgon.js" />
+    <Content Include="Content\Img\DSC_0158.jpg" />
+    <Content Include="Content\Img\DSC_0274.jpg" />
+    <Content Include="Content\Img\DSC_0294.jpg" />
+    <Content Include="Content\Img\DSC_0322.jpg" />
+    <Content Include="Content\Img\folderIcon.png" />
+    <Content Include="Content\Img\Hospital.jpg" />
+    <Content Include="Content\Img\Hospital1.jpg" />
+    <Content Include="Content\Img\Hospital2.jpg" />
+    <Content Include="Content\Img\Hospital3.jpg" />
+    <Content Include="Content\Img\LazzPharma.ico" />
+    <Content Include="Content\Img\LazzPharma.png" />
+    <Content Include="Content\Img\logo.png" />
+    <Content Include="Content\Img\NoImage.png" />
+    <Content Include="Content\Img\Slider\head-img.jpg" />
+    <Content Include="Content\Img\Slider\img2.jpg" />
+    <Content Include="Content\Img\Slider\img3.jpg" />
+    <Content Include="Content\IqraHMS\AdmissionArea\Js\Admission\AppScripts.js" />
+    <Content Include="Content\IqraHMS\AdmissionArea\Js\Admission\onAdmissionDetails.js" />
+    <Content Include="Content\IqraHMS\AdmissionArea\Templates\Admission.html" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Js\Appointment.js" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Js\Calendar.js" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Js\NonePatientAppointmentCreate.js" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Js\PatientAppointmentCreate.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\AppointmentCharge\AppointmentCharge.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\AppointmentCharge\AppointmentChargePrint.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\BedAllocation\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\BedAllocation\PrintBedReceipt.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\BedChargeInvoice\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\BedChargeInvoice\BedChargeInvoice.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\BedChargeInvoice\OtherChargeInvoice.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\BillClearance\BillClearance.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\ChemberVisit\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\DoctorFees\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\DuePayment\AddPayment.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\DuePayment\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\InvestigationFees\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\InvestigationFees\InvestigationDetails.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\InvestigationInvoice\PrintInvestigationInvoice.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\InvestigationInvoice\PrintInvestigationInvoiceBarcodeSticker.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\PatientTransection\DischargeBillPrint.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\PatientTransection\PrintPatientTransection.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\PatientTransection\RePrintDischargeBill.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\Release\PrintRelease.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Js\TotalBills\AppScripts.js" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\AddPayment.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\AppointmentCharge.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\AppointmentChargePrint.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\BedChargeInvoice.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\BillClearance.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\InvestigationDetails.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\OtherChargeInvoice.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\PatientInvestigationBarcode.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\PrintBedReceipt.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\PrintDischargeBill.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\PrintPatientTransection.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\PrintInvestigationInvoice.html" />
+    <Content Include="Content\IqraHMS\BillingArea\Templates\PrintRelease.html" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReportCategory\CandidateReportCategoryDetails.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReportTitle\CandidateReportTitle.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReportCategory\CandidateReportCategory.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReportItem\CandidateReportItem.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReportTitle\CandidateReportTitleDetails.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReport\AddCandidateReport.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReport\CandidateReport.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReport\CandidateReportPrint.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReport\SetData.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Js\CandidateReport\WebCamPicture.js" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Templates\AddCandidateReport.html" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Templates\WebCamPicture.html" />
+    <Content Include="Content\IqraHMS\CommissionArea\Js\CommissionGroup\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommissionArea\Js\CommissionSetting\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommissionArea\Js\Commission\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommissionArea\Js\DoctorInvestigationCommission\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommissionArea\Js\TotalBillsHistory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommonArea\Js\Department\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommonArea\Js\Designation\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommonArea\Js\DiseaseType\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommonArea\Js\EmployeeType\AppScripts.js" />
+    <Content Include="Content\IqraHMS\CommonArea\Js\Profession\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\AppointmentSchedule\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\AppointmentSchedule\OnScheduleDetails.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\AppointmentTime\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\DoctorAvailability\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\Doctor\AddDoctor.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\Doctor\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\Doctor\DoctorDetails.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\Doctor\EndVisitTime.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Js\Doctor\PatientList.js" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Templates\AddDoctor.html" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Templates\DoctorDetails.html" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Templates\EndVisitTime.html" />
+    <Content Include="Content\IqraHMS\DrugArea\Js\DrugBrand\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DrugArea\Js\DrugCompany\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DrugArea\Js\DrugGeneric\AppScripts.js" />
+    <Content Include="Content\IqraHMS\DrugArea\Js\DrugType\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\HMSInventoryItem\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\HMSInventoryItem\OnDetails.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryItemPurchaseInfo\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryItemPurchaseInfo\ItemListController.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryItemPurchaseInfo\OnCreate.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryItemPurchaseInfo\OnDetails.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryItemPurchaseInfo\Preview.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryItemStock\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryStockChangeHistory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InventoryUnit\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Js\InvestigationInventory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InventoryArea\Templates\AddPurchase.html" />
+    <Content Include="Content\IqraHMS\InventoryArea\Templates\ItemList.html" />
+    <Content Include="Content\IqraHMS\InventoryArea\Templates\Preview.html" />
+    <Content Include="Content\IqraHMS\InvestigationArea\css\InvestigationPrint.css" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationCategory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationEquipment\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItemRelation\AppScripts - Copy.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItemRelation\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItemRelation\Investigation - Copy.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItemRelation\ReportCategory.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItem\AppScripts - Copy.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItem\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItem\OnDetails - Copy.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationItem\OnDetails.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationRefference\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationReportCategory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationReportCategory\OnDetails.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\InvestigationReportGroup\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\Investigation\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\Investigation\OnDetails.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\Investigation\OnSetData.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PathologistInvestigationStatus\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\CreateForNonePatient.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\Create.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\DuePayment.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\ListDelivered.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\MakeDelivered.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\OnDetails.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\PatientInvestigation\PrintInvestigation.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\ReportDelivery\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Js\SampleCollection\AppScripts.js" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Templates\CreateForNonePatient.html" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Templates\HtmlPage1.html" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Templates\OnSetData.html" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Templates\PrintInvestigation.html" />
+    <Content Include="Content\HMSPharmacy\OTServiceArea\Content\Js\ot-service.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Admission\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Appointment\Calendar.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\IdPrinted\AddIdCard.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\PatientHistory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\PatientPicture\AddPicture.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\PatientStatus\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\AddInvestigationCreate.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\AddPatient.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\AddRoomAllocation.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\AddRoomAllocationCreate.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\AppointmentTimeDetails.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\BedAllocationDetails.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\DischargeBill.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\LinkScript\Appointment.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\LinkScript\BedAllocation.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\LinkScript\BillClearance.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\LinkScript\Service.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\LinkScript\Release.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\PatientAppointmentCreate.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\PatientDetails.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\PrescriptionDetails.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\PatientSelector.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\Registration.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Patient\Release.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Js\Release\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AddIdPrinted.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AddInvestigationCreate.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AddPatient.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AddPicture.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AddRoomAllocation.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AddRoomAllocationCreate.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\AppointmentTimeDetails.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\BedAllocationDetails.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\PatientAppointmentCreate.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\PatientDetails.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\PrescriptionDetails.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\PatientSelector.html" />
+    <Content Include="Content\IqraHMS\PatientArea\Templates\Release.html" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Js\PrescribedMedicine\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Js\Prescription\AddPrescription.js" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Js\Prescription\AppScripts.js" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Templates\AddPrescription.html" />
+    <Content Include="Content\IqraHMS\ReferralArea\Js\Reference\AppScripts.js" />
+    <Content Include="Content\IqraHMS\ReferralArea\Js\Reference\ReferenceDetails.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\Bed\AppScripts.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\Bed\OnBedDetails.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\Building\AppScripts.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\RoomCategory\AppScripts.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\RoomType\AppScripts.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\Room\AppScripts.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Js\Room\RoomDetails.js" />
+    <Content Include="Content\IqraHMS\RoomArea\Templates\RoomDetails.html" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\HospitalService\AppScripts.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\HospitalService\ServiceDetails.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\PatientServiceItem\AppScripts.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\PatientService\AddPatientService.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\PatientService\AppPatientService.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\PatientService\AppScripts.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Js\PatientService\PatientServiceDetails.js" />
+    <Content Include="Content\IqraHMS\ServiceArea\Templates\AddPatientService.html" />
+    <Content Include="Content\IqraHMS\StuffArea\Js\Stuff\AppScripts.js" />
+    <Content Include="Content\IqraHMS\StuffArea\Js\Stuff\StuffDetails.js" />
+    <Content Include="Content\IqraHMS\StuffArea\Templates\AddEmployeeDetails.html" />
+    <Content Include="Content\IqraHMS\StuffArea\Templates\AddEmployeeDocument.html" />
+    <Content Include="Content\IqraHMS\StuffArea\Templates\StuffDetails.html" />
+    <Content Include="Content\IqraHMS\SurgeryArea\Js\surgery.js" />
+    <Content Include="Content\IqraHMS\TransectionArea\Js\DoctorTransection\AppScripts.js" />
+    <Content Include="Content\IqraHMS\TransectionArea\Js\PatientTransection\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReportingItem\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReportingItem\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReportingItem\Details.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReportingItem\ItemDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReportingItem\ListController.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReporting\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReporting\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\AccountReporting\Details.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Account\AccountGroup.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Account\AccountGroupCategory.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Account\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSettingItem\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSettingItem\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSettingItem\Details.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSettingItem\ItemDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSettingItem\ListController.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSetting\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSetting\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheetSetting\Details.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BalanceSheet\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Bank\AddTransaction.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Bank\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Bank\Transaction.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BillPayment\AddBillPayment.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\BillPayment\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Bill\AddBill.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Bill\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Bill\BillDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\DailyInOut\AddDailyInOut.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\DailyInOut\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\DailyInOut\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\DailyInOut\Details.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\DailyInOut\Details\SaleDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\DailyInOut\ItemDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Depreciation\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\Depreciation\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FiscalYear\AddFiscalYear.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FiscalYear\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FixedAssetType\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FixedAssetType\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FixedAsset\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FixedAsset\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\FixedAsset\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\IncomeStatement\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\ManualJournal\AddManualJournal.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\ManualJournal\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\ManualJournal\List.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\ManualJournal\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\OpeningClosingBalance\AddOpeningBalance.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\OpeningClosingBalance\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\PaymentType\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\PaymentType\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\TaxComponent\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\TaxComponent\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\TaxRate\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Content\TaxRate\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AccountReportingItem\Add.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AccountReportingItem\Details.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AccountReportingItem\ItemDetails.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AccountReporting\Details.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AddDailyInOut.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AddDailyInOutDetails.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AddFiscalYear.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AddInOut.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\AddOpeningBalance.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\BalanceSheetSettingItem\Add.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\BalanceSheetSettingItem\Details.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\BalanceSheetSettingItem\ItemDetails.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\BalanceSheetSetting\Details.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\BillPayment\AddBillPayment.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\DailyItemSaleDetails.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\Depreciation\Add.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\FixedAssetType\AddInOut.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\FixedAsset\Add.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\ManualJournal\AddManualJournal.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\TaxComponent\Add.html" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Templates\TaxRate\Add.html" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\Attendance\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\Attendance\AttendanceDetails.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\Attendance\DaySummaryDetails.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\Attendance\Summary.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\Attendance\Users.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\DailyAttendance\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\DailyAttendance\DailyAttendanceDetails.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\LateEntry\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\LateEntry\LateEntryDetails.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\LateEntry\Setting.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\OverTime\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Content\OverTime\OnOverTimeApprove.js" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Templates\DailyAttendanceDetails.html" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Templates\DaySummaryDetails.html" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Templates\OnOverTimeApprove.html" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Content\Js\Category\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Content\Js\Computer\ComputerDetails.js" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Content\Js\ItemType\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Content\Js\SalesError\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Content\Js\SalesError\ImageViewer.js" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Content\Js\UnitType\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Templates\Computer\ComputerDetails.html" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Content\ComparisonDetailController.js" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Content\CounterWiseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Content\DailyOrderComparisionDetails.js" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Content\MonthlyDetails.js" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Content\OrderComparison.js" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Content\SuplierWiseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Templates\ComparisionReportDetails.html" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Templates\MonthlyOrderComparisionDetails.html" />
+    <Content Include="Content\IqraPharmacy\CustomerArea\Content\Customer\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Content\DailtyInfoDetails.js" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Content\DailyInfo.js" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Templates\DailyInfoDetails.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Calendar.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Designation\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Designation\DesignationDetails.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\EmployeeShift\AddNewEmployeeShift.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\EmployeeShift\Admin.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\EmployeeShift\EmployeeShift.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\EmployeeShift\ShiftDetailController.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\LeaveCategory\LeaveCategory.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\AddEmployeeLeave.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\AddEmployeeLeaveByAdmin.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\AdminLeave.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\EmployeeLeave.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\Leave.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\LeaveApproveController.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Leave\LeaveDetails.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\ActionMethod.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\MenuList.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\Roles.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\Security.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\SetAccess.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\SetRole.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Security\SubMenu.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\UserType\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\User\AddIncrement.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\User\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\User\ChangeAttendanceId.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\User\ChangePassword.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\User\Report.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\User\UserDetails.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Weekend\AddNewWeekend.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Content\Weekend\Weekend.js" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\AddEmployeeLeave.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\ChangeAttendanceId.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\ChangePassword.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\DesignationDetails.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\EmployeeShift\AddNewEmployeeShift.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\Leave\AddEmployeeLeaveByAdmin.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\Leave\LeaveApprove.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\Leave\LeaveDetails.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\Security\Add.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\Security\AssignRole.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\UserDetails.html" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Templates\Weekend\AddNewWeekend.html" />
+    <Content Include="Content\IqraPharmacy\ErrorArea\Content\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\AddExpense.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\AddFile.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\AddReport.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\ExpanseType\ExpanseType.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\Expense.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\ExpenseOld.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\ImageViewer.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\Report\AddReport.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\Report\Report.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\SuplierPayment\AddSuplierPayment.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\SuplierPayment\AddSuplierPaymentController.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\SuplierPayment\CounterWiseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\SuplierPayment\List\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\SuplierPayment\SuplierPayment.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Content\SuplierPayment\SuplierWiseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Templates\AddExpense.html" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Templates\AddFiles.html" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Templates\AddReport.html" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Templates\AddSuplierPayment.html" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Templates\ImageViewer.html" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Templates\SuplierPaymentReportDetails.html" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\EmployeeShift\AddNewEmployeeShift.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\EmployeeShift\Admin.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\EmployeeShift\EmployeeShift.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\EmployeeShift\SetEndDate.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\EmployeeShift\ShiftDetailController.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\LeaveCategory\LeaveCategory.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\AddEmployeeLeave.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\AddEmployeeLeaveByAdmin.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\AdminLeave.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\EmployeeLeave.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\Leave.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\LeaveApproveController.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Leave\LeaveDetails.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Weekend\AddNewWeekend.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Weekend\SetEndDate.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Content\Weekend\Weekend.js" />
+    <Content Include="Content\IqraPharmacy\HRIS\Templates\AddEmployeeLeave.html" />
+    <Content Include="Content\IqraPharmacy\HRIS\Templates\EmployeeShift\AddNewEmployeeShift.html" />
+    <Content Include="Content\IqraPharmacy\HRIS\Templates\Leave\AddEmployeeLeaveByAdmin.html" />
+    <Content Include="Content\IqraPharmacy\HRIS\Templates\Leave\LeaveApprove.html" />
+    <Content Include="Content\IqraPharmacy\HRIS\Templates\Leave\LeaveDetails.html" />
+    <Content Include="Content\IqraPharmacy\HRIS\Templates\Weekend\AddNewWeekend.html" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\Alert.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\Inventory.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\InventoryDue\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\InventoryDue\OnPatientDetails.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\InventoryDuePayment\AddNew.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\InventoryDuePayment\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\InventoryDuePayment\OnPatientDetails.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\ItemInventories.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Content\ItemSales.js" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Templates\InventoryDuePayment\Add.html" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Templates\InventoryDuePayment\PrintBill.html" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\AddDailySale.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\CashCounterReport\CashCounterReport.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\CashCounterReport\CashCounterReportDetails.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\ColumnSelector.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\DailySale.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\ItemSales.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\SaleDetails - Copy.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\SaleDetails.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Content\SalesReport.js" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Templates\AddDailySale.html" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Templates\CashCounterReportDetails.html" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Templates\SaleDetails.html" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Content\Purchase\All.js" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Content\Sales\All.js" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Content\Stock\All.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\AddNonePharmacy.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\AddReceived.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\ItemListController.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\Received.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\Sales\AddSale.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\Sales\ItemListController.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\Content\Item\Sales\Sales.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Content\ProductDuplicateController.js" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Templates\Add.html" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Templates\Duplicate.html" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Content\Patient\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Content\Patient\OnPatientDetails.js" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Content\Patient\ProductReturn\AddByVoucher.js" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Content\Patient\ProductReturn\AddReturnByItem.js" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Content\Patient\ProductReturn\ReturnByItemPreview.js" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Content\Patient\ProductReturn\Selector.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\AdvanceSalary\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\BonusStructure\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\EmployeeBonusDetails\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\EmployeeBonus\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\EmployeeBonus\OnGenerate.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanAccount\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanAccount\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanApprover\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanStructure\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanStructure\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanType\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\LoanType\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\OverTimeApplication\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\OverTimeSetting\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\SalaryItem\AppScripts.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Content\SalaryItem\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Templates\EmployeeBonus\OnGenerate.html" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\AddPharmacy.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\EditPharmacy.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\AddReceived.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\ItemListController.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\Received.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\Sales\AddSale.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\Sales\ItemListController.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\Item\Sales\Sales.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Content\ProductDuplicateController.js" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Templates\Add.html" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Templates\Duplicate.html" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Templates\Edit.html" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Templates\ItemList.html" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Templates\Received.html" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Templates\Sales.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Add.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\AddConversion.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Adjustment\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Adjustment\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\DeletedItems.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\AllProducts.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\BarcodeChangeController.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Counter\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Counter\CounterDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Edit.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\ProductDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\ProductDuplicateController.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\ProductErrorList\NonePharmacy.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\ProductErrorList\Pharmacy.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\Selector.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Content\StockChangeController.js" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\AddConversion.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\BarcodeChangeController.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\CounterDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\DailyDueDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\ProductDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\ProductDuplicate.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\Selector.html" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Templates\StockChange.html" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\AddOrder.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\EmailDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\ItemAddController.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\ItemListController.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\NonePharmacyOrder.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\Order.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\OrderCCEmail.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\OrderDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\OrderSelector.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\PharmacyOrder.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Content\Resend.js" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Templates\AddOrder.html" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Templates\EmailDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Templates\ItemAdd.html" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Templates\OrderDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Templates\OrderSelector.html" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\DailyPurchaseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\MonthlyPurchaseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\Preview.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\PurchaseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\PurchaseItemDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\Selector.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Content\SuplierWisePurchaseDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Templates\DailyPurchaseDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Templates\Preview.html" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Templates\PurchaseDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Templates\PurchaseItemDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Templates\Selector.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\AddPurchaseByReturnController.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\AddReturnByItem.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\Details.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\PurchaseBuReturnPreview.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\PurchaseByReturn.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\PurchaseByReturnDetails.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\ReturnByItemPreview.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\AddByItem.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\AddByVoucher.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\Details.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\ItemSelector.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\Preview.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Content\SuplierReturn\PurchaseSelector.js" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\AddPurchaseByReturn.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\AddReturnByItem.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\PurchaseByReturnDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\PurchaseByReturnPreview.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\ReturnByItemPreview.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\ReturnDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\SuplierReturnByItem.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\SuplierReturnByVoucher.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\SuplierReturnDetails.html" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Templates\SuplierReturnPreview.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\ColumnSelector.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\PreviousStock.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\ProductStoreColumnSelector.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\PurchaseColumnSelector.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Purchase\ByCounter.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Purchase\ByItem.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Purchase\BySuplier.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Purchase\ReportBase.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Purchase\SummaryReport.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\RequiredItem\ByCounter.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\RequiredItem\BySuplier.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\RequiredItem\Preview.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\RequiredItem\ReportBase.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Sales\ByItem.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Sales\StockPosition.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Sales\SummaryReport.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Sales\Suplier.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Sales\SuplierStock.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\StockPosition.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\SummaryReport.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\Suplier.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Content\SuplierStock.js" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\OrderPreview.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\PreviousStock.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\PurchaseReport.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\RequiredItemReport.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\RequiredItemReportBySuplier.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\SaleReport.html" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Templates\StockPosition.html" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Increment\AddEmployeeIncrement.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Increment\AddIncrement.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Increment\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\SalaryPayment\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\SalaryRepayment\OnDetails.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Salary\AddMonthlySalaryController.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Salary\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Salary\GenerateSalary.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Salary\GenerateSalarySheet.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Salary\SalarySheet.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Content\Salary\SheetFromDMCH.js" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Templates\Increment\AddEmployeeIncrement.html" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Templates\Increment\AddIncrement.html" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Templates\Salary\AddMonthlySalary.html" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Templates\Salary\GenerateSalary.html" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Templates\Salary\GenerateSalarySheet.html" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Templates\Salary\SalarySheet.html" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\Due\DailyDueDetails.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\Due\PurchaseDue.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierOrderCategory\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\AddSuplierPayment.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\AddSuplierPaymentController.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\AdjustSuplierPayment.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\CounterWiseDetails.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\List\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\SuplierPayment.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\SuplierPaymentAdjust\SuplierWiseDetails.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\Suplier\AddOrderCategoryController.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\Suplier\AdjustDue.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\Suplier\AppScript.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Content\Suplier\SuplierDetails.js" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Templates\OrderCategory.html" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Templates\SuplierDetails.html" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\IqraService\CSS\DatePicker.css" />
+    <Content Include="Content\IqraService\CSS\DropDown.css" />
+    <Content Include="Content\IqraService\CSS\Global.css" />
+    <Content Include="Content\IqraService\CSS\Grid.css" />
+    <Content Include="Content\IqraService\CSS\LogIn.css" />
+    <Content Include="Content\IqraService\CSS\Window.css" />
+    <Content Include="Content\IqraService\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\IqraService\Img\arrow_down.png" />
+    <Content Include="Content\IqraService\Img\arrow_up.png" />
+    <Content Include="Content\IqraService\Img\loading_img.gif" />
+    <Content Include="Content\IqraService\Img\loading_line.gif" />
+    <Content Include="Content\IqraService\Img\noCitizenPhoto.png" />
+    <Content Include="Content\IqraService\Img\search.png" />
+    <Content Include="Content\IqraService\Img\sprite.png" />
+    <Content Include="Content\IqraService\Img\sprite_2x.png" />
+    <Content Include="Content\IqraService\Js\AddController.js" />
+    <Content Include="Content\IqraService\Js\AddFormController.js" />
+    <Content Include="Content\IqraService\Js\Barcode.js" />
+    <Content Include="Content\IqraService\Js\DatePicker.js" />
+    <Content Include="Content\IqraService\Js\DropDown.js" />
+    <Content Include="Content\IqraService\Js\Grid.js" />
+    <Content Include="Content\IqraService\Js\IqraConfig.js" />
+    <Content Include="Content\IqraService\Js\ListController.js" />
+    <Content Include="Content\IqraService\Js\Login.js" />
+    <Content Include="Content\IqraService\Js\OnDetailsWithGrid.js" />
+    <Content Include="Content\IqraService\Js\OnDetailsWithTab.js" />
+    <Content Include="Content\IqraService\Js\WarningController.js" />
+    <Content Include="Content\Js\adminlte.min.js" />
+    <Content Include="Content\Js\AppComponent.js" />
+    <Content Include="Content\Js\bootstrap.min.js" />
+    <Content Include="Content\Js\FileSelector.js" />
+    <Content Include="Content\Js\IqraService\ArrGrid.js" />
+    <Content Include="Content\IqraService\Js\AutoComplete.js" />
+    <Content Include="Content\Js\IqraService\BarChart.js" />
+    <Content Include="Content\Js\IqraService\DateTimePicker.js" />
+    <Content Include="Content\IqraService\Js\Global.js" />
+    <Content Include="Content\Js\IqraService\LineChart.js" />
+    <Content Include="Content\Js\modules\buttons.js" />
+    <Content Include="Content\Js\modules\columns.js" />
+    <Content Include="Content\Js\modules\constants.js" />
+    <Content Include="Content\Js\modules\dropdown.js" />
+    <Content Include="Content\Js\modules\filter.js" />
+    <Content Include="Content\Js\modules\render-dictionaries.js" />
+    <Content Include="Content\Js\modules\utils.js" />
+    <Content Include="Content\Js\UserProfile.js" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Content\Theme\Css\dashboard.css" />
+    <Content Include="Content\Theme\Css\font-awesome.css" />
+    <Content Include="Content\Theme\Css\ionicons.min.css" />
+    <Content Include="Content\Theme\Css\_all-skins.min.css" />
+    <Content Include="Content\Theme\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Theme\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Theme\Js\adminlte.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Areas\AccessArea\Views\AppAccess\Index.cshtml" />
+    <Content Include="Areas\AccessArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\AccessArea\Views\web.config" />
+    <Content Include="Areas\AccessArea\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\MenuArea\Views\MenuAccess\Index.cshtml" />
+    <Content Include="Areas\MenuArea\Views\MenuCategory\Index.cshtml" />
+    <Content Include="Areas\MenuArea\Views\MenuItem\Index.cshtml" />
+    <Content Include="Areas\MenuArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\MenuArea\Views\SubMenuItem\Index.cshtml" />
+    <Content Include="Areas\MenuArea\Views\web.config" />
+    <Content Include="Areas\MenuArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraService\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\IqraService\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\IqraService\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Theme\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Theme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Theme\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Theme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Theme\fonts\FontAwesome.otf" />
+    <Content Include="Content\Theme\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Theme\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Theme\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Theme\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\AccountGroup\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\AccountGroupCategory\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\AccountReporting\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\AccountReportingItem\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\AppAccount\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\BalanceSheet\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\BalanceSheetSetting\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\BalanceSheetSettingItem\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\Bank\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\Bank\Transaction.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\Bill\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\BillPayment\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\DailyInOut\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\Depreciation\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\FiscalYear\Create.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\FiscalYear\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\FixedAsset\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\FixedAssetType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\IncomeStatement\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\ManualJournal\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\OpeningBalance\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\TaxComponent\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\TaxRate\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\Transaction\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\Attendance\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\Attendance\Sheet.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\Attendance\Summary.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\Attendance\Users.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\DailyAttendance\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\LateEntry\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\LateEntry\Setting.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\LateEntrySetting\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\OverTime\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\AttendanceArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\Category\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\ItemType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\UnitType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Views\OrderCompare\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ComparisonArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\CustomerArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\CustomerArea\Views\Customer\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\CustomerArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\CustomerArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Views\DailyInfo\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Views\DailyLoginInfo\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\DailyInfoItemArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\Designation\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\Employee\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\Employee\Report.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\EmployeeType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\Security\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\EmployeeArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ErrorArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ErrorArea\Views\DataError\TPPrice.cshtml" />
+    <Content Include="Content\IqraPharmacy\ErrorArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ErrorArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\Expense\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\Expense\Old.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\Expense\Report.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\ExpenseType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\SuplierPayment\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\SuplierPayment\List.cshtml" />
+    <Content Include="Content\IqraPharmacy\ExpenseArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\EmployeeShift\Admin.cshtml" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\EmployeeShift\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\Leave\Admin.cshtml" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\Leave\Employee.cshtml" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\Leave\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\LeaveCategory\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\Weekend\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\Inventory\Alert.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\Inventory\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\Inventory\ItemInventories.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\Inventory\ItemSales.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\InventoryAlert\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\DailySale\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\Counter.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\DeliveryReport.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\Item.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\List.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\Pharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\ItemSales\Suplier.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ItemSalesArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobilePurchaseReport\All.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobilePurchaseReport\Graphical.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobilePurchaseReport\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobilePurchaseReport\Pharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobilePurchaseReport\Summary.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileSaleReport\All.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileSaleReport\Graphical.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileSaleReport\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileSaleReport\Pharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileSaleReport\Summary.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileStockReport\All.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileStockReport\Graphical.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileStockReport\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileStockReport\Pharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\MobileStockReport\Summary.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\Shared\PurchasePartial.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\Shared\SalePartial.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\Shared\StockPartial.cshtml" />
+    <Content Include="Content\IqraPharmacy\MobileArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Views\NonePharmacy\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Views\NonePharmacyItemReceive\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\NonePharmacy\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\AdvanceSalary\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\BonusStructure\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\EmployeeBonus\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\EmployeeBonusDetails\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\LoanAccount\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\LoanApprover\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\LoanStructure\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\LoanType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\OverTimeApplication\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\OverTimeSetting\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\SalaryItem\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\PayrollArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\PharmacyItem\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\PharmacyItemReceive\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\PharmacyItemSale\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\Shared\ProductMenuPartial.cshtml" />
+    <Content Include="Content\IqraPharmacy\Pharmacy\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\Counter\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\Product\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\Product\Stock.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\ProductAdjustment\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\ProductErrorList\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\ProductErrorList\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\Order\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\Order\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\Order\Pharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\OrderEmails\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductOrderArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Views\Purchase\NonePharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Views\Purchase\Pharmacy.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductPurchaseArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Views\ProductReturn\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Views\PurchaseByReturn\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Views\SuplierReturn\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductReturnArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\RackArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Views\ColumnSelector\Product.cshtml" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Views\ColumnSelector\Purchase.cshtml" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Views\ColumnSelector\Sales.cshtml" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\ReportArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Views\Increment\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Views\Salary\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\Suplier\Due.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\Suplier\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\SuplierOrderCategory\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\SuplierPaymentAdjust\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\HRIS\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\AccountantArea\Views\PaymentType\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Views\web.config" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraPharmacy\PatientArea\Views\PharmacyPatient\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\InventoryDuePayment\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\InventoryArea\Views\InventoryDue\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\ProductArea\Views\Product\DeletedItems.cshtml" />
+    <Content Include="Content\IqraPharmacy\SuplierArea\Views\Suplier\AdjustDue.cshtml" />
+    <Content Include="Content\IqraPharmacy\SalaryArea\Views\SalaryPayment\Index.cshtml" />
+    <Content Include="Content\IqraPharmacy\CommonArea\Views\SalesError\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\BedAllocation\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\ChemberVisit\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\DoctorFees\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\InvestigationFees\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\RoomChargeInvoice\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\TotalBills\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\DoctorInvestigationCommission\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\TotalBillsHistory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\Department\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\Designation\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\EmployeeType\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\AppointmentTime\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\DoctorAvailability\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\Doctor\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\Doctor\Patients.cshtml" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\DrugArea\Views\DrugBrand\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DrugArea\Views\DrugCompany\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DrugArea\Views\DrugGeneric\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DrugArea\Views\DrugType\Index.cshtml" />
+    <Content Include="Content\IqraHMS\DrugArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\DrugArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\InvestigationCategory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\InvestigationItem\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\InvestigationRefference\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\InvestigationReportCategory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\Investigation\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Admission\Index.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\PatientHistory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Patient\Index.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Views\PrescribedMedicine\Index.cshtml" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Views\Prescription\Index.cshtml" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\PrescriptionArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\ReferralArea\Views\Reference\Index.cshtml" />
+    <Content Include="Content\IqraHMS\ReferralArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\ReferralArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\Bed\Index.cshtml" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\Building\Index.cshtml" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\RoomCategory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\RoomType\Index.cshtml" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\Room\Index.cshtml" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\RoomArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\StuffArea\Views\Stuff\Index.cshtml" />
+    <Content Include="Content\IqraHMS\StuffArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\StuffArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\TransectionArea\Views\DoctorTransection\Index.cshtml" />
+    <Content Include="Content\IqraHMS\TransectionArea\Views\PatientTransection\Index.cshtml" />
+    <Content Include="Content\IqraHMS\TransectionArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\TransectionArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\InvestigationEquipment\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\Commission\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\PatientInvestigation\Index.cshtml" />
+    <Content Include="Content\IqraHMS\ServiceArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Patient\Release.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Patient\Appointment.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Patient\BedAllocation.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Patient\BillClearance.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\Patient\Service.cshtml" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Views\Appointment\Index.cshtml" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\AppointmentArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\PathologistInvestigationStatus\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\ReportDelivery\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\SampleCollection\Index.cshtml" />
+    <Content Include="Content\IqraHMS\ServiceArea\Views\PatientService\Index.cshtml" />
+    <Content Include="Content\IqraHMS\ServiceArea\Views\PatientServiceItem\Index.cshtml" />
+    <Content Include="Content\IqraHMS\ServiceArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\ServiceArea\Views\HospitalService\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\InventoryItemPurchaseInfo\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\HMSInventoryItem\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\InventoryUnit\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\InventoryItemStock\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\InventoryStockChangeHistory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InventoryArea\Views\InvestigationInventory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\CommissionGroup\Index.cshtml" />
+    <Content Include="Areas\LicenceArea\Views\Licence\Index.cshtml" />
+    <Content Include="Areas\LicenceArea\Views\web.config" />
+    <Content Include="Areas\LicenceArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\DoctorsArea\Views\AppointmentSchedule\Index.cshtml" />
+    <Content Include="Content\HTMLViews\AdmissionFormPrintable.cshtml" />
+    <Content Include="Content\HTMLViews\Index.cshtml" />
+    <Content Include="Content\IqraHMS\AdmissionArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\AdmissionArea\Views\Admission\Index.cshtml" />
+    <Content Include="Content\IqraHMS\AdmissionArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\Profession\Index.cshtml" />
+    <Content Include="Content\IqraHMS\PatientArea\Views\PatientStatus\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CommonArea\Views\DiseaseType\Index.cshtml" />
+    <Content Include="Content\HMSPharmacy\AccountArea\Views\AccountReference\Index.cshtml" />
+    <Content Include="Content\HMSPharmacy\AccountArea\Views\Shared\_Layout.cshtml" />
+    <Content Include="Content\HMSPharmacy\AccountArea\Views\web.config" />
+    <Content Include="Content\HMSPharmacy\AccountArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\CommissionArea\Views\CommissionSetting\Index.cshtml" />
+    <Content Include="Content\IqraHMS\InvestigationArea\Views\InvestigationReportGroup\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Views\CandidateReportItem\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Views\web.config" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Views\CandidateReportCategory\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Views\CandidateReportTitle\Index.cshtml" />
+    <Content Include="Content\IqraHMS\CandidateReportArea\Views\CandidateReport\Index.cshtml" />
+    <Content Include="Content\IqraHMS\BillingArea\Views\DuePayment\Index.cshtml" />
+    <Content Include="Content\HMSPharmacy\OperationArea\Views\Operation\Index.cshtml" />
+    <Content Include="Content\HMSPharmacy\OTServiceArea\Views\OTService\Index.cshtml" />
+    <Content Include="Content\IqraHMS\SurgeryArea\Views\Surgery\Index.cshtml" />
+    <Content Include="Content\HMSPharmacy\OperationArea\Views\web.config" />
+    <Content Include="Content\HMSPharmacy\OperationArea\Views\_ViewStart.cshtml" />
+    <Content Include="Content\HMSPharmacy\OTServiceArea\web.config" />
+    <Content Include="Content\HMSPharmacy\OTServiceArea\_ViewStart.cshtml" />
+    <Content Include="Content\HMSPharmacy\SurgeryArea\Views\Surgery\Index.cshtml" />
+    <Content Include="Content\HMSPharmacy\SurgeryArea\web.config" />
+    <Content Include="Content\HMSPharmacy\SurgeryArea\_ViewStart.cshtml" />
+    <Content Include="Content\HMSPharmacy\SurgeryArea\Views\Surgon\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\LazzDohar.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Templates\FileSelector.html" />
+    <Content Include="Templates\OnDetailsWithGrid.html" />
+    <Content Include="Templates\OnDetailsWithTab.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Menu\Admin.cshtml" />
+    <Content Include="Views\Shared\DefinedString.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\AccessArea\Models\" />
+    <Folder Include="Areas\LicenceArea\Models\" />
+    <Folder Include="Areas\LicenceArea\Views\Shared\" />
+    <Folder Include="Areas\MenuArea\Models\" />
+    <Folder Include="Content\HMSPharmacy\AccountArea\Models\" />
+    <Folder Include="Content\HMSPharmacy\AccountArea\Templates\" />
+    <Folder Include="Content\HMSPharmacy\OperationArea\Templates\" />
+    <Folder Include="Content\HMSPharmacy\OTServiceArea\Templates\" />
+    <Folder Include="Content\HMSPharmacy\SurgeryArea\Templates\" />
+    <Folder Include="Content\ImageData\Patients\Icon\" />
+    <Folder Include="Content\ImageData\Patients\Orginal\" />
+    <Folder Include="Content\IqraHMS\BillingArea\Js\ServiceArea\" />
+    <Folder Include="Content\IqraHMS\CompounderArea\Js\CompounderDoctor\" />
+    <Folder Include="Content\IqraHMS\CompounderArea\Views\CompounderDoctor\" />
+    <Folder Include="Content\IqraHMS\FingerprintArea\" />
+    <Folder Include="Content\IqraHMS\HistoryArea\" />
+    <Folder Include="Content\IqraHMS\PatientArea\Js\Patient\Css\" />
+    <Folder Include="Content\IqraHMS\ServiceArea\Views\Shared\" />
+    <Folder Include="Content\IqraHMS\StuffArea\Views\Employee\" />
+    <Folder Include="Content\IqraHMS\SurgeryArea\Templates\" />
+    <Folder Include="Content\IqraPharmacy\AccountantArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\AccountantArea\Templates\Bill\" />
+    <Folder Include="Content\IqraPharmacy\AccountantArea\Templates\PaymentType\" />
+    <Folder Include="Content\IqraPharmacy\AttendanceArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\CommonArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\CommonArea\Views\Computer\" />
+    <Folder Include="Content\IqraPharmacy\ComparisonArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\CustomerArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\CustomerArea\Templates\" />
+    <Folder Include="Content\IqraPharmacy\DailyInfoItemArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\ErrorArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\ExpenseArea\Views\ExpenseDocument\" />
+    <Folder Include="Content\IqraPharmacy\HRIS\Models\" />
+    <Folder Include="Content\IqraPharmacy\HRIS\Views\Shared\" />
+    <Folder Include="Content\IqraPharmacy\InventoryArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\InventoryArea\Views\Error\" />
+    <Folder Include="Content\IqraPharmacy\ItemSalesArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\MobileArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\NonePharmacy\Models\" />
+    <Folder Include="Content\IqraPharmacy\PatientArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\PatientArea\Views\Shared\" />
+    <Folder Include="Content\IqraPharmacy\PayrollArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\PayrollArea\Templates\OverTimeApplication\" />
+    <Folder Include="Content\IqraPharmacy\PayrollArea\Templates\OverTimeSetting\" />
+    <Folder Include="Content\IqraPharmacy\PayrollArea\Templates\SalaryItem\" />
+    <Folder Include="Content\IqraPharmacy\PayrollArea\Views\SalaryInfo\" />
+    <Folder Include="Content\IqraPharmacy\PayrollArea\Views\SalaryPayment\" />
+    <Folder Include="Content\IqraPharmacy\ProductArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\ProductArea\Views\ItemBase\" />
+    <Folder Include="Content\IqraPharmacy\ProductReturnArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\RackArea\Content\" />
+    <Folder Include="Content\IqraPharmacy\RackArea\Controllers\" />
+    <Folder Include="Content\IqraPharmacy\RackArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\RackArea\Templates\" />
+    <Folder Include="Content\IqraPharmacy\RackArea\Views\Shared\" />
+    <Folder Include="Content\IqraPharmacy\ReportArea\Content\Order\" />
+    <Folder Include="Content\IqraPharmacy\ReportArea\Views\Generator\" />
+    <Folder Include="Content\IqraPharmacy\ReportArea\Views\PurchaseReport\" />
+    <Folder Include="Content\IqraPharmacy\ReportArea\Views\RequiredItem\" />
+    <Folder Include="Content\IqraPharmacy\ReportArea\Views\SalesReport\" />
+    <Folder Include="Content\IqraPharmacy\ReportArea\Views\StockReport\" />
+    <Folder Include="Content\IqraPharmacy\SalaryArea\Models\" />
+    <Folder Include="Content\IqraPharmacy\SalaryArea\Views\SalaryRepayment\" />
+    <Folder Include="Content\IqraPharmacy\SuplierArea\Models\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.SetUp\App.SetUp.csproj">
+      <Project>{25adc28c-096a-47cf-a977-d1a3b0e661dd}</Project>
+      <Name>App.SetUp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HMSPharmacy.Data\IqraHMS.OT.Data.csproj">
+      <Project>{1486bbf5-a90b-4d2e-9a0f-c896f9e31203}</Project>
+      <Name>IqraHMS.OT.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HMSPharmacy.Service\IqraHMS.OT.Service.csproj">
+      <Project>{69cb8b97-4706-432f-9378-c7bf682c1fc9}</Project>
+      <Name>IqraHMS.OT.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HMSPharmacy.Web\IqraHMS.OT.Web.csproj">
+      <Project>{eb82c848-2059-4f76-a9d8-04f5fe683cb0}</Project>
+      <Name>IqraHMS.OT.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IqraBase.App\IqraBase.App.csproj">
+      <Project>{136263ea-631e-4d66-8182-af99d3232275}</Project>
+      <Name>IqraBase.App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12952</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12952/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

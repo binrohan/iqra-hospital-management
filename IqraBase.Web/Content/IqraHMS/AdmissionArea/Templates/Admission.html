@@ -1,0 +1,223 @@
+﻿<div class="formBody">
+    <div class="row formHeader headerFormMenu">
+        <div style="float: left" class="widget-title">
+            <h4 style="margin:5px;">New Admision</h4>
+        </div><span class="pull-right button_container">
+            <a class="button btn_cancel"><span class="glyphicon glyphicon-remove"></span></a>
+        </span>
+    </div>
+    <div class="middleForm" action="/">
+        <div class="">
+
+            
+            <div id="admission">
+                <section class="section--form container">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="registration-number">Registration Number</label>
+                                    <input type="text" class="form-control" id="registration-number" data-binding="AdmissionNo">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="bed">Bed</label>
+                                    <input type="text" class="form-control" id="bed" data-binding="BedId">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" class="form-control" id="date" data-binding="Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="patient-name">Patient Name</label>
+                                    <input type="text" class="form-control" id="patient-name" data-binding="PatientName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="father-or-husband-name">Father's / Husband's Name</label>
+                                    <input type="text" class="form-control" id="father-or-husband-name" data-binding="SpouseName">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="mother-name">Mothers's Name</label>
+                                    <input type="text" class="form-control" id="mother-name" required data-binding="MotherName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input type="number" class="form-control" id="age" required data-binding="Age">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select class="form-control" required data-binding="Gender">
+                                        <option selected disabled>Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="profession">Profession</label>
+                                    <input type="text" class="form-control" id="profession" required data-binding="Profession">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="present-address">Present Address</label>
+                                    <input type="text" class="form-control" id="present-address" required data-binding="PresentAddress">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="present-address">Permanent Address</label>
+                                    <input type="text" class="form-control" id="permanent-address" required data-binding="PermanentAddress">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="Type-of-Disease">Type of Disease</label>
+                                    <input type="text" class="form-control" id="Type-of-Disease" required data-binding="TypeOfDisease">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="admission-date">Date of Admission</label>
+                                    <input type="date" class="form-control" id="admission-date" required data-binding="AdmissionDate">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="admission-time">Time of Addmission</label>
+                                    <input type="text" class="form-control" id="admission-time" required data-binding="AdmissionTime">
+                                </div>
+                            </div>
+                            <div class="col-md-1 v-bottom">
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" data-binding="AdmissionDayTimeCondition" type="radio" name="admission-day-condition" id="admission-day-condition-am" value="am" checked>
+                                        <label class="form-check-label" for="admission-day-condition-am">AM</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" data-binding="AdmissionDayTimeCondition" type="radio" name="admission-day-condition" id="admission-day-condition-pm" value="PM">
+                                        <label class="form-check-label" for="admission-day-condition-pm">PM</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <legend>Emergency Contact</legend>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="emergency-contact-name-one">Name</label>
+                                        <input type="text" class="form-control" id="emergency-contact-name-one" required data-binding="EmergencyContactNameOne">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="emergency-contact-number-one">No</label>
+                                        <input type="text" class="form-control" id="emergency-contact-number-one" required data-binding="EmergencyContactNumberOne">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="emergency-contact-name-two">Name</label>
+                                        <input type="text" class="form-control" id="emergency-contact-name-two" required data-binding="EmergencyContactNameTwo">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="emergency-contact-number-two">No</label>
+                                        <input type="text" class="form-control" id="emergency-contact-number-two" required data-binding="EmergencyContactNumberTwo">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="consultant-name">Name of Consultant</label>
+                                    <input type="text" class="form-control" id="consultant-name" required data-binding="ConsultantName">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="referred-by">Referred By</label>
+                                    <input type="text" class="form-control" id="referred-by" required data-binding="ReferredBy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="discharge-date">Discharge Date</label>
+                                    <input type="date" class="form-control" id="discharge-date" required data-binding="DischargeDate">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="discharge-time">Time of Dischage</label>
+                                    <input type="text" class="form-control" id="discharge-time" required data-binding="DischargeTime">
+                                </div>
+                            </div>
+                            <div class="col-md-1 v-bottom">
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input data-binding="DischargedDayTimeCondition" class="form-check-input" type="radio" name="discharge-day-condition" id="discharge-day-condition-am" value="AM" checked>
+                                        <label class="form-check-label" for="discharge-day-condition-am">AM</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input data-binding="DischargedDayTimeCondition" class="form-check-input" type="radio" name="discharge-day-condition" id="discharge-day-condition-pm" value="PM" checked>
+                                        <label class="form-check-label" for="discharge-day-condition-pm">PM</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="text-center formFooter FooterFormMenu">
+                <button class="btn btn_save btn-white btn-default btn-round" type="button"><span class="glyphicon glyphicon-save"></span> Save </button>
+                <button class="btn btn_cancel btn-white btn-default btn-round" type="button"> <span class="glyphicon glyphicon-remove"></span> Cancel </button>
+            </div>
+        </div>
+    </div>
+</div>
+

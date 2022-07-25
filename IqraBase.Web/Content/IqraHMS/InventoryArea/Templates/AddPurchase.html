@@ -1,0 +1,82 @@
+﻿<div class="">
+    
+    <div class="formHeader empty_style row headerFormMenu">
+        <div class="col-xs-10 empty_style"><h4 data-binding="title" class="widget-title auto_bind" style="margin: 5px;"> New Purchase </h4></div>
+        <div class="col-xs-2 empty_style" style="padding: 0px; margin: 0px;">
+            <span class="pull-right button_container">
+                <a class="button btn_cancel"><span style="left:-2px;" class="glyphicon glyphicon-remove"></span></a>
+            </span>
+        </div>
+    </div>
+    <div class="middleForm empty_style">
+        <div style="position:relative" class="widget-body">
+            <div class="widget-main no-padding">
+                <div class="form-horizontal smart-form middleForm">
+                    <div style="margin-bottom: 10px;" class="row">
+                        <button style="margin-left:10px;" class="btn btn_clear_item btn-white btn-default btn-round pull-right" type="button">
+                            <span class="glyphicon glyphicon-plus"></span> Clear All
+                        </button>
+                        <button class="btn btn_add_item btn-white btn-default btn-round pull-right" type="button">
+                            <span class="glyphicon glyphicon-plus"></span> Add Item
+                        </button>
+                    </div>
+                    <div id="item_grid" class="grid_form grid_small_text"></div>
+                    <div class="row" style="margin-top:10px;">
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Name">Total Items</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalItems" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="TotalPrice">Total Price</label></div>
+                            <div class="input-group">
+                                <span data-binding="TotalPrice" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Discount">Total Discount</label></div>
+                            <div class="input-group">
+                                <span data-binding="Discount" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="Reduce">Reduce</label></div>
+                            <div class="input-group">
+                                <input data-type="float|null" data-binding="Reduce" class="form-control" type="text">
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="PayableAmount">Payable Amount</label></div>
+                            <div class="input-group">
+                                <span data-binding="PayableAmount" class="form-control auto_bind"></span>
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="PaidAmount">Paid Amount</label></div>
+                            <div class="input-group">
+                                <input data-type="float|null" data-binding="PaidAmount" class="form-control" type="text">
+                            </div>
+                        </section>
+                        <section class="col-sm-2 col col-md-2">
+                            <div><label for="DueAmount">Due Amount</label></div>
+                            <div class="input-group">
+                                <input data-type="float|null" data-binding="DueAmount" class="form-control" type="text">
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="text-center formFooter FooterFormMenu">
+                            <button class="btn btn_save btn-white btn-default btn-round" type="button">
+                                <span class="glyphicon glyphicon-save"></span> Preview Purchase 
+                            </button>
+                            <button class="btn btn_cancel btn-white btn-default btn-round" type="button">
+                                <span class="glyphicon glyphicon-remove"></span> Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

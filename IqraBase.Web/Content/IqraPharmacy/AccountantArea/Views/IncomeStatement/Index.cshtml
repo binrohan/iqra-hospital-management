@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="header">
+    <center>
+        <h1 class="empty_style"> Lazz Pharma Ltd.</h1>
+        <h3 class="empty_style">DMCH BRANCH</h3>
+        <h3 class="empty_style">Income Statement</h3>
+    </center>
+</div>
+<div id="filter_container" class="row">
+
+</div>
+<div id="data_container">
+    <div id="revenue_section" class="section_container">
+        <div class="section_header">
+            Revenue :
+        </div>
+        <div class="section_item_container row">
+            
+        </div>
+        <div class="section_total_container row">
+
+        </div>
+        <div class="section_gross_item_container row">
+
+        </div>
+        <div class="section_gross_total_container row">
+
+        </div>
+    </div>
+    <div id="expense_section" class="section_container">
+        <div class="section_header">
+            Expense :
+        </div>
+        <div class="section_item_container row">
+
+        </div>
+        <div class="section_total_container row">
+
+        </div>
+    </div>
+    <div id="loss_profit_section" class="section_container">
+        <div class="section_header">
+            P/L Statement :
+        </div>
+        <div class="section_item_container row">
+
+        </div>
+        <div class="section_total_container row">
+
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .section_header{
+        text-decoration:underline;
+         font-size: 1.5em;
+    }
+    .section_item_container,.section_gross_item_container{
+        border-bottom:1px solid silver;
+    }
+    .section_container .total{
+        text-align:right;
+    }
+    .section_container {
+      margin-bottom: 15px;
+    }
+    .section_gross_total_container,.section_total_container.row {
+      font-weight: bold;
+    }
+</style>
+<script src="~/Content/IqraPharmacy/AccountantArea/Content/IncomeStatement/AppScript.js"></script>

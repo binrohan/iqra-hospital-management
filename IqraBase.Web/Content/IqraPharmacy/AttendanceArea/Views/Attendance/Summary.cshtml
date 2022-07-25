@@ -1,0 +1,18 @@
+﻿
+
+@{
+    ViewBag.Title = "Attendance Summary | " + LazzPharma.Web.Service.AppService.Name;
+}
+<h2 class="empty_style">Attendance Summary</h2>
+@section MenuItems {
+    @Html.Partial("~/Views/Menu/Admin.cshtml")
+}
+<div>
+    <div class="">
+        <div id="clndr"></div>
+    </div>
+</div>
+<script src="~/Content/IqraPharmacy/AttendanceArea/Content/Attendance/Summary.js"></script>
+<script src="~/Content/Js/IqraService/LineChart.js"></script>
+
+
